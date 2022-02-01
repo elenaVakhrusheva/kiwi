@@ -1,0 +1,16 @@
+.my-flex-cont {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ align-items: flex-start;
+ align-content: flex-start;
+ width: 100%;
+ height: auto;
+}
+.my-flex-box {
+ margin: 5px;
+ padding: 5px;
+ flex: 2 1 auto;
+ align-self: auto;
+ order: 0;
+}
