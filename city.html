@@ -4,13 +4,145 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Город</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <div class="header">
+    <div class="container">
+      <div class="header__wrap"></div>
+    </div>
+  </div> 
+  <!-- /header -->
+  <div class="nav-breadcrumb">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Экскурсии</a></li>
+            <li class="breadcrumb-item"><a href="#">Россия</a></li>
+            <li class="breadcrumb-item"><a href="#">Автомобильные</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">Сочи</a></li>
+          </ol>
+        </nav>
+    </div>
+  </div>
+  <!-- /nav-breadcrumb -->
+  <h1>Экскурсии в Сочи</h1>
+  <nav>
+    <ul class="type-excursions">
+      <li class="type-excursions__item"><a href="#">Все</a></li>
+      <li class="type-excursions__item"><a href="#">Автомобильные (25)</a></li>
+      <li class="type-excursions__item"><a href="#">Пешие (1 238)</a></li>
+      <li class="type-excursions__item"><a href="#">Авто в аренду (2 400)</a></li>
+    </ul>
+  </nav>
+  <div class="wrapper filter-content">    
+    <aside>      
+      <div class="filter-content__filter">
+        <div class="filter-content__title">Фильтры <span>(3)</span> </div>
+        <div class="filter-content__filter-title__icon-minus">
+          <img src="/icons/minus.svg" alt="свернуть">
+        </div>
+      </div>
+      <!-- .filter-content__rating -->
+      <div class="filter-content__rating">
+        <div class="filter-content__title">Рейтинг</div>
+        <div>
+          <ul class="filter-content__rating-list">
+						<li class="rating-list__item">
+							<input class="rating-list__item-input" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">Любой</label>
+						</li>
+
+						<li>
+							<input class="rating-list__item-input" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">От 
+                <span class="rating-list__item-star">
+                  <img src="/icons/star.svg" alt="звезда">
+                </span>
+                <span class="rating-list__item-star">
+                  <img src="/icons/star.svg" alt="звезда">
+                </span>
+                <span class="rating-list__item-star">
+                  <img src="/icons/star.svg" alt="звезда">
+                </span>
+                <span class="rating-list__item-star">
+                  <img src="/icons/star.svg" alt="звезда">
+                </span>
+                <span class="rating-list__item-star">
+                  <img src="/icons/star.svg" alt="звезда">
+                </span>
+              </label>
+						</li>
+					</ul> 
+        </div>	        
+      </div> <!-- /.filter-content__rating -->
+
+      <!-- .filter-content__data -->
+      <div class="filter-content__data">
+        <div class="filter-content__title">Дата </div>
+        <div class="filter-content__data-items">
+          <div class="filter-content__data-start">
+            <input type="date" name="date">
+          </div>
+          <div class="filter-content__data-end">
+            <input type="date" name="date">
+          </div>
+        </div>
+      </div> <!-- /.filter-content__data -->
+
+      <!--.filter-content__price-->
+      <div class="filter-content__price">
+        <div class="filter-content__title">Стоимость </div>
+          <div>
+            <input type="text" id="amount" readonly >
+          </div>
+          <div id="slider-range"></div>
+      </div> <!--/.filter-content__price-->
+
+      <!--.filter-content__price-->
+      <div class="filter-content__price">
+        <div class="filter-content__title">Количество часов </div>
+          <div>
+            <input type="text" id="amount1" readonly >
+          </div>
+          <div id="slider-range"></div>
+      </div> <!--/.filter-content__price-->
+
+      <div class="filter-content__checkbox">
+				<ul>
+					<li>
+						<input class="filter custom-checkbox" data-filter=".check1" type="checkbox" id="checkbox1" >
+			    	<label class="checkbox-label" for="checkbox1">Акции</label>
+					</li>
+					<li>
+						<input class="filter custom-checkbox" data-filter=".check2" type="checkbox" id="checkbox2">
+						<label class="checkbox-label" for="checkbox2">Рекомендуем с детьми</label>
+					</li>
+				</ul>
+			</div> <!-- /.filter-content__checkbox -->
+
+      <div class="filter-content__buttons">
+        <a href="#" class="buttons">Очистить</a>
+        <a href="#" class="buttons">Применить</a>
+      </div>
+
+    </aside>
+    <main>...</main>
+</div>
   <div class="my-flex-cont">
     <div class="my-flex-box">Блок 1</div>
     <div class="my-flex-box">Блок 2</div>
   </div>
+
+
+ 
+<script src="/js/main.js"></script>
+
 </body>
 </html>
