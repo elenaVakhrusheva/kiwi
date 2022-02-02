@@ -43,10 +43,19 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 100%;
+  font-size: 32px;
+  line-height: 32px;
   text-align: left;
-  padding-bottom: 2rem;
+  padding-bottom: 32px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  padding: 16px 0 8px 0;
+  color: #373f47;
 }
 
 .my-flex-cont {
@@ -416,6 +425,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: bold;
     color: #fbb216;
   }
+}
+
+/* == списки ==*/
+
+section.decription {
+  margin: 88px 0 84px;
+}
+
+.decription__ul-text,
+.decription__ol-text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #545d65;
+  padding-left: 23px;
+}
+
+.decription__ul-text {
+  list-style-type: disc;
+  padding-bottom: 16px;
 }
 
 /* A media query */
