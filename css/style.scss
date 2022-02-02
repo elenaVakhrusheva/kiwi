@@ -5,10 +5,12 @@ body {
   color: #545d65;
 }
 
-.wrapper {
+.wrapper,
+.container {
   max-width: 1320px;
   margin: 0 auto;
 }
+
 a {
   color: #545d65;
 }
@@ -327,6 +329,92 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   & .buttons:active {
     border: 1px solid #26a65b;
     color: #26a65b;
+  }
+}
+
+/* == Сортировка == */
+
+.nav-sort {
+  border-bottom: 1px solid #f2eee6;
+}
+.nav-tabs {
+  margin-bottom: 24px;
+}
+
+.nav-link {
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373f47;
+
+  &:hover,
+  &:focus {
+    color: #373f47;
+    border: none;
+  }
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+.nav-tabs .nav-link:hover {
+  border: none;
+  color: #26a65b;
+}
+
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 1px solid #26a65b;
+  color: #26a65b;
+}
+
+/* === cards ===*/
+
+.card {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
+  margin-bottom: 24px;
+  /* height: 208px;
+  width: 312px;*/
+
+  &-body {
+    padding: 20px 24px;
+  }
+
+  &-image {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  &-feedback p {
+    font-size: 12px;
+    line-height: 24px;
+    color: #545d65;
+  }
+
+  &-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #373f47;
+    margin-bottom: 48px;
+  }
+
+  &__clock-price,
+  &-feedback {
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+  }
+
+  &__clock {
+    font-size: 13px;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbb216;
   }
 }
 

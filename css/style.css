@@ -7,36 +7,37 @@ body {
   color: #545d65; }
 
 /* line 8, style.scss */
-.wrapper {
+.wrapper,
+.container {
   max-width: 1320px;
   margin: 0 auto; }
 
-/* line 12, style.scss */
+/* line 14, style.scss */
 a {
   color: #545d65; }
 
-/* line 15, style.scss */
+/* line 17, style.scss */
 p {
   font-size: 1rem;
   line-height: 175%; }
 
-/* line 19, style.scss */
+/* line 21, style.scss */
 .img-responsive {
   width: 100%;
   height: auto; }
 
-/* line 23, style.scss */
+/* line 25, style.scss */
 .breadcrumb {
   font-size: 0.75rem;
   line-height: 200%;
   color: #aaa7a2;
   background-color: #fff; }
 
-/* line 29, style.scss */
+/* line 31, style.scss */
 .header {
   height: 5.5rem; }
 
-/* line 33, style.scss */
+/* line 35, style.scss */
 h1 {
   font-weight: 600;
   font-size: 36px;
@@ -45,7 +46,7 @@ h1 {
   padding-bottom: 40px;
   color: #373f47; }
 
-/* line 42, style.scss */
+/* line 44, style.scss */
 h2 {
   font-weight: 600;
   font-size: 2rem;
@@ -53,7 +54,7 @@ h2 {
   text-align: left;
   padding-bottom: 2rem; }
 
-/* line 50, style.scss */
+/* line 52, style.scss */
 .my-flex-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +74,7 @@ h2 {
   width: 100%;
   height: auto; }
 
-/* line 59, style.scss */
+/* line 61, style.scss */
 .my-flex-box {
   margin: 5px;
   padding: 5px;
@@ -87,11 +88,11 @@ h2 {
           order: 0; }
 
 /*nav ex*/
-/* line 68, style.scss */
+/* line 70, style.scss */
 .type-excursions {
   overflow: hidden;
   padding: 8px 20px; }
-  /* line 72, style.scss */
+  /* line 74, style.scss */
   .type-excursions__item {
     padding: 0 20px;
     background: #ffffff;
@@ -103,17 +104,17 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     float: left; }
-    /* line 81, style.scss */
+    /* line 83, style.scss */
     .type-excursions__item:nth-last-child(n + 2) {
       margin-right: 16px; }
-    /* line 85, style.scss */
+    /* line 87, style.scss */
     .type-excursions__item:active {
       background-color: #fbb216;
       border: 1px solid #fbb216; }
-      /* line 89, style.scss */
+      /* line 91, style.scss */
       .type-excursions__item:active a:active {
         color: #ffffff; }
-    /* line 94, style.scss */
+    /* line 96, style.scss */
     .type-excursions__item a {
       margin: auto;
       font-size: 14px;
@@ -145,17 +146,17 @@ h2 {
   padding: 5px;
   border: 1px solid #aaa;
 }*/
-/* line 129, style.scss */
+/* line 131, style.scss */
 .filter-content {
   font-size: 16px;
   line-height: 32px;
   width: 100%; }
 
-/* line 134, style.scss */
+/* line 136, style.scss */
 .filter-content aside {
   max-width: 288px; }
 
-/* line 137, style.scss */
+/* line 139, style.scss */
 .filter-content__filter,
 .filter-content__rating,
 .filter-content__data,
@@ -163,7 +164,7 @@ h2 {
   border-bottom: 1px solid #f1f1f1;
   padding-bottom: 16px;
   margin-bottom: 8px; }
-  /* line 145, style.scss */
+  /* line 147, style.scss */
   .filter-content__filter-list,
   .filter-content__rating-list,
   .filter-content__data-list,
@@ -177,7 +178,7 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-/* line 151, style.scss */
+/* line 153, style.scss */
 .filter-content__filter,
 .filter-content__data-items {
   display: -webkit-box;
@@ -189,12 +190,12 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-/* line 158, style.scss */
+/* line 160, style.scss */
 input[type="radio"],
 label {
   cursor: pointer; }
 
-/* line 163, style.scss */
+/* line 165, style.scss */
 input.rating-list__item-input[type="radio"] {
   position: relative;
   height: 22px;
@@ -204,7 +205,7 @@ input.rating-list__item-input[type="radio"] {
   appearance: none;
   outline: none; }
 
-/* line 173, style.scss */
+/* line 175, style.scss */
 input.rating-list__item-input[type="radio"]::before {
   content: "";
   position: absolute;
@@ -218,7 +219,7 @@ input.rating-list__item-input[type="radio"]::before {
   background-color: white;
   border: 2px solid #26a65b; }
 
-/* line 186, style.scss */
+/* line 188, style.scss */
 input.rating-list__item-input[type="radio"]:checked::after {
   content: "";
   position: absolute;
@@ -235,11 +236,11 @@ input.rating-list__item-input[type="radio"]:checked::after {
 /*input.rating-list__item-input[type="radio"]:checked ~ label {
   background-color: red;
 }*/
-/* line 201, style.scss */
+/* line 203, style.scss */
 .rating-list__item-star img:active {
   background-image: url("/icons/star-full.svg"); }
 
-/* line 205, style.scss */
+/* line 207, style.scss */
 input[type="date"] {
   background: #fff url(/icons/calendar.svg) 63% 50% no-repeat;
   border: none;
@@ -247,19 +248,19 @@ input[type="date"] {
   float: left;
   width: 100%; }
 
-/* line 212, style.scss */
+/* line 214, style.scss */
 input[type="date"]::-webkit-inner-spin-button {
   display: none; }
 
-/* line 215, style.scss */
+/* line 217, style.scss */
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0; }
 
-/* line 219, style.scss */
+/* line 221, style.scss */
 .ui-slider .ui-slider-range {
   background-color: #26a65b; }
 
-/* line 223, style.scss */
+/* line 225, style.scss */
 .ui-state-default,
 .ui-widget-content .ui-state-default {
   font-weight: normal;
@@ -274,21 +275,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 24px;
   height: 24px; }
 
-/* line 236, style.scss */
+/* line 238, style.scss */
 .ui-widget {
   font-size: 2px; }
 
-/* line 239, style.scss */
+/* line 241, style.scss */
 .ui-widget.ui-widget-content {
   border: none;
   background: #e0dcd3; }
 
-/* line 244, style.scss */
+/* line 246, style.scss */
 .ui-widget-content .ui-state-default:focus,
 .ui-widget-content .ui-state-default:active {
   outline: 2px solid #26a65b; }
 
-/* line 249, style.scss */
+/* line 251, style.scss */
 .filter-content__price input[type="text"] {
   color: #aaa7a1;
   font-size: 16px;
@@ -296,21 +297,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-align: center;
   border: none;
   width: 100%; }
-  /* line 257, style.scss */
+  /* line 259, style.scss */
   .filter-content__price input[type="text"]:active {
     color: #373f47; }
 
-/* line 262, style.scss */
+/* line 264, style.scss */
 .filter-content__checkbox {
   margin-bottom: 16px; }
 
-/* line 266, style.scss */
+/* line 268, style.scss */
 .custom-checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0; }
 
-/* line 271, style.scss */
+/* line 273, style.scss */
 .custom-checkbox + label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -324,7 +325,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           user-select: none;
   font-weight: 700; }
 
-/* line 277, style.scss */
+/* line 279, style.scss */
 .custom-checkbox + label::before {
   content: "";
   display: inline-block;
@@ -342,29 +343,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-position: center center;
   background-size: 50% 50%; }
 
-/* line 291, style.scss */
+/* line 293, style.scss */
 .custom-checkbox:checked + label::before {
   border-color: #26a65b;
   background-color: #fff;
   background-image: url("/icons/check.svg"); }
 
 /* стили при наведении курсора на checkbox */
-/* line 298, style.scss */
+/* line 300, style.scss */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #26a65b; }
 
 /* стили для активного состояния чекбокса (при нажатии на него) */
-/* line 302, style.scss */
+/* line 304, style.scss */
 .custom-checkbox:not(:disabled):active + label::before {
   background-color: #26a65b;
   border-color: #26a65b; }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
-/* line 308, style.scss */
+/* line 310, style.scss */
 .custom-checkbox:disabled + label::before {
   background-color: #e9ecef; }
 
-/* line 312, style.scss */
+/* line 314, style.scss */
 .filter-content__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,7 +375,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  /* line 317, style.scss */
+  /* line 319, style.scss */
   .filter-content__buttons .buttons {
     font-size: 14px;
     line-height: 21px;
@@ -384,14 +385,96 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 4px;
     padding: 13px 24px;
     font-weight: 600; }
-  /* line 327, style.scss */
+  /* line 329, style.scss */
   .filter-content__buttons .buttons:active {
     border: 1px solid #26a65b;
     color: #26a65b; }
 
+/* == Сортировка == */
+/* line 337, style.scss */
+.nav-sort {
+  border-bottom: 1px solid #f2eee6; }
+
+/* line 340, style.scss */
+.nav-tabs {
+  margin-bottom: 24px; }
+
+/* line 344, style.scss */
+.nav-link {
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373f47; }
+  /* line 350, style.scss */
+  .nav-link:hover, .nav-link:focus {
+    color: #373f47;
+    border: none; }
+
+/* line 357, style.scss */
+.nav-tabs .nav-link {
+  border: none; }
+
+/* line 360, style.scss */
+.nav-tabs .nav-link:hover {
+  border: none;
+  color: #26a65b; }
+
+/* line 365, style.scss */
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 1px solid #26a65b;
+  color: #26a65b; }
+
+/* === cards ===*/
+/* line 373, style.scss */
+.card {
+  border: none;
+  -webkit-box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
+          box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
+  margin-bottom: 24px;
+  /* height: 208px;
+  width: 312px;*/ }
+  /* line 380, style.scss */
+  .card-body {
+    padding: 20px 24px; }
+  /* line 384, style.scss */
+  .card-image {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 0px 0px; }
+  /* line 389, style.scss */
+  .card-feedback p {
+    font-size: 12px;
+    line-height: 24px;
+    color: #545d65; }
+  /* line 395, style.scss */
+  .card-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #373f47;
+    margin-bottom: 48px; }
+  /* line 403, style.scss */
+  .card__clock-price, .card-feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 24px; }
+  /* line 410, style.scss */
+  .card__clock {
+    font-size: 13px; }
+  /* line 414, style.scss */
+  .card__price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbb216; }
+
 /* A media query */
 @media (min-width: 768) {
-  /* line 335, style.scss */
+  /* line 423, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;

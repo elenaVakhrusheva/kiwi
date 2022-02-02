@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Город</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -18,6 +20,8 @@
     </div>
   </div> 
   <!-- /header -->
+
+  
   <div class="nav-breadcrumb">
     <div class="container">
       <nav aria-label="breadcrumb">
@@ -31,118 +35,410 @@
         </nav>
     </div>
   </div>
+<div class="container">
+            <h1>Экскурсии в Сочи</h1>
+              <nav>
+                <ul class="type-excursions">
+                  <li class="type-excursions__item"><a href="#">Все</a></li>
+                  <li class="type-excursions__item"><a href="#">Автомобильные (25)</a></li>
+                  <li class="type-excursions__item"><a href="#">Пешие (1 238)</a></li>
+                  <li class="type-excursions__item"><a href="#">Авто в аренду (2 400)</a></li>
+                </ul>
+              </nav>
+          </div>	 
   <!-- /nav-breadcrumb -->
-  <h1>Экскурсии в Сочи</h1>
-  <nav>
-    <ul class="type-excursions">
-      <li class="type-excursions__item"><a href="#">Все</a></li>
-      <li class="type-excursions__item"><a href="#">Автомобильные (25)</a></li>
-      <li class="type-excursions__item"><a href="#">Пешие (1 238)</a></li>
-      <li class="type-excursions__item"><a href="#">Авто в аренду (2 400)</a></li>
-    </ul>
-  </nav>
-  <div class="wrapper filter-content">    
-    <aside>      
-      <div class="filter-content__filter">
-        <div class="filter-content__title">Фильтры <span>(3)</span> </div>
-        <div class="filter-content__filter-title__icon-minus">
-          <img src="/icons/minus.svg" alt="свернуть">
-        </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+                  <div class="filter-content">         
+            <div class="filter-content__filter">
+              <div class="filter-content__title">Фильтры <span>(3)</span> </div>
+              <div class="filter-content__filter-title__icon-minus">
+                <img src="/icons/minus.svg" alt="свернуть">
+              </div>
+            </div>
+            <!-- .filter-content__rating -->
+            <div class="filter-content__rating">
+              <div class="filter-content__title">Рейтинг</div>
+              <div>
+                <ul class="filter-content__rating-list">
+                  <li class="rating-list__item">
+                    <input class="rating-list__item-input" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                    <label class="radio-label" for="radio1">Любой</label>
+                  </li>
+
+                  <li>
+                    <input class="rating-list__item-input" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                    <label class="radio-label" for="radio2">От 
+                      <span class="rating-list__item-star">
+                        <img src="/icons/star.svg" alt="звезда">
+                      </span>
+                      <span class="rating-list__item-star">
+                        <img src="/icons/star.svg" alt="звезда">
+                      </span>
+                      <span class="rating-list__item-star">
+                        <img src="/icons/star.svg" alt="звезда">
+                      </span>
+                      <span class="rating-list__item-star">
+                        <img src="/icons/star.svg" alt="звезда">
+                      </span>
+                      <span class="rating-list__item-star">
+                        <img src="/icons/star.svg" alt="звезда">
+                      </span>
+                    </label>
+                  </li>
+                </ul> 
+              </div>	        
+            </div> <!-- /.filter-content__rating -->
+
+            <!-- .filter-content__data -->
+            <div class="filter-content__data">
+              <div class="filter-content__title">Дата </div>
+              <div class="filter-content__data-items">
+                <div class="filter-content__data-start">
+                  <input type="date" name="date">
+                </div>
+                <div class="filter-content__data-end">
+                  <input type="date" name="date">
+                </div>
+              </div>
+            </div> <!-- /.filter-content__data -->
+
+            <!--.filter-content__price-->
+            <div class="filter-content__price">
+              <div class="filter-content__title">Стоимость </div>
+                <div>
+                  <input type="text" id="amount" readonly >
+                </div>
+                <div id="slider-range"></div>
+            </div> <!--/.filter-content__price-->
+
+            <!--.filter-content__price-->
+            <div class="filter-content__price">
+              <div class="filter-content__title">Количество часов </div>
+                <div>
+                  <input type="text" id="amount1" readonly >
+                </div>
+                <div id="slider-range"></div>
+            </div> <!--/.filter-content__price-->
+
+            <div class="filter-content__checkbox">
+              <ul>
+                <li>
+                  <input class="filter custom-checkbox" data-filter=".check1" type="checkbox" id="checkbox1" >
+                  <label class="checkbox-label" for="checkbox1">Акции</label>
+                </li>
+                <li>
+                  <input class="filter custom-checkbox" data-filter=".check2" type="checkbox" id="checkbox2">
+                  <label class="checkbox-label" for="checkbox2">Рекомендуем с детьми</label>
+                </li>
+              </ul>
+            </div> <!-- /.filter-content__checkbox -->
+
+            <div class="filter-content__buttons">
+              <a href="#" class="buttons">Очистить</a>
+              <a href="#" class="buttons">Применить</a>
+            </div>
+          </div>
       </div>
-      <!-- .filter-content__rating -->
-      <div class="filter-content__rating">
-        <div class="filter-content__title">Рейтинг</div>
-        <div>
-          <ul class="filter-content__rating-list">
-						<li class="rating-list__item">
-							<input class="rating-list__item-input" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-							<label class="radio-label" for="radio1">Любой</label>
-						</li>
+      <div class="col-9">
+    
+        
+       <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link  nav-sort active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Популярные</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-sort" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Сначала дешевле</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-sort" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Сначала дороже</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-sort" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">С высоким рейтингом</a>
+          </li>
+        </ul>
 
-						<li>
-							<input class="rating-list__item-input" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-							<label class="radio-label" for="radio2">От 
-                <span class="rating-list__item-star">
-                  <img src="/icons/star.svg" alt="звезда">
-                </span>
-                <span class="rating-list__item-star">
-                  <img src="/icons/star.svg" alt="звезда">
-                </span>
-                <span class="rating-list__item-star">
-                  <img src="/icons/star.svg" alt="звезда">
-                </span>
-                <span class="rating-list__item-star">
-                  <img src="/icons/star.svg" alt="звезда">
-                </span>
-                <span class="rating-list__item-star">
-                  <img src="/icons/star.svg" alt="звезда">
-                </span>
-              </label>
-						</li>
-					</ul> 
-        </div>	        
-      </div> <!-- /.filter-content__rating -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <div class="col-4">
+                <div class="card">
+                  <img src="/img/attractions/Istanbul-2.jpg" class="card-img-top card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
 
-      <!-- .filter-content__data -->
-      <div class="filter-content__data">
-        <div class="filter-content__title">Дата </div>
-        <div class="filter-content__data-items">
-          <div class="filter-content__data-start">
-            <input type="date" name="date">
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 1 вкладка 1 карточка-->
+              <div class="col-4">
+                <div class="card">
+                  <img src="/img/attractions/Istanbul-3.jpg" class="card-img-top card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 1 вкладка 2 карточка-->
+              <div class="col-4">
+                <div class="card">
+                  <img src="/img/attractions/Istanbul-4.jpg" class="card-img-top card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 1 вкладка 3 карточка-->
+              <div class="col-4">
+                <div class="card">
+                  <img src="/img/attractions/Istanbul-2.jpg" class="card-img-top card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 1 вкладка 4 карточка-->
+              <div class="col-4">
+                <div class="card">
+                  <img src="/img/attractions/Istanbul-2.jpg" class="card-img-top card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 1 вкладка 5 карточка-->
+              <div class="col-4">
+                <div class="card">
+                  <img src="/img/attractions/Istanbul-2.jpg" class="card-img-top card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 1 вкладка 6 карточка-->
+            </div>
+          </div> <!-- 1 вкладка: Популярные-->
+          
+          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+              <div class="col-3">col-3</div>
+              <div class="col-3">col-3</div>
+              <div class="col-3">col-3</div>
+            </div>
           </div>
-          <div class="filter-content__data-end">
-            <input type="date" name="date">
+          <!-- 2 вкладка: Сначала дешевле-->
+          
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+            <div class="row">
+              <div class="col-3">col-3</div>
+              <div class="col-3">col-3</div>
+              <div class="col-3">col-3</div>
+            </div>
           </div>
+          <!-- 3 вкладка: Сначала дороже-->
+          
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="card-group">
+              <div class="card">
+                  <img src="/img/attractions/Istanbul-2.jpg" class="card-img-top card-image" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/img/attractions/Istanbul-2.jpg" class="card-img-top card-image" alt="Автомобильная экскурсия по Стамбулу">
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                        <img src="/icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="/icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+          <!-- 3 вкладка: С высоким рейтингом-->
         </div>
-      </div> <!-- /.filter-content__data -->
-
-      <!--.filter-content__price-->
-      <div class="filter-content__price">
-        <div class="filter-content__title">Стоимость </div>
-          <div>
-            <input type="text" id="amount" readonly >
-          </div>
-          <div id="slider-range"></div>
-      </div> <!--/.filter-content__price-->
-
-      <!--.filter-content__price-->
-      <div class="filter-content__price">
-        <div class="filter-content__title">Количество часов </div>
-          <div>
-            <input type="text" id="amount1" readonly >
-          </div>
-          <div id="slider-range"></div>
-      </div> <!--/.filter-content__price-->
-
-      <div class="filter-content__checkbox">
-				<ul>
-					<li>
-						<input class="filter custom-checkbox" data-filter=".check1" type="checkbox" id="checkbox1" >
-			    	<label class="checkbox-label" for="checkbox1">Акции</label>
-					</li>
-					<li>
-						<input class="filter custom-checkbox" data-filter=".check2" type="checkbox" id="checkbox2">
-						<label class="checkbox-label" for="checkbox2">Рекомендуем с детьми</label>
-					</li>
-				</ul>
-			</div> <!-- /.filter-content__checkbox -->
-
-      <div class="filter-content__buttons">
-        <a href="#" class="buttons">Очистить</a>
-        <a href="#" class="buttons">Применить</a>
+        
+        
+        
+       
+        
       </div>
-
-    </aside>
-    <main>...</main>
-</div>
-  <div class="my-flex-cont">
-    <div class="my-flex-box">Блок 1</div>
-    <div class="my-flex-box">Блок 2</div>
+    </div>
   </div>
+
+    
 
 
  
 <script src="/js/main.js"></script>
+  <script>
+  $(function () {
+    $('#myTab li:first-child a').tab('show')
+  })
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
