@@ -30,9 +30,10 @@ h1 {
   font-weight: 600;
   font-size: 36px;
   line-height: 32px;
-  text-align: center;
+  text-align: left;
   padding-bottom: 40px;
   color: #373f47;
+  margin: 0;
 }
 
 h2 {
@@ -72,12 +73,12 @@ h3 {
 /*nav ex*/
 .type-excursions {
   overflow: hidden;
-  padding: 8px 20px;
+  padding: 0 0 40px 0px;
 
   &__item {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
     background: #ffffff;
-    border: 1px solid #373f47;
+    /* border: 1px solid #373f47;*/
     box-sizing: border-box;
     border-radius: 32px;
     display: flex;
@@ -87,7 +88,8 @@ h3 {
       margin-right: 16px;
     }
 
-    &:active {
+    &:active,
+    .nav-link.active {
       background-color: #fbb216;
       border: 1px solid #fbb216;
 
@@ -108,6 +110,41 @@ h3 {
       color: #373f47;
     }
   }
+}
+
+.type-excursions__item:active,
+.type-excursions__item .nav-link.active {
+  background-color: #fbb216;
+  border: 1px solid #fbb216;
+}
+
+.type-excursions__item a {
+  margin: auto;
+  font-size: 14px;
+  line-height: 32px;
+  color: #373f47;
+  border: 1px solid #373f47;
+  border-radius: 32px !important;
+  padding: 0 20px;
+}
+
+.type-excursions__item a.nav-link {
+}
+
+.type-excursions__item:active,
+.type-excursions__item .nav-link.active {
+  background-color: #fbb216;
+  border: 1px solid #fbb216;
+  border-radius: 32px;
+}
+.type-excursions__item {
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
 }
 
 .filter-content {
@@ -533,6 +570,57 @@ section.decription {
   list-style-type: none;
 }
 
+/* === Страны ===*/
+
+.container-country {
+  margin-bottom: 88px;
+}
+.card-country {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.card-country__img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translate(0%, 0%);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(55, 63, 71, 0.6) 10%, rgba(55, 63, 71, 0.6) 96%);
+  padding: 21px 24px 23px 24px;
+  text-align: left;
+}
+.card-title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.card-excurs {
+  font-size: 13px;
+  line-height: 16px;
+  color: #fbb216;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
 /* A media query */
 
 @media (min-width: 1200px) {
