@@ -219,12 +219,12 @@ input[type="date"]::-webkit-inner-spin-button {
 input[type="date"]::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
-  background: url(/icons/calendar.svg) no-repeat center;
+  background: url(icons/calendar.svg) no-repeat center;
   background-size: contain;
 }
 
 .rating-list__item-star img:active {
-  background-image: url("/icons/star-full.svg");
+  background-image: url("icons/star-full.svg");
 }
 
 .radio-label {
@@ -319,7 +319,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .custom-checkbox:checked + label::before {
   border-color: #26a65b;
   background-color: #fff;
-  background-image: url("/icons/check.svg");
+  background-image: url("icons/check.svg");
 }
 
 /* стили при наведении курсора на checkbox */
@@ -497,7 +497,7 @@ section.decription {
     width: 100%;
     appearance: none;
     overflow: hidden;
-    background: url("/icons/dropdown.svg") no-repeat right;
+    background: url("icons/dropdown.svg") no-repeat right;
 
     &::after {
       border: none;
@@ -526,6 +526,11 @@ section.decription {
 .dropdown-item {
   font-size: 14px;
   line-height: 24px;
+}
+
+.rating-list__item,
+.filter-content__checkbox ul li {
+  list-style-type: none;
 }
 
 /* A media query */
@@ -621,6 +626,24 @@ section.decription {
     line-height: 32px;
     padding-bottom: 32px;
     margin-bottom: 0;
+    text-align: left;
+  }
+
+  .filter-content__filter {
+    padding-bottom: 0;
+  }
+
+  .breadcrumb {
+    padding: 0;
+  }
+
+  .filter-content__head .filter-content__title {
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+
+  .dropdown-menu.show {
+    width: 90%;
   }
 
   .type-excursions {
@@ -629,6 +652,7 @@ section.decription {
     overflow-x: auto;
     width: 100%;
     scrollbar-width: none;
+    padding: 0;
 
     &::-webkit-scrollbar {
       width: 0;
@@ -651,5 +675,29 @@ section.decription {
 @media (min-width: 576px) {
   .mobile-tabs {
     display: none;
+  }
+}
+@media (max-width: 320px) {
+  .filter-content__buttons .buttons {
+    padding: 13px 24px;
+  }
+
+  .filter-content__rating-list,
+  .filter-content__buttons {
+    justify-content: flex-start;
+  }
+  .rating-list__item:first-child {
+    padding-right: 45px;
+  }
+
+  .filter-content__checkbox ul li:nth-last-child(n + 2) {
+    float: none;
+  }
+
+  input[type="date"] {
+    width: 100%;
+  }
+  .md-p-8 {
+    padding: 0 16px;
   }
 }

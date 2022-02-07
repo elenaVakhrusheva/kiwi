@@ -249,12 +249,12 @@ input[type="date"]::-webkit-inner-spin-button {
 input[type="date"]::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
-  background: url(/icons/calendar.svg) no-repeat center;
+  background: url(icons/calendar.svg) no-repeat center;
   background-size: contain; }
 
 /* line 226, style.scss */
 .rating-list__item-star img:active {
-  background-image: url("/icons/star-full.svg"); }
+  background-image: url("icons/star-full.svg"); }
 
 /* line 230, style.scss */
 .radio-label {
@@ -364,7 +364,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .custom-checkbox:checked + label::before {
   border-color: #26a65b;
   background-color: #fff;
-  background-image: url("/icons/check.svg"); }
+  background-image: url("icons/check.svg"); }
 
 /* стили при наведении курсора на checkbox */
 /* line 326, style.scss */
@@ -540,7 +540,7 @@ section.decription {
        -moz-appearance: none;
             appearance: none;
     overflow: hidden;
-    background: url("/icons/dropdown.svg") no-repeat right; }
+    background: url("icons/dropdown.svg") no-repeat right; }
     /* line 502, style.scss */
     .dropdown-toggle::after {
       border: none; }
@@ -569,17 +569,22 @@ section.decription {
   font-size: 14px;
   line-height: 24px; }
 
+/* line 531, style.scss */
+.rating-list__item,
+.filter-content__checkbox ul li {
+  list-style-type: none; }
+
 /* A media query */
 @media (min-width: 1200px) {
-  /* line 534, style.scss */
+  /* line 539, style.scss */
   .container {
     max-width: 1320px; } }
 @media (min-width: 1024px) {
-  /* line 540, style.scss */
+  /* line 545, style.scss */
   .card-body {
     padding: 10px 12px; } }
 @media (min-width: 768px) {
-  /* line 546, style.scss */
+  /* line 551, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;
@@ -587,71 +592,89 @@ section.decription {
     padding-left: 24px;
     padding-right: 24px; } }
 @media (max-width: 1024px) {
-  /* line 556, style.scss */
+  /* line 561, style.scss */
   .md-p-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 561, style.scss */
+  /* line 566, style.scss */
   .md-m-0 {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 566, style.scss */
+  /* line 571, style.scss */
   .md-p-8 {
     padding: 0 8px; }
 
-  /* line 570, style.scss */
+  /* line 575, style.scss */
   .filter-content__rating-list {
     margin-bottom: 0; }
 
-  /* line 574, style.scss */
+  /* line 579, style.scss */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 578, style.scss */
+  /* line 583, style.scss */
   .filter-content__buttons .buttons {
     padding: 10px 12px; } }
 @media (max-width: 768px) {
-  /* line 583, style.scss */
+  /* line 588, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 43px; }
 
-  /* line 587, style.scss */
+  /* line 592, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: left;
     padding-right: 24px; }
 
-  /* line 592, style.scss */
+  /* line 597, style.scss */
   .filter-content {
     margin-bottom: 36px; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  /* line 598, style.scss */
+  /* line 603, style.scss */
   .radio-label {
     font-size: 13px; }
 
-  /* line 602, style.scss */
+  /* line 607, style.scss */
   .input[type="date"] {
     font-size: 12px; } }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   /* стили */ }
 @media only screen and (max-width: 576px) {
-  /* line 612, style.scss */
+  /* line 617, style.scss */
   .nav-tabs {
     display: none; }
 
-  /* line 615, style.scss */
+  /* line 620, style.scss */
   .filter-content {
     margin-bottom: 24px; }
 
-  /* line 619, style.scss */
+  /* line 624, style.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
     padding-bottom: 32px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-align: left; }
 
-  /* line 626, style.scss */
+  /* line 632, style.scss */
+  .filter-content__filter {
+    padding-bottom: 0; }
+
+  /* line 636, style.scss */
+  .breadcrumb {
+    padding: 0; }
+
+  /* line 640, style.scss */
+  .filter-content__head .filter-content__title {
+    padding-top: 0;
+    padding-bottom: 8px; }
+
+  /* line 645, style.scss */
+  .dropdown-menu.show {
+    width: 90%; }
+
+  /* line 649, style.scss */
   .type-excursions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -661,12 +684,13 @@ section.decription {
             justify-content: space-between;
     overflow-x: auto;
     width: 100%;
-    scrollbar-width: none; }
-    /* line 633, style.scss */
+    scrollbar-width: none;
+    padding: 0; }
+    /* line 657, style.scss */
     .type-excursions::-webkit-scrollbar {
       width: 0;
       height: 0; }
-    /* line 637, style.scss */
+    /* line 661, style.scss */
     .type-excursions__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -681,12 +705,38 @@ section.decription {
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       font-size: 14px; }
-      /* line 644, style.scss */
+      /* line 668, style.scss */
       .type-excursions__item a {
         margin: 0 20px; } }
 @media (min-width: 576px) {
-  /* line 652, style.scss */
+  /* line 676, style.scss */
   .mobile-tabs {
     display: none; } }
+@media (max-width: 320px) {
+  /* line 681, style.scss */
+  .filter-content__buttons .buttons {
+    padding: 13px 24px; }
 
+  /* line 685, style.scss */
+  .filter-content__rating-list,
+  .filter-content__buttons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+  /* line 689, style.scss */
+  .rating-list__item:first-child {
+    padding-right: 45px; }
+
+  /* line 693, style.scss */
+  .filter-content__checkbox ul li:nth-last-child(n + 2) {
+    float: none; }
+
+  /* line 697, style.scss */
+  input[type="date"] {
+    width: 100%; }
+
+  /* line 700, style.scss */
+  .md-p-8 {
+    padding: 0 16px; } }
 /*# sourceMappingURL=style.css.map */
