@@ -688,6 +688,10 @@ section.decription-country {
   .card-body {
     padding: 10px 12px;
   }
+
+  .md-p-33 {
+    padding: 0 33px 0 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -750,6 +754,14 @@ section.decription-country {
   }
   .breadcrumb {
     margin-bottom: 24px;
+  }
+  .p-768-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-titile {
+    padding: 0;
   }
 }
 
@@ -826,6 +838,15 @@ section.decription-country {
       font-size: 14px;
     }
   }
+  .md-p-0,
+  .page-titile {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .md-p-8 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 576px) {
@@ -866,9 +887,7 @@ section.decription-country {
   input[type="date"] {
     width: 100%;
   }
-  .md-p-8 {
-    padding: 0 16px;
-  }
+
   .card-title {
     font-size: 20px;
   }

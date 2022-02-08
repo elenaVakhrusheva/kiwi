@@ -751,9 +751,13 @@ section.decription-country {
 @media (min-width: 1024px) {
   /* line 688, style.scss */
   .card-body {
-    padding: 10px 12px; } }
+    padding: 10px 12px; }
+
+  /* line 692, style.scss */
+  .md-p-33 {
+    padding: 0 33px 0 15px; } }
 @media (min-width: 768px) {
-  /* line 694, style.scss */
+  /* line 698, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;
@@ -761,81 +765,90 @@ section.decription-country {
     padding-left: 24px;
     padding-right: 24px; } }
 @media (max-width: 1024px) {
-  /* line 704, style.scss */
+  /* line 708, style.scss */
   .md-p-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 709, style.scss */
+  /* line 713, style.scss */
   .md-m-0 {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 714, style.scss */
+  /* line 718, style.scss */
   .md-p-8 {
     padding: 0 8px; }
 
-  /* line 718, style.scss */
+  /* line 722, style.scss */
   .filter-content__rating-list {
     margin-bottom: 0; }
 
-  /* line 722, style.scss */
+  /* line 726, style.scss */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 726, style.scss */
+  /* line 730, style.scss */
   .filter-content__buttons .buttons {
     padding: 10px 12px; } }
 @media (max-width: 768px) {
-  /* line 731, style.scss */
+  /* line 735, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 43px; }
 
-  /* line 735, style.scss */
+  /* line 739, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: left;
     padding-right: 24px; }
 
-  /* line 740, style.scss */
+  /* line 744, style.scss */
   .filter-content {
     margin-bottom: 36px; }
 
-  /* line 743, style.scss */
+  /* line 747, style.scss */
   .type-excursions {
     padding: 0 0 32px 0px; }
 
-  /* line 747, style.scss */
+  /* line 751, style.scss */
   h3 {
     padding: 0 0 32px 0;
     margin: 0; }
 
-  /* line 751, style.scss */
+  /* line 755, style.scss */
   .breadcrumb {
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+
+  /* line 758, style.scss */
+  .p-768-0 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* line 763, style.scss */
+  .page-titile {
+    padding: 0; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  /* line 757, style.scss */
+  /* line 769, style.scss */
   .radio-label {
     font-size: 13px; }
 
-  /* line 761, style.scss */
+  /* line 773, style.scss */
   .input[type="date"] {
     font-size: 12px; }
 
-  /* line 764, style.scss */
+  /* line 776, style.scss */
   .card-title {
     font-size: 20px; } }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   /* стили */ }
 @media only screen and (max-width: 576px) {
-  /* line 774, style.scss */
+  /* line 786, style.scss */
   .nav-tabs {
     display: none; }
 
-  /* line 777, style.scss */
+  /* line 789, style.scss */
   .filter-content {
     margin-bottom: 24px; }
 
-  /* line 781, style.scss */
+  /* line 793, style.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -843,28 +856,28 @@ section.decription-country {
     margin-bottom: 0;
     text-align: left; }
 
-  /* line 788, style.scss */
+  /* line 800, style.scss */
   h3 {
     padding: 0 0 24px 0; }
 
-  /* line 792, style.scss */
+  /* line 804, style.scss */
   .filter-content__filter {
     padding-bottom: 0; }
 
-  /* line 796, style.scss */
+  /* line 808, style.scss */
   .breadcrumb {
     padding: 0; }
 
-  /* line 800, style.scss */
+  /* line 812, style.scss */
   .filter-content__head .filter-content__title {
     padding-top: 0;
     padding-bottom: 8px; }
 
-  /* line 805, style.scss */
+  /* line 817, style.scss */
   .dropdown-menu.show {
     width: 90%; }
 
-  /* line 809, style.scss */
+  /* line 821, style.scss */
   .type-excursions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -877,11 +890,11 @@ section.decription-country {
     scrollbar-width: none;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
-    /* line 817, style.scss */
+    /* line 829, style.scss */
     .type-excursions::-webkit-scrollbar {
       width: 0;
       height: 0; }
-    /* line 821, style.scss */
+    /* line 833, style.scss */
     .type-excursions__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -895,56 +908,63 @@ section.decription-country {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
-      font-size: 14px; } }
+      font-size: 14px; }
+
+  /* line 841, style.scss */
+  .md-p-0,
+  .page-titile {
+    padding-left: 16px;
+    padding-right: 16px; }
+
+  /* line 846, style.scss */
+  .md-p-8 {
+    padding-left: 0;
+    padding-right: 0; } }
 @media (min-width: 576px) {
-  /* line 832, style.scss */
+  /* line 853, style.scss */
   .mobile-tabs {
     display: none; } }
 @media (max-width: 425px) {
-  /* line 838, style.scss */
+  /* line 859, style.scss */
   .md-p-12 {
     padding: 0 16px; }
 
-  /* line 841, style.scss */
+  /* line 862, style.scss */
   .card-country {
     margin-bottom: 16px; }
 
-  /* line 844, style.scss */
+  /* line 865, style.scss */
   .breadcrumb {
     margin-bottom: 16px; } }
 @media (max-width: 320px) {
-  /* line 850, style.scss */
+  /* line 871, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 24px; }
 
-  /* line 854, style.scss */
+  /* line 875, style.scss */
   .filter-content__rating-list,
   .filter-content__buttons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
-  /* line 858, style.scss */
+  /* line 879, style.scss */
   .rating-list__item:first-child {
     padding-right: 45px; }
 
-  /* line 862, style.scss */
+  /* line 883, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: none; }
 
-  /* line 866, style.scss */
+  /* line 887, style.scss */
   input[type="date"] {
     width: 100%; }
 
-  /* line 869, style.scss */
-  .md-p-8 {
-    padding: 0 16px; }
-
-  /* line 872, style.scss */
+  /* line 891, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 875, style.scss */
+  /* line 894, style.scss */
   .mobile-none {
     display: none; } }
 
