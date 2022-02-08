@@ -90,9 +90,7 @@ h3 {
   padding: 0 0 40px 0px;
 
   &__item {
-    /*padding: 0 20px;*/
     background: #ffffff;
-    /* border: 1px solid #373f47;*/
     box-sizing: border-box;
     border-radius: 32px;
     display: flex;
@@ -100,6 +98,10 @@ h3 {
 
     &:nth-last-child(n + 2) {
       margin-right: 16px;
+    }
+
+    & a.nav-link:hover {
+      border: 1px solid #fbb216;
     }
 
     &:active,
@@ -658,6 +660,22 @@ section.decription {
   font-weight: bold;
   color: #ffffff;
 }
+
+section.decription-country {
+  margin: 64px 0 84px;
+
+  & h3 {
+    padding: 16px 0 24px 0;
+  }
+
+  & h4 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #373f47;
+    padding: 20px 0 8px 0;
+  }
+}
+
 /* A media query */
 
 @media (max-width: 1440px) {
