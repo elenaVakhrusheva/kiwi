@@ -12,8 +12,8 @@ a {
 
 /* line 11, style.scss */
 p {
-  font-size: 1rem;
-  line-height: 175%; }
+  font-size: 16px;
+  line-height: 32px; }
 
 /* line 15, style.scss */
 .img-responsive {
@@ -62,9 +62,10 @@ h2 {
   font-size: 32px;
   line-height: 32px;
   text-align: left;
-  padding-bottom: 32px; }
+  margin-bottom: 32px;
+  color: #373f47; }
 
-/* line 61, style.scss */
+/* line 62, style.scss */
 h3 {
   font-weight: 600;
   font-size: 24px;
@@ -73,7 +74,7 @@ h3 {
   padding: 16px 0 8px 0;
   color: #373f47; }
 
-/* line 70, style.scss */
+/* line 71, style.scss */
 .my-flex-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,7 +94,7 @@ h3 {
   width: 100%;
   height: auto; }
 
-/* line 79, style.scss */
+/* line 80, style.scss */
 .my-flex-box {
   margin: 5px;
   padding: 5px;
@@ -107,11 +108,11 @@ h3 {
           order: 0; }
 
 /*nav ex*/
-/* line 88, style.scss */
+/* line 89, style.scss */
 .type-excursions {
   overflow: hidden;
   padding: 0 0 40px 0px; }
-  /* line 92, style.scss */
+  /* line 93, style.scss */
   .type-excursions__item {
     background: #ffffff;
     -webkit-box-sizing: border-box;
@@ -121,40 +122,40 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     float: left; }
-    /* line 99, style.scss */
+    /* line 100, style.scss */
     .type-excursions__item:nth-last-child(n + 2) {
       margin-right: 16px; }
-    /* line 103, style.scss */
+    /* line 104, style.scss */
     .type-excursions__item a.nav-link:hover {
       border: 1px solid #fbb216; }
-    /* line 107, style.scss */
+    /* line 108, style.scss */
     .type-excursions__item:active,
     .type-excursions__item .nav-link.active {
       background-color: #fbb216;
       border: 1px solid #fbb216; }
-      /* line 112, style.scss */
+      /* line 113, style.scss */
       .type-excursions__item:active a:hover,
       .type-excursions__item .nav-link.active a:hover {
         text-decoration: none; }
-      /* line 116, style.scss */
+      /* line 117, style.scss */
       .type-excursions__item:active a:active,
       .type-excursions__item .nav-link.active a:active {
         color: #ffffff;
         text-decoration: none; }
-    /* line 122, style.scss */
+    /* line 123, style.scss */
     .type-excursions__item a {
       margin: auto;
       font-size: 14px;
       line-height: 32px;
       color: #373f47; }
 
-/* line 131, style.scss */
+/* line 132, style.scss */
 .type-excursions__item:active,
 .type-excursions__item .nav-link.active {
   background-color: #fbb216;
   border: 1px solid #fbb216; }
 
-/* line 137, style.scss */
+/* line 138, style.scss */
 .type-excursions__item a {
   margin: auto;
   font-size: 14px;
@@ -164,14 +165,14 @@ h3 {
   border-radius: 32px !important;
   padding: 0 20px; }
 
-/* line 150, style.scss */
+/* line 151, style.scss */
 .type-excursions__item:active,
 .type-excursions__item .nav-link.active {
   background-color: #fbb216;
   border: 1px solid #fbb216;
   border-radius: 32px; }
 
-/* line 156, style.scss */
+/* line 157, style.scss */
 .type-excursions__item {
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -181,34 +182,34 @@ h3 {
   display: flex;
   float: left; }
 
-/* line 166, style.scss */
+/* line 167, style.scss */
 .filter-content {
   font-size: 16px;
   line-height: 32px;
   width: 100%; }
-  /* line 171, style.scss */
+  /* line 172, style.scss */
   .filter-content__title {
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     color: #545d65;
     padding-bottom: 16px; }
-  /* line 180, style.scss */
+  /* line 181, style.scss */
   .filter-content__item:last-child {
     border-bottom: none; }
 
-/* line 185, style.scss */
+/* line 186, style.scss */
 .filter-content aside {
   max-width: 288px; }
 
-/* line 189, style.scss */
+/* line 190, style.scss */
 .filter-content__filter,
 .filter-content__rating,
 .filter-content__data,
 .filter-content__price {
   border-bottom: 1px solid #f1f1f1;
   padding: 16px 0; }
-  /* line 196, style.scss */
+  /* line 197, style.scss */
   .filter-content__filter-list,
   .filter-content__rating-list,
   .filter-content__data-list,
@@ -222,12 +223,12 @@ h3 {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-/* line 202, style.scss */
+/* line 203, style.scss */
 .filter-content__rating:not(:first-child) {
   padding-top: 16px;
   padding-bottom: 0; }
 
-/* line 206, style.scss */
+/* line 207, style.scss */
 .filter-content__filter,
 .filter-content__data-items {
   display: -webkit-box;
@@ -240,12 +241,12 @@ h3 {
           justify-content: space-between; }
 
 /* === input's ===*/
-/* line 215, style.scss */
+/* line 216, style.scss */
 input[type="radio"],
 label {
   cursor: pointer; }
 
-/* line 220, style.scss */
+/* line 221, style.scss */
 input.rating-list__item-input[type="radio"] {
   position: relative;
   height: 22px;
@@ -255,7 +256,7 @@ input.rating-list__item-input[type="radio"] {
   appearance: none;
   outline: none; }
 
-/* line 230, style.scss */
+/* line 231, style.scss */
 input.rating-list__item-input[type="radio"]::before {
   content: "";
   position: absolute;
@@ -269,7 +270,7 @@ input.rating-list__item-input[type="radio"]::before {
   background-color: white;
   border: 2px solid #26a65b; }
 
-/* line 243, style.scss */
+/* line 244, style.scss */
 input.rating-list__item-input[type="radio"]:checked::after {
   content: "";
   position: absolute;
@@ -283,47 +284,47 @@ input.rating-list__item-input[type="radio"]:checked::after {
           transform: translate(-50%, -50%);
   visibility: visible; }
 
-/* line 256, style.scss */
+/* line 257, style.scss */
 input[type="date"] {
   border: none;
   color: #aaa7a2;
   width: 120%;
   font-size: 14px;
   line-height: 24px; }
-  /* line 263, style.scss */
+  /* line 264, style.scss */
   input[type="date"]:active, input[type="date"]:focus {
     border: 0; }
 
-/* line 268, style.scss */
+/* line 269, style.scss */
 input[type="date"]::-webkit-inner-spin-button {
   display: none; }
 
-/* line 272, style.scss */
+/* line 273, style.scss */
 input[type="date"]::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
-  background: url(icons/calendar.svg) no-repeat center;
+  background: url("icons/calendar.svg") no-repeat center;
   background-size: contain; }
 
-/* line 279, style.scss */
+/* line 280, style.scss */
 .rating-list__item-star img:active {
   background-image: url("icons/star-full.svg"); }
 
-/* line 283, style.scss */
+/* line 284, style.scss */
 .radio-label {
   line-height: 24px;
   margin: 0;
   vertical-align: top; }
 
-/* line 289, style.scss */
+/* line 290, style.scss */
 #slider-range {
   margin: 8px 0 16px 0; }
 
-/* line 293, style.scss */
+/* line 294, style.scss */
 .ui-slider .ui-slider-range {
   background-color: #26a65b; }
 
-/* line 297, style.scss */
+/* line 298, style.scss */
 .ui-state-default,
 .ui-widget-content .ui-state-default {
   font-weight: normal;
@@ -338,21 +339,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 24px;
   height: 24px; }
 
-/* line 310, style.scss */
+/* line 311, style.scss */
 .ui-widget {
   font-size: 2px; }
 
-/* line 313, style.scss */
+/* line 314, style.scss */
 .ui-widget.ui-widget-content {
   border: none;
   background: #e0dcd3; }
 
-/* line 318, style.scss */
+/* line 319, style.scss */
 .ui-widget-content .ui-state-default:focus,
 .ui-widget-content .ui-state-default:active {
   outline: 2px solid #26a65b; }
 
-/* line 323, style.scss */
+/* line 324, style.scss */
 .filter-content__price input[type="text"] {
   color: #aaa7a1;
   font-size: 16px;
@@ -360,26 +361,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-align: center;
   border: none;
   width: 100%; }
-  /* line 331, style.scss */
+  /* line 332, style.scss */
   .filter-content__price input[type="text"]:active {
     color: #373f47; }
 
-/* line 336, style.scss */
+/* line 337, style.scss */
 .ui-slider-horizontal .ui-slider-handle {
   top: -12px; }
 
-/* line 340, style.scss */
+/* line 341, style.scss */
 .filter-content__checkbox {
   margin-bottom: 16px;
   padding: 12px 0 0 0; }
 
-/* line 345, style.scss */
+/* line 346, style.scss */
 .custom-checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0; }
 
-/* line 350, style.scss */
+/* line 351, style.scss */
 .custom-checkbox + label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -395,7 +396,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 24px; }
 
-/* line 358, style.scss */
+/* line 359, style.scss */
 .custom-checkbox + label::before {
   content: "";
   display: inline-block;
@@ -413,29 +414,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-position: center center;
   background-size: 50% 50%; }
 
-/* line 372, style.scss */
+/* line 373, style.scss */
 .custom-checkbox:checked + label::before {
   border-color: #26a65b;
   background-color: #fff;
   background-image: url("icons/check.svg"); }
 
 /* стили при наведении курсора на checkbox */
-/* line 379, style.scss */
+/* line 380, style.scss */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #26a65b; }
 
 /* стили для активного состояния чекбокса (при нажатии на него) */
-/* line 383, style.scss */
+/* line 384, style.scss */
 .custom-checkbox:not(:disabled):active + label::before {
   background-color: #26a65b;
   border-color: #26a65b; }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
-/* line 389, style.scss */
+/* line 390, style.scss */
 .custom-checkbox:disabled + label::before {
   background-color: #e9ecef; }
 
-/* line 393, style.scss */
+/* line 394, style.scss */
 .filter-content__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,10 +447,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0; }
-  /* line 399, style.scss */
+  /* line 400, style.scss */
   .filter-content__buttons a:hover, .filter-content__buttons a:focus {
     text-decoration: none; }
-  /* line 404, style.scss */
+  /* line 405, style.scss */
   .filter-content__buttons .buttons {
     font-size: 14px;
     line-height: 21px;
@@ -459,60 +460,60 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 4px;
     padding: 13px 24px;
     font-weight: 600; }
-    /* line 414, style.scss */
+    /* line 415, style.scss */
     .filter-content__buttons .buttons:nth-last-child(n + 2) {
       margin-right: 16px; }
-  /* line 418, style.scss */
+  /* line 419, style.scss */
   .filter-content__buttons .buttons:active {
     border: 1px solid #26a65b;
     color: #26a65b; }
 
 /* == Сортировка == */
-/* line 426, style.scss */
+/* line 427, style.scss */
 .nav-sort {
   border-bottom: 1px solid #f2eee6; }
 
-/* line 429, style.scss */
+/* line 430, style.scss */
 .nav-tabs {
   margin-bottom: 24px; }
 
-/* line 433, style.scss */
+/* line 434, style.scss */
 .nav-link {
   padding: 8px 16px;
   font-size: 14px;
   line-height: 24px;
   color: #373f47; }
-  /* line 439, style.scss */
+  /* line 440, style.scss */
   .nav-link:hover, .nav-link:focus {
     color: #373f47;
     border: none; }
 
-/* line 446, style.scss */
+/* line 447, style.scss */
 .nav-tabs .nav-link {
   border: none; }
 
-/* line 449, style.scss */
+/* line 450, style.scss */
 .nav-tabs .nav-link:hover {
   border: none;
   color: #26a65b; }
 
-/* line 454, style.scss */
+/* line 455, style.scss */
 .nav-tabs .nav-link.active {
   border: none;
   border-bottom: 1px solid #26a65b;
   color: #26a65b; }
 
 /* === cards ===*/
-/* line 462, style.scss */
+/* line 463, style.scss */
 .card {
   border: none;
   -webkit-box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
           box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
   margin-bottom: 24px; }
-  /* line 467, style.scss */
+  /* line 468, style.scss */
   .card-body {
     padding: 20px 24px; }
-  /* line 471, style.scss */
+  /* line 472, style.scss */
   .card-image {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -521,7 +522,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
-    /* line 478, style.scss */
+    /* line 479, style.scss */
     .card-image__wrap {
       height: 208px;
       overflow: hidden;
@@ -536,7 +537,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           -ms-flex-align: center;
               align-items: center;
       text-align: center; }
-      /* line 487, style.scss */
+      /* line 488, style.scss */
       .card-image__wrap span {
         position: absolute;
         top: 85%;
@@ -559,19 +560,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         color: #ffffff;
         padding: 0 24px;
         border-radius: 0px 4px 0px 0px; }
-  /* line 506, style.scss */
+  /* line 507, style.scss */
   .card-feedback p {
     font-size: 12px;
     line-height: 24px;
     color: #545d65; }
-  /* line 512, style.scss */
+  /* line 513, style.scss */
   .card-name {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     color: #373f47;
     margin-bottom: 48px; }
-  /* line 520, style.scss */
+  /* line 521, style.scss */
   .card__clock-price, .card-feedback {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -580,10 +581,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         -ms-flex-pack: justify;
             justify-content: space-between;
     line-height: 24px; }
-  /* line 527, style.scss */
+  /* line 528, style.scss */
   .card__clock {
     font-size: 13px; }
-  /* line 531, style.scss */
+  /* line 532, style.scss */
   .card__price {
     font-size: 20px;
     line-height: 24px;
@@ -591,11 +592,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: #fbb216; }
 
 /* == списки ==*/
-/* line 541, style.scss */
+/* line 542, style.scss */
 section.decription {
   margin: 88px 0 84px; }
 
-/* line 545, style.scss */
+/* line 546, style.scss */
 .decription__ul-text,
 .decription__ol-text {
   font-size: 16px;
@@ -603,16 +604,16 @@ section.decription {
   color: #545d65;
   padding-left: 23px; }
 
-/* line 553, style.scss */
+/* line 554, style.scss */
 .decription__ul-text {
   list-style-type: disc;
   padding-bottom: 16px; }
 
 /* === dropdown === */
-/* line 560, style.scss */
+/* line 561, style.scss */
 .dropdown {
   padding: 0 16px 24px; }
-  /* line 563, style.scss */
+  /* line 564, style.scss */
   .dropdown-toggle {
     font-size: 14px;
     line-height: 24px;
@@ -628,45 +629,45 @@ section.decription {
             appearance: none;
     overflow: hidden;
     background: url("icons/dropdown.svg") no-repeat right; }
-    /* line 577, style.scss */
+    /* line 578, style.scss */
     .dropdown-toggle::after {
       border: none; }
 
-/* line 582, style.scss */
+/* line 583, style.scss */
 .btn.dropdown-toggle {
   color: #26a65b; }
-  /* line 585, style.scss */
+  /* line 586, style.scss */
   .btn.dropdown-toggle:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
-/* line 590, style.scss */
+/* line 591, style.scss */
 .dropdown-menu.show {
   display: block;
   border: 1px solid #26a65b;
   width: 100%; }
 
-/* line 596, style.scss */
+/* line 597, style.scss */
 .dropdown-item:focus,
 .dropdown-item:hover {
   color: #26a65b; }
 
-/* line 601, style.scss */
+/* line 602, style.scss */
 .dropdown-item {
   font-size: 14px;
   line-height: 24px; }
 
-/* line 606, style.scss */
+/* line 607, style.scss */
 .rating-list__item,
 .filter-content__checkbox ul li {
   list-style-type: none; }
 
 /* === Страны ===*/
-/* line 613, style.scss */
+/* line 614, style.scss */
 .container-country {
   margin-bottom: 48px; }
 
-/* line 616, style.scss */
+/* line 617, style.scss */
 .card-country {
   position: relative;
   display: -webkit-box;
@@ -681,14 +682,14 @@ section.decription {
   text-align: center;
   color: white; }
 
-/* line 625, style.scss */
+/* line 626, style.scss */
 .card-country__img {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px; }
 
-/* line 631, style.scss */
+/* line 632, style.scss */
 .card-img-overlay {
   position: absolute;
   top: 70%;
@@ -709,55 +710,367 @@ section.decription {
   text-align: left;
   border-radius: 0 0 8px 8px; }
 
-/* line 644, style.scss */
+/* line 645, style.scss */
 .card-title {
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 10px; }
 
-/* line 650, style.scss */
+/* line 651, style.scss */
 .card-excurs {
   font-size: 13px;
   line-height: 16px;
   color: #fbb216;
   margin-bottom: 10px; }
 
-/* line 657, style.scss */
+/* line 658, style.scss */
 .card-price {
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
   color: #ffffff; }
 
-/* line 664, style.scss */
+/* line 665, style.scss */
 section.decription-country {
   margin: 64px 0 84px; }
-  /* line 667, style.scss */
+  /* line 668, style.scss */
   section.decription-country h3 {
     padding: 16px 0 24px 0; }
-  /* line 671, style.scss */
+  /* line 672, style.scss */
   section.decription-country h4 {
     font-size: 24px;
     line-height: 32px;
     color: #373f47;
     padding: 20px 0 8px 0; }
 
+/* === Город детально ===*/
+/* line 681, style.scss */
+.banner__wrap {
+  background: url("/img/banners/banner-budapeht.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  padding: 104px 224px 72px 224px;
+  text-align: center;
+  position: relative; }
+  /* line 690, style.scss */
+  .banner__wrap-descript {
+    position: relative;
+    z-index: 3; }
+  /* line 695, style.scss */
+  .banner__wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(36, 42, 48, 0.6);
+    z-index: 2;
+    border-radius: 8px; }
+  /* line 707, style.scss */
+  .banner__wrap-rewiews {
+    font-size: 0.75rem; }
+    /* line 710, style.scss */
+    .banner__wrap-rewiews_number {
+      font-size: 12px;
+      line-height: 24px; }
+  /* line 716, style.scss */
+  .banner__wrap-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 48px; }
+  /* line 725, style.scss */
+  .banner__wrap-stars {
+    margin-bottom: 8px; }
+
+/* line 730, style.scss */
+.promo-section {
+  position: relative;
+  display: block;
+  margin-top: -50px;
+  min-height: 104px; }
+  /* line 736, style.scss */
+  .promo-section__container {
+    -webkit-box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
+            box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
+    padding: 24px; }
+
+/* line 742, style.scss */
+.promo-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  background: #fff;
+  border-radius: 8px;
+  max-width: 68.5rem;
+  margin: 0 auto; }
+
+/* line 754, style.scss */
+.promo-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  height: 100%;
+  text-align: center; }
+  /* line 760, style.scss */
+  .promo-section__content p, .promo-section__content img {
+    margin: auto; }
+  /* line 765, style.scss */
+  .promo-section__content p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 18px; }
+    /* line 771, style.scss */
+    .promo-section__content p span {
+      font-weight: 400; }
+  /* line 776, style.scss */
+  .promo-section__content img {
+    max-width: 52px;
+    max-height: 52px; }
+
+/* line 782, style.scss */
+.decription-city {
+  margin-top: 64px; }
+  /* line 785, style.scss */
+  .decription-city__attractions {
+    margin-bottom: 88px; }
+
+/* line 789, style.scss */
+.attraction-item {
+  overflow: hidden;
+  margin: 0;
+  width: 100%; }
+
+/* line 794, style.scss */
+.attraction-item figure {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  height: 400px;
+  border-radius: 8px; }
+
+/* line 804, style.scss */
+.attraction-item figure img {
+  position: relative;
+  display: block;
+  min-height: 100%; }
+
+/* line 809, style.scss */
+.attraction-item figure figcaption {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(55, 63, 71, 0.6)), color-stop(96%, rgba(55, 63, 71, 0.6)));
+  background-image: linear-gradient(to bottom, rgba(55, 63, 71, 0.6) 10%, rgba(55, 63, 71, 0.6) 96%); }
+
+/* line 814, style.scss */
+.attraction-item figure figcaption::before,
+.attraction-item figure figcaption::after {
+  pointer-events: none; }
+
+/* line 818, style.scss */
+.attraction-item figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 826, style.scss */
+.attraction-item figure h4,
+.attraction-item figure p {
+  margin: 0; }
+
+/* line 831, style.scss */
+.attraction-item__label {
+  background: #fbb216;
+  border-radius: 0px 8px 8px 0px;
+  padding: 8px 16px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 5; }
+
+/* line 845, style.scss */
+.attraction-item__label img {
+  width: 100%;
+  position: relative;
+  display: block;
+  min-height: 100%;
+  float: left;
+  max-width: 32px;
+  margin-right: 8px; }
+
+/* line 855, style.scss */
+.attraction-item__label span {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: #ffffff;
+  vertical-align: middle; }
+
+/* line 863, style.scss */
+.link_add-see {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fbb216; }
+  /* line 869, style.scss */
+  .link_add-see:hover {
+    text-decoration: underline;
+    color: #fbb216; }
+
+/* Эффект при наведении */
+/* line 876, style.scss */
+figure.attraction-item__decript img {
+  width: 100%; }
+
+/* line 879, style.scss */
+figure.attraction-item__decript figcaption {
+  top: auto;
+  bottom: 0;
+  height: 88px;
+  text-align: left;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(55, 63, 71, 0.6)), color-stop(96%, rgba(55, 63, 71, 0.6)));
+  background-image: linear-gradient(to bottom, rgba(55, 63, 71, 0.6) 10%, rgba(55, 63, 71, 0.6) 96%); }
+  /* line 886, style.scss */
+  figure.attraction-item__decript figcaption h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px 24px 8px 24px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s; }
+  /* line 895, style.scss */
+  figure.attraction-item__decript figcaption p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s, -webkit-transform 0.35s;
+    padding: 0 24px 20px 24px; }
+  /* line 905, style.scss */
+  figure.attraction-item__decript figcaption h4, figure.attraction-item__decript figcaption p {
+    color: #ffffff;
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0); }
+
+/* line 913, style.scss */
+figure.attraction-item__decript img:hover figure.attraction-item__decript figcaption {
+  height: 160px; }
+
+/* line 917, style.scss */
+figure.attraction-item__decript:hover img,
+figure.attraction-item__decript:hover p {
+  opacity: 1; }
+
+/* line 922, style.scss */
+figure.attraction-item__decript:hover h4,
+figure.attraction-item__decript:hover p {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px); }
+
+/* line 928, style.scss */
+figure.attraction-item__decript:hover figcaption {
+  height: 160px; }
+
+/* line 932, style.scss */
+figure.attraction-item__decript:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s; }
+
+/* line 939, style.scss */
+.attraction-item figure img:hover figure.attraction-item__decript figcaption {
+  height: 160px; }
+
+/* line 942, style.scss */
+.decription-city__list {
+  margin-bottom: 86px; }
+
+/* line 945, style.scss */
+.list-included {
+  float: left;
+  margin-right: 24px; }
+
+/* line 949, style.scss */
+.list-not-included {
+  float: right; }
+
+/* line 952, style.scss */
+.list-included,
+.list-not-included {
+  list-style-position: inside; }
+
+/* line 956, style.scss */
+.list-included li,
+.list-not-included li {
+  font-size: 16px;
+  line-height: 28px;
+  color: #545d65;
+  padding-left: 36px;
+  margin-bottom: 20px; }
+
+/* line 965, style.scss */
+.list-included li {
+  background: url(/icons/tick-circle.svg) no-repeat left center; }
+
+/* line 968, style.scss */
+.list-not-included li {
+  background: url(/icons/close-circle.svg) no-repeat left center; }
+
+/* === gallery=== */
+/* line 973, style.scss */
+.gallery-item {
+  padding: 0; }
+  /* line 976, style.scss */
+  .gallery-item a img {
+    padding: 0;
+    background-color: none;
+    border: none;
+    border-radius: 0;
+    max-height: 288px;
+    width: 100%; }
+
 /* A media query */
 @media (max-width: 1440px) {
-  /* line 682, style.scss */
+  /* line 989, style.scss */
   .md-p-12 {
     padding: 0 12px; } }
+@media (min-width: 1200px) {
+  /* line 995, style.scss */
+  .container {
+    max-width: 1320px; } }
 @media (min-width: 1024px) {
-  /* line 688, style.scss */
+  /* line 1001, style.scss */
   .card-body {
     padding: 10px 12px; }
 
-  /* line 692, style.scss */
+  /* line 1005, style.scss */
   .md-p-33 {
     padding: 0 33px 0 15px; } }
 @media (min-width: 768px) {
-  /* line 698, style.scss */
+  /* line 1011, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;
@@ -765,90 +1078,90 @@ section.decription-country {
     padding-left: 24px;
     padding-right: 24px; } }
 @media (max-width: 1024px) {
-  /* line 708, style.scss */
+  /* line 1021, style.scss */
   .md-p-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 713, style.scss */
+  /* line 1026, style.scss */
   .md-m-0 {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 718, style.scss */
+  /* line 1031, style.scss */
   .md-p-8 {
     padding: 0 8px; }
 
-  /* line 722, style.scss */
+  /* line 1035, style.scss */
   .filter-content__rating-list {
     margin-bottom: 0; }
 
-  /* line 726, style.scss */
+  /* line 1039, style.scss */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 730, style.scss */
+  /* line 1043, style.scss */
   .filter-content__buttons .buttons {
     padding: 10px 12px; } }
 @media (max-width: 768px) {
-  /* line 735, style.scss */
+  /* line 1048, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 43px; }
 
-  /* line 739, style.scss */
+  /* line 1052, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: left;
     padding-right: 24px; }
 
-  /* line 744, style.scss */
+  /* line 1057, style.scss */
   .filter-content {
     margin-bottom: 36px; }
 
-  /* line 747, style.scss */
+  /* line 1060, style.scss */
   .type-excursions {
     padding: 0 0 32px 0px; }
 
-  /* line 751, style.scss */
+  /* line 1064, style.scss */
   h3 {
     padding: 0 0 32px 0;
     margin: 0; }
 
-  /* line 755, style.scss */
+  /* line 1068, style.scss */
   .breadcrumb {
     margin-bottom: 24px; }
 
-  /* line 758, style.scss */
+  /* line 1071, style.scss */
   .p-768-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 763, style.scss */
+  /* line 1076, style.scss */
   .page-titile {
     padding: 0; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  /* line 769, style.scss */
+  /* line 1082, style.scss */
   .radio-label {
     font-size: 13px; }
 
-  /* line 773, style.scss */
+  /* line 1086, style.scss */
   .input[type="date"] {
     font-size: 12px; }
 
-  /* line 776, style.scss */
+  /* line 1089, style.scss */
   .card-title {
     font-size: 20px; } }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   /* стили */ }
 @media only screen and (max-width: 576px) {
-  /* line 786, style.scss */
+  /* line 1099, style.scss */
   .nav-tabs {
     display: none; }
 
-  /* line 789, style.scss */
+  /* line 1102, style.scss */
   .filter-content {
     margin-bottom: 24px; }
 
-  /* line 793, style.scss */
+  /* line 1106, style.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -856,28 +1169,28 @@ section.decription-country {
     margin-bottom: 0;
     text-align: left; }
 
-  /* line 800, style.scss */
+  /* line 1113, style.scss */
   h3 {
     padding: 0 0 24px 0; }
 
-  /* line 804, style.scss */
+  /* line 1117, style.scss */
   .filter-content__filter {
     padding-bottom: 0; }
 
-  /* line 808, style.scss */
+  /* line 1121, style.scss */
   .breadcrumb {
     padding: 0; }
 
-  /* line 812, style.scss */
+  /* line 1125, style.scss */
   .filter-content__head .filter-content__title {
     padding-top: 0;
     padding-bottom: 8px; }
 
-  /* line 817, style.scss */
+  /* line 1130, style.scss */
   .dropdown-menu.show {
     width: 90%; }
 
-  /* line 821, style.scss */
+  /* line 1134, style.scss */
   .type-excursions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -890,11 +1203,11 @@ section.decription-country {
     scrollbar-width: none;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
-    /* line 829, style.scss */
+    /* line 1142, style.scss */
     .type-excursions::-webkit-scrollbar {
       width: 0;
       height: 0; }
-    /* line 833, style.scss */
+    /* line 1146, style.scss */
     .type-excursions__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -910,61 +1223,61 @@ section.decription-country {
               flex: 0 0 auto;
       font-size: 14px; }
 
-  /* line 841, style.scss */
+  /* line 1154, style.scss */
   .md-p-0,
   .page-titile {
     padding-left: 16px;
     padding-right: 16px; }
 
-  /* line 846, style.scss */
+  /* line 1159, style.scss */
   .md-p-8 {
     padding-left: 0;
     padding-right: 0; } }
 @media (min-width: 576px) {
-  /* line 853, style.scss */
+  /* line 1166, style.scss */
   .mobile-tabs {
     display: none; } }
 @media (max-width: 425px) {
-  /* line 859, style.scss */
+  /* line 1172, style.scss */
   .md-p-12 {
     padding: 0 16px; }
 
-  /* line 862, style.scss */
+  /* line 1175, style.scss */
   .card-country {
     margin-bottom: 16px; }
 
-  /* line 865, style.scss */
+  /* line 1178, style.scss */
   .breadcrumb {
     margin-bottom: 16px; } }
 @media (max-width: 320px) {
-  /* line 871, style.scss */
+  /* line 1184, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 24px; }
 
-  /* line 875, style.scss */
+  /* line 1188, style.scss */
   .filter-content__rating-list,
   .filter-content__buttons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
-  /* line 879, style.scss */
+  /* line 1192, style.scss */
   .rating-list__item:first-child {
     padding-right: 45px; }
 
-  /* line 883, style.scss */
+  /* line 1196, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: none; }
 
-  /* line 887, style.scss */
+  /* line 1200, style.scss */
   input[type="date"] {
     width: 100%; }
 
-  /* line 891, style.scss */
+  /* line 1204, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 894, style.scss */
+  /* line 1207, style.scss */
   .mobile-none {
     display: none; } }
 

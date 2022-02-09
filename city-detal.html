@@ -1,12 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>city detal</title>
+  <title>Город детально</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <div class="header">
+    <div class="container">
+      <div class="header__wrap"></div>
+    </div>
+  </div> 
+ <!-- /header -->
+
+  <div class="nav-breadcrumb">
+    <div class="container md-p-0">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item"><a href="#">Экскурсии</a></li>
+          <li class="breadcrumb-item"><a href="#">Россия</a></li>
+          <li class="breadcrumb-item"><a href="#">Автомобильные</a></li>
+          <li class="breadcrumb-item"><a href="#">Сочи</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">Обзорная автомобильная экскурсия «Визитные карточки Будапешта»</a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="container md-p-0">
+    <h1>Экскурсии по России</h1>          
+  </div>	 
+  <!-- /nav-breadcrumb -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="mx-auto text-white banner__wrap">
+          <div class="banner__wrap-descript">
+            <h1 class="banner__wrap-title">Обзорная автомобильная экскурсия «Визитные карточки Будапешта»</h1>
+            <div class="banner__wrap-rewiews">
+              <p class="banner__wrap-stars">
+                <span>
+                  <img src="icons/star-full.svg" alt="звезда">
+                  <img src="icons/star-full.svg" alt="звезда">
+                  <img src="icons/star-full.svg" alt="звезда">
+                  <img src="icons/star-full.svg" alt="звезда">
+                  <img src="icons/star-full.svg" alt="звезда">
+                </span>
+              </p>
+              <p class="banner__wrap-rewiews_number"><span>802 отзыва</span></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="promo-section bd-bottom">
+          <div class="promo-wrap">
+            <div class="container promo-section__container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 xs-padding ">
+                  <div class="promo-section__content">
+                    <img src="icons/time.svg" alt="Продолжительность" class="img-responsive">
+                    <p>Продолжительность<br><span>2-4 часа</span></p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="promo-section__content">
+                    <img src="icons/tour.svg" alt="Тип тура">
+                    <p>Тип тура<br><span>Автомобильный</span></p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="promo-section__content">
+                    <img src="icons/group.svg" alt="Размер группы">
+                    <p>Размер группы<br><span>Неограничен</span></p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="promo-section__content">
+                    <img src="icons/language.svg" alt="Языки">
+                    <p>Языки<br><span>Русский, Английский</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="decription-city">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="decription-city__text">
+            <h2>Общие сведения</h2>
+            <p>Будапешт — жемчужина Восточной Европы, уникальный город, в котором гармонично уживаются самые разные архитектурные стили, от классики до неоготики и модерна.</p>
+            <p>Раскинувшись по обоим берегам Дуная, столица Венгрии встречает гостей роскошными дворцами и театрами с позеленевшими от времени медными куполами, величественными памятниками королям, композиторам и поэтам, многочисленными музеями и художественными галереями.</p>
+          </div>
+
+          <div class="decription-city__attractions"> 
+            <h3>Достопримечательности Будапешта</h3>           
+            
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="attraction-item">
+                    <a href="#">
+											<figure class="attraction-item__decript">
+                      <img src="img/attractions/Budapest.jpg" alt="Площадь героев в Будапеште"/>
+                        <div class="attraction-item__label">
+                          <img src="/icons/childs.svg" alt="">
+                          <span>Детям понравится</span>
+                        </div>
+                        <figcaption>
+                          <h4>Площадь героев</h4>
+                          <p>Одно из живописнейших мест города, украшенное многовековыми памятниками и обрамленное двумя зданиями в стиле неоклассицизма.</p>
+                        </figcaption>			
+                    </figure>
+										</a>
+									</div>
+                </div> <!-- конец 1 достопримечательности-->
+                <div class="col-md-4">
+                  <div class="attraction-item">
+										 <a href="#">
+											<figure class="attraction-item__decript">
+                      <img src="img/attractions/Budapest.jpg" alt="Базилика Святого Стефана"/>
+                        <figcaption>
+                          <h4>Базилика Святого Стефана</h4>
+                          <p>Одно из живописнейших мест города, украшенное многовековыми памятниками и обрамленное двумя зданиями в стиле неоклассицизма.</p>
+                        </figcaption>			
+                    	</figure>
+										 </a>
+                  </div>
+                </div> <!-- конец 2 достопримечательности-->
+                <div class="col-md-4">
+                  <div class="attraction-item">
+										<a href="#">
+											<figure class="attraction-item__decript">
+                      <img src="img/attractions/Budapest.jpg" alt="Смотровая площадка возле гостиницы Марриотт"/>
+											<div class="attraction-item__label">
+                          <img src="/icons/childs.svg" alt="">
+                          <span>Детям понравится</span>
+                        </div>
+                        <figcaption>
+                          <h4>Смотровая площадка возле гостиницы Марриотт</h4>
+                          <p>Одно из живописнейших мест города, украшенное многовековыми памятниками и обрамленное двумя зданиями в стиле неоклассицизма.</p>
+                        </figcaption>			
+                    </figure>
+										</a>
+									</div>
+                </div> <!-- конец 3 достопримечательности-->
+              </div>
+							<a href="#" class="link_add-see">Показать еще</a>
+              
+          </div> <!-- конец всех достопримечательностей-->
+
+					<div class="decription-city__list">
+						<div class="row">
+							<div class="col-md-12">
+								<h2>Включено / Исключено</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-9">
+								<ul class="list-included">
+									<li>Трансфер из отеля и назад</li>
+									<li>Комфортный автомобиль</li>
+									<li>Водитель говорит по-русски</li>
+									<li>Топливо и сборы</li>
+									<li>Питьевая вода</li>
+								</ul>
+
+								<ul class="list-not-included">
+									<li>Входные билеты на все достопримечательности</li>
+									<li>Лицензированный гид</li>
+									<li>Другие напитки и блюда</li>
+									<li>Чаевые</li>
+								</ul>
+							</div>
+						</div>								
+					</div> <!-- /.decription-city__list-->
+
+					<div class="decription-city__gallery">
+						<div class="row">
+								<div class="col-lg-6 col-md-6 col-xs-6 ">
+									 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery">
+                    <img class="img-thumbnail" src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+								</div> <!-- / 1фото-->
+								<div class="col-lg-6 col-md-6 col-xs-6 gallery-item">
+									<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="img/attractions/Budapest/gallery-2.jpg" data-target="#image-gallery">
+										<img class="img-thumbnail" src="img/attractions/Budapest/gallery-2.jpg" alt="Another alt text">
+									</a>
+								</div> <!-- / 2фото-->
+								<div class="col-lg-6 col-md-6 col-xs-6 gallery-item">
+									<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="img/attractions/Budapest/gallery-3.jpg" data-target="#image-gallery">
+										<img class="img-thumbnail" src="img/attractions/Budapest/gallery-3.jpg" alt="Another alt text">
+									</a>
+								</div> <!-- / 3фото-->
+								<div class="col-lg-6 col-md-6 col-xs-6 gallery-item">
+									<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="img/attractions/Budapest/gallery-4.jpg" data-target="#image-gallery">
+										<img class="img-thumbnail" src="img/attractions/Budapest/gallery-4.jpg" alt="Another alt text">
+									</a>
+								</div> <!-- / 4фото-->
+							
+
+ 							<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title" id="image-gallery-title"></h4>
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+												</button>
+										</div>
+										<div class="modal-body">
+												<img id="image-gallery-image" class="img-responsive col-md-12" src="">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+											</button>
+
+											<button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- /.col-md-9-->
+       
+
+
+        <div class="col-md-3">
+          <h3>Оформление заказа</h3>
+          <div class="form-group">
+            <!-- элемент input с id = datetimepicker1 -->
+            <div class="input-group" id="datetimepicker1">
+              <input type="text" class="form-control" />
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div>
+          </div>
+          <!--div class="flex-w flex-sb-m p-b-52">
+				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+						All Products
+					</button>
+
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
+						Women
+					</button>
+
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
+						Men
+					</button>
+
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
+						Bag
+					</button>
+
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
+						Shoes
+					</button>
+
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
+						Watches
+					</button>
+				</div>
+
+				<div class="flex-w flex-c-m m-tb-10">
+					<div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter show-filter">
+						<i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
+						<i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+						 Filter
+					</div>
+
+					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
+						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
+						<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+						Search
+					</div>
+				</div-->
+				
+				<!-- Search product -->
+				<div class="dis-none panel-search w-full p-t-10 p-b-15">
+					<div class="bor8 dis-flex p-l-15">
+						<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+							<i class="zmdi zmdi-search"></i>
+						</button>
+
+						<input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="search-product" placeholder="Search">
+					</div>	
+				</div>
+
+				<!-- Filter -->
+				<div class="dis-none panel-filter w-full p-t-10" style="display: block;">
+					<div class="wrap-filter flex-w bg6 w-full p-lr-40 p-t-27 p-lr-15-sm">
+						<div class="filter-col1 p-r-15 p-b-27">
+							<div class="mtext-102 cl2 p-b-15">
+								Sort By
+							</div>
+
+							<ul>
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										Default
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										Popularity
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										Average rating
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
+										Newness
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										Price: Low to High
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										Price: High to Low
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="filter-col2 p-r-15 p-b-27">
+							<div class="mtext-102 cl2 p-b-15">
+								Price
+							</div>
+
+							<ul>
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
+										All
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										$0.00 - $50.00
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										$50.00 - $100.00
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										$100.00 - $150.00
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										$150.00 - $200.00
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<a href="#" class="filter-link stext-106 trans-04">
+										$200.00+
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="filter-col3 p-r-15 p-b-27">
+							<div class="mtext-102 cl2 p-b-15">
+								Color
+							</div>
+
+							<ul>
+								<li class="p-b-6">
+									<span class="fs-15 lh-12 m-r-6" style="color: #222;">
+										<i class="zmdi zmdi-circle"></i>
+									</span>
+
+									<a href="#" class="filter-link stext-106 trans-04">
+										Black
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<span class="fs-15 lh-12 m-r-6" style="color: #4272d7;">
+										<i class="zmdi zmdi-circle"></i>
+									</span>
+
+									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
+										Blue
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<span class="fs-15 lh-12 m-r-6" style="color: #b3b3b3;">
+										<i class="zmdi zmdi-circle"></i>
+									</span>
+
+									<a href="#" class="filter-link stext-106 trans-04">
+										Grey
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<span class="fs-15 lh-12 m-r-6" style="color: #00ad5f;">
+										<i class="zmdi zmdi-circle"></i>
+									</span>
+
+									<a href="#" class="filter-link stext-106 trans-04">
+										Green
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<span class="fs-15 lh-12 m-r-6" style="color: #fa4251;">
+										<i class="zmdi zmdi-circle"></i>
+									</span>
+
+									<a href="#" class="filter-link stext-106 trans-04">
+										Red
+									</a>
+								</li>
+
+								<li class="p-b-6">
+									<span class="fs-15 lh-12 m-r-6" style="color: #aaa;">
+										<i class="zmdi zmdi-circle-o"></i>
+									</span>
+
+									<a href="#" class="filter-link stext-106 trans-04">
+										White
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="filter-col4 p-b-27">
+							<div class="mtext-102 cl2 p-b-15">
+								Tags
+							</div>
+
+							<div class="flex-w p-t-4 m-r--5">
+								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+									Fashion
+								</a>
+
+								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+									Lifestyle
+								</a>
+
+								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+									Denim
+								</a>
+
+								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+									Streetstyle
+								</a>
+
+								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+									Crafts
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div-->
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+
 </body>
 </html>
