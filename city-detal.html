@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
   </div>	 
   <!-- /nav-breadcrumb -->
 
-  <div class="container">
+  <div class="container container-banner">
     <div class="row">
       <div class="col-lg-12">
         <div class="mx-auto text-white banner__wrap">
@@ -63,25 +64,25 @@
           <div class="promo-wrap">
             <div class="container promo-section__container">
               <div class="row">
-                <div class="col-md-3 col-sm-6 xs-padding ">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
                   <div class="promo-section__content">
                     <img src="icons/time.svg" alt="Продолжительность" class="img-responsive">
                     <p>Продолжительность<br><span>2-4 часа</span></p>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="promo-section__content">
                     <img src="icons/tour.svg" alt="Тип тура">
                     <p>Тип тура<br><span>Автомобильный</span></p>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="promo-section__content">
                     <img src="icons/group.svg" alt="Размер группы">
                     <p>Размер группы<br><span>Неограничен</span></p>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="promo-section__content">
                     <img src="icons/language.svg" alt="Языки">
                     <p>Языки<br><span>Русский, Английский</span></p>
@@ -98,18 +99,18 @@
   <section class="decription-city">
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-lg-9 col-md-12">
           <div class="decription-city__text">
             <h2>Общие сведения</h2>
             <p>Будапешт — жемчужина Восточной Европы, уникальный город, в котором гармонично уживаются самые разные архитектурные стили, от классики до неоготики и модерна.</p>
             <p>Раскинувшись по обоим берегам Дуная, столица Венгрии встречает гостей роскошными дворцами и театрами с позеленевшими от времени медными куполами, величественными памятниками королям, композиторам и поэтам, многочисленными музеями и художественными галереями.</p>
           </div>
 
-          <div class="decription-city__attractions"> 
+          <section class="decription-city__attractions"> 
             <h3>Достопримечательности Будапешта</h3>           
             
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="attraction-item">
                     <a href="#">
 											<figure class="attraction-item__decript">
@@ -126,7 +127,7 @@
 										</a>
 									</div>
                 </div> <!-- конец 1 достопримечательности-->
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="attraction-item">
 										 <a href="#">
 											<figure class="attraction-item__decript">
@@ -139,7 +140,7 @@
 										 </a>
                   </div>
                 </div> <!-- конец 2 достопримечательности-->
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="attraction-item">
 										<a href="#">
 											<figure class="attraction-item__decript">
@@ -159,16 +160,16 @@
               </div>
 							<a href="#" class="link_add-see">Показать еще</a>
               
-          </div> <!-- конец всех достопримечательностей-->
+          </section> <!-- конец всех достопримечательностей-->
 
-					<div class="decription-city__list">
+					<section class="decription-city__list">
 						<div class="row">
 							<div class="col-md-12">
 								<h2>Включено / Исключено</h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-9">
+							<div class="col-lg-9 col-md-12-1024">
 								<ul class="list-included">
 									<li>Трансфер из отеля и назад</li>
 									<li>Комфортный автомобиль</li>
@@ -185,31 +186,21 @@
 								</ul>
 							</div>
 						</div>								
-					</div> <!-- /.decription-city__list-->
+					</section> <!-- /.decription-city__list-->
 
-					<div class="decription-city__gallery">
-						<div class="row">
-								<div class="col-lg-6 col-md-6 col-xs-6 ">
-									 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery">
-                    <img class="img-thumbnail" src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                         alt="Another alt text">
-                </a>
+					<section class="decription-city__gallery">
+						<div class="row">							
+								<div class="col-lg-6 col-md-6 col-sm-12 gallery-item ">
+									  <a class="thumbnail" href="img/attractions/Budapest/gallery-1.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0"  src="img/attractions/Budapest/gallery-1.webp"  /></a>
 								</div> <!-- / 1фото-->
-								<div class="col-lg-6 col-md-6 col-xs-6 gallery-item">
-									<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="img/attractions/Budapest/gallery-2.jpg" data-target="#image-gallery">
-										<img class="img-thumbnail" src="img/attractions/Budapest/gallery-2.jpg" alt="Another alt text">
-									</a>
+								<div class="col-lg-6 col-md-6 col-sm-12 gallery-item">
+									<a class="thumbnail" href="img/attractions/Budapest/gallery-2.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0" src="img/attractions/Budapest/gallery-2.webp"  /></a>
 								</div> <!-- / 2фото-->
-								<div class="col-lg-6 col-md-6 col-xs-6 gallery-item">
-									<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="img/attractions/Budapest/gallery-3.jpg" data-target="#image-gallery">
-										<img class="img-thumbnail" src="img/attractions/Budapest/gallery-3.jpg" alt="Another alt text">
-									</a>
+								<div class="col-lg-6 col-md-6 col-sm-6 gallery-item">
+									<a class="thumbnail" href="img/attractions/Budapest/gallery-3.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0"  src="img/attractions/Budapest/gallery-3.webp"  /></a>
 								</div> <!-- / 3фото-->
-								<div class="col-lg-6 col-md-6 col-xs-6 gallery-item">
-									<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="img/attractions/Budapest/gallery-4.jpg" data-target="#image-gallery">
-										<img class="img-thumbnail" src="img/attractions/Budapest/gallery-4.jpg" alt="Another alt text">
-									</a>
+								<div class="col-lg-6 col-md-6 col-sm-6 gallery-item">
+								<a class="thumbnail" href="img/attractions/Budapest/gallery-4.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0" src="img/attractions/Budapest/gallery-4.webp"  /></a>
 								</div> <!-- / 4фото-->
 							
 
@@ -235,269 +226,265 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</section> <!-- /.decription-city__gallery-->
+
+					<section class="decription-city__faq">
+						<h2>FAQs</h2>
+						
+						<div class="faq-item">
+							<input class="hide" id="hd-1" type="checkbox">
+							<label for="hd-1">Гид лицензированный?</label>
+							<div>Нет, водитель не имеет лицензии как туристический гид, но может многое рассказать о городе.</div>
+						</div>
+							
+						<div class="faq-item">
+							<input class="hide" id="hd-2" type="checkbox">
+							<label for="hd-2">Трансфер включен в стоимость?</label>
+							<div>Нет, водитель не имеет лицензии как туристический гид, но может многое рассказать о городе.</div>
+						</div>
+
+					</section> <!-- /.decription-city__faq-->
+
+					<section class="decription-city__reviews">
+						<h2>Отзывы</h2>
+
+						<div class="reviews-item">
+							<div class="reviews-item__photo">
+								<img src="img/attractions/Budapest/reviews-kirill.jpg" alt="">
+							</div>
+							<div class="reviews-item__name">
+								<p>Кирилл</p>
+								<p>
+									<span>
+										<img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+									</span>
+								</p>
+							</div>						
+							<div class="reviews-item__text">Брали экскурсию по Стамбулу в КивиТакси. Водитель очень грамотно и подробно рассказал о достопримечательностях города. Мы посетили несколько мостов, Дворцовый мыс, Часовую башню, посмотрели на жизнь элитных районов, насладились свежестью парка. Здорово, что водитель делает остановки по желанию.
+							</div>
+						</div> <!--конец 1 отзыва-->
+
+						<div class="reviews-item">
+							<div class="reviews-item__photo">
+								<img src="img/attractions/Budapest/reviews-ekaterina.png" alt="">
+							</div>
+							<div class="reviews-item__name">
+								<p>Екатерина</p>
+								<p>
+									<span>
+										<img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+									</span>
+								</p>
+							</div>						
+							<div class="reviews-item__text">Спасибо Кивитакси за прекрасную экскурсию! За 3 часа мы посмотрели достопримечательности Рима, пофотографировались, сходили в кафе, узнали много интересных фактов о городе. Думали, что 3 часа это мало но оказалось, что времени хватит на все.
+							</div>
+						</div> <!--конец 2 отзыва-->
+
+						<div class="reviews-item">
+							<div class="reviews-item__photo">
+								<img src="img/attractions/Budapest/reviews-kirill.jpg" alt="">
+							</div>
+							<div class="reviews-item__name">
+								<p>Кирилл</p>
+								<p>
+									<span>
+										<img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+                    <img src="icons/star-full.svg" alt="звезда">
+									</span>
+								</p>
+							</div>						
+							<div class="reviews-item__text">Брали экскурсию по Стамбулу в КивиТакси. Водитель очень грамотно и подробно рассказал о достопримечательностях города. Мы посетили несколько мостов, Дворцовый мыс, Часовую башню, посмотрели на жизнь элитных районов, насладились свежестью парка. Здорово, что водитель делает остановки по желанию.
+							</div>
+						</div> <!--конец 3 отзыва-->
+						<div>
+							<a href="#" class="link_add-see">Показать еще</a>
+							<a href="#" class="link_btn">Написать отзыв</a>
+						</div>						
+					</section><!-- /.decription-city__reviews-->
+
+				
+
 
 				</div><!-- /.col-md-9-->
        
 
 
-        <div class="col-md-3">
-          <h3>Оформление заказа</h3>
-          <div class="form-group">
-            <!-- элемент input с id = datetimepicker1 -->
-            <div class="input-group" id="datetimepicker1">
-              <input type="text" class="form-control" />
-              <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-              </span>
-            </div>
-          </div>
-          <!--div class="flex-w flex-sb-m p-b-52">
-				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-						All Products
-					</button>
+        <div class="col-md-3"> <!-- блок фильтр -->
+          <h4 class="filter-zakaz_title">Оформление заказа</h4>
+          <div class="form-group"> 
 
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
-						Women
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
-						Men
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
-						Bag
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
-						Shoes
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-						Watches
-					</button>
-				</div>
-
-				<div class="flex-w flex-c-m m-tb-10">
-					<div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter show-filter">
-						<i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
-						<i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-						 Filter
+						<a href="#" class="link_btn-green">Оформить</a>
 					</div>
-
-					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
-						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
-						<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-						Search
-					</div>
-				</div-->
-				
-				<!-- Search product -->
-				<div class="dis-none panel-search w-full p-t-10 p-b-15">
-					<div class="bor8 dis-flex p-l-15">
-						<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
-							<i class="zmdi zmdi-search"></i>
-						</button>
-
-						<input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="search-product" placeholder="Search">
-					</div>	
-				</div>
-
-				<!-- Filter -->
-				<div class="dis-none panel-filter w-full p-t-10" style="display: block;">
-					<div class="wrap-filter flex-w bg6 w-full p-lr-40 p-t-27 p-lr-15-sm">
-						<div class="filter-col1 p-r-15 p-b-27">
-							<div class="mtext-102 cl2 p-b-15">
-								Sort By
+				</div> <!-- / блок фильтр -->
+      </div> <!-- /.row-->
+			
+			
+			<div class="row"> <!-- блок доп.предложений -->
+					<div class="col-md-12">
+							<section>
+					<div class="container  md-p-0">
+						<div class="row">
+							<div class="col-md-12 ">
+								<h3>Вам также может понравиться</h3>
 							</div>
-
-							<ul>
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										Default
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										Popularity
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										Average rating
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
-										Newness
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										Price: Low to High
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										Price: High to Low
-									</a>
-								</li>
-							</ul>
 						</div>
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+								<div class="card">
+									<a href="#"  class="card-link">
+									<div class="card-image__wrap">
+										<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+											<span>Сочи</span>
+									</div>
+										
+										<div class="card-body">
+											<div class="card-feedback">
+												<p class="card-feedback__stars">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+												</p>
+												<p>802 отзыва</p>
+											</div>
 
-						<div class="filter-col2 p-r-15 p-b-27">
-							<div class="mtext-102 cl2 p-b-15">
-								Price
+											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+											<div class="card__clock-price">
+												<p class="card__clock">
+													<span><img src="icons/clock.svg" alt="время"></span>
+													5 часов
+												</p>
+												<p class="card__price">от €333,00</p>
+											</div>
+
+										</div>
+										</a>
+									</div>
 							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+								<div class="card">
+									<a href="#"  class="card-link">
+										<div class="card-image__wrap">
+											<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+											<span>Сочи</span>
+										</div>
+										
+										<div class="card-body">
+											<div class="card-feedback">
+												<p class="card-feedback__stars">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+												</p>
+												<p>802 отзыва</p>
+											</div>
 
-							<ul>
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
-										All
-									</a>
-								</li>
+											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
 
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										$0.00 - $50.00
-									</a>
-								</li>
+											<div class="card__clock-price">
+												<p class="card__clock">
+													<span><img src="icons/clock.svg" alt="время"></span>
+													5 часов
+												</p>
+												<p class="card__price">от €333,00</p>
+											</div>
 
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										$50.00 - $100.00
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										$100.00 - $150.00
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										$150.00 - $200.00
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										$200.00+
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="filter-col3 p-r-15 p-b-27">
-							<div class="mtext-102 cl2 p-b-15">
-								Color
+										</div>
+										</a>
+									</div>
 							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+								<div class="card">
+									<a href="#"  class="card-link">
+										<div class="card-image__wrap">
+											<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+											<span>Сочи</span>
+										</div>
+										
+										<div class="card-body">
+											<div class="card-feedback">
+												<p class="card-feedback__stars">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+												</p>
+												<p>802 отзыва</p>
+											</div>
 
-							<ul>
-								<li class="p-b-6">
-									<span class="fs-15 lh-12 m-r-6" style="color: #222;">
-										<i class="zmdi zmdi-circle"></i>
-									</span>
+											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
 
-									<a href="#" class="filter-link stext-106 trans-04">
-										Black
-									</a>
-								</li>
+											<div class="card__clock-price">
+												<p class="card__clock">
+													<span><img src="icons/clock.svg" alt="время"></span>
+													5 часов
+												</p>
+												<p class="card__price">от €333,00</p>
+											</div>
 
-								<li class="p-b-6">
-									<span class="fs-15 lh-12 m-r-6" style="color: #4272d7;">
-										<i class="zmdi zmdi-circle"></i>
-									</span>
-
-									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
-										Blue
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<span class="fs-15 lh-12 m-r-6" style="color: #b3b3b3;">
-										<i class="zmdi zmdi-circle"></i>
-									</span>
-
-									<a href="#" class="filter-link stext-106 trans-04">
-										Grey
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<span class="fs-15 lh-12 m-r-6" style="color: #00ad5f;">
-										<i class="zmdi zmdi-circle"></i>
-									</span>
-
-									<a href="#" class="filter-link stext-106 trans-04">
-										Green
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<span class="fs-15 lh-12 m-r-6" style="color: #fa4251;">
-										<i class="zmdi zmdi-circle"></i>
-									</span>
-
-									<a href="#" class="filter-link stext-106 trans-04">
-										Red
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<span class="fs-15 lh-12 m-r-6" style="color: #aaa;">
-										<i class="zmdi zmdi-circle-o"></i>
-									</span>
-
-									<a href="#" class="filter-link stext-106 trans-04">
-										White
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="filter-col4 p-b-27">
-							<div class="mtext-102 cl2 p-b-15">
-								Tags
+										</div>
+										</a>
+									</div>
 							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+								<div class="card">
+									<a href="#" class="card-link">
+										<div class="card-image__wrap">
+											<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+											<span>Сочи</span>
+										</div>
+										
+										<div class="card-body">
+											<div class="card-feedback">
+												<p class="card-feedback__stars">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+													<img src="icons/star-full.svg" alt="звезда">
+												</p>
+												<p>802 отзыва</p>
+											</div>
 
-							<div class="flex-w p-t-4 m-r--5">
-								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Fashion
-								</a>
+											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
 
-								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Lifestyle
-								</a>
+											<div class="card__clock-price">
+												<p class="card__clock">
+													<span><img src="icons/clock.svg" alt="время"></span>
+													5 часов
+												</p>
+												<p class="card__price">от €333,00</p>
+											</div>
 
-								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Denim
-								</a>
-
-								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Streetstyle
-								</a>
-
-								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Crafts
-								</a>
+										</div>
+										</a>
+									</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div-->
-        </div>
-      </div>
-    </div></div>
+					</section>
+					</div>
+			</div> <!-- / блок доп.предложений -->
+    </div>
+	</div>
   </section>
 
-
+<script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
