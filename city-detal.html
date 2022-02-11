@@ -331,17 +331,17 @@
 						<div class="filter-content__item">
 							<label for="hour" class="filter-content__title">Количество часов</label>
 							<div class="filter-content__count-block">
-                <button class="count-minus"></button>
-								<input name="hour" type="number" placeholder="2" step="1" min="1" max="24"/>
-								<button class="count-plus"> </button>
+                <button class="count-minus" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+								<input name="hour" type="number" placeholder="2" step="1" min="1" max="24"  value="1" readonly/>
+								<button class="count-plus"  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"> </button>
               </div>
 						</div>
 						<div class="filter-content__item">
 							<label for="human" class="filter-content__title">Количество человек</label>
 							<div class="filter-content__count-block">
-                <button class="count-minus"></button>
+                <button class="count-minus"  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
 								<input name="human" type="number" placeholder="2" step="1" min="1" max="10" />
-								<button class="count-plus"> </button>
+								<button class="count-plus" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"> </button>
               </div>
 						</div>
 						<div class="filter-content__item">

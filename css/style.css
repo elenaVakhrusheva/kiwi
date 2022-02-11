@@ -391,8 +391,9 @@ textarea[name="place"]::placeholder {
   font-weight: bold;
   text-align: right;
   padding: 16px 0;
-  border: none; }
-  /* line 347, style.scss */
+  border: none;
+  width: 100%; }
+  /* line 348, style.scss */
   .filter-content__summ::-webkit-input-placeholder {
     color: #fbb216; }
   .filter-content__summ:-ms-input-placeholder {
@@ -402,7 +403,7 @@ textarea[name="place"]::placeholder {
   .filter-content__summ::placeholder {
     color: #fbb216; }
 
-/* line 352, style.scss */
+/* line 353, style.scss */
 input:active,
 :hover,
 :focus {
@@ -410,22 +411,22 @@ input:active,
   outline-offset: 0; }
 
 /* стили при наведении курсора на checkbox */
-/* line 360, style.scss */
+/* line 361, style.scss */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #26a65b; }
 
 /* стили для активного состояния чекбокса (при нажатии на него) */
-/* line 364, style.scss */
+/* line 365, style.scss */
 .custom-checkbox:not(:disabled):active + label::before {
   background-color: #26a65b;
   border-color: #26a65b; }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
-/* line 370, style.scss */
+/* line 371, style.scss */
 .custom-checkbox:disabled + label::before {
   background-color: #e9ecef; }
 
-/* line 374, style.scss */
+/* line 375, style.scss */
 .filter-content__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,10 +437,10 @@ input:active,
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0; }
-  /* line 380, style.scss */
+  /* line 381, style.scss */
   .filter-content__buttons a:hover, .filter-content__buttons a:focus {
     text-decoration: none; }
-  /* line 385, style.scss */
+  /* line 386, style.scss */
   .filter-content__buttons .buttons {
     font-size: 14px;
     line-height: 21px;
@@ -449,15 +450,15 @@ input:active,
     border-radius: 4px;
     padding: 13px 24px;
     font-weight: 600; }
-    /* line 395, style.scss */
+    /* line 396, style.scss */
     .filter-content__buttons .buttons:nth-last-child(n + 2) {
       margin-right: 16px; }
-  /* line 399, style.scss */
+  /* line 400, style.scss */
   .filter-content__buttons .buttons:active {
     border: 1px solid #26a65b;
     color: #26a65b; }
 
-/* line 404, style.scss */
+/* line 405, style.scss */
 .filter-content__count-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,75 +469,75 @@ input:active,
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-/* line 409, style.scss */
+/* line 410, style.scss */
 .count-minus,
 .count-plus {
   width: 24px;
   height: auto;
   border: none; }
 
-/* line 415, style.scss */
+/* line 416, style.scss */
 .count-minus {
   background: url(/icons/minus.svg) 50% 50% no-repeat; }
 
-/* line 418, style.scss */
+/* line 419, style.scss */
 .count-plus {
   background: url(/icons/add.svg) 50% 50% no-repeat; }
 
 /* == Сортировка == */
-/* line 423, style.scss */
+/* line 424, style.scss */
 .nav-sort {
   border-bottom: 1px solid #f2eee6; }
 
-/* line 426, style.scss */
+/* line 427, style.scss */
 .nav-tabs {
   margin-bottom: 24px; }
 
-/* line 430, style.scss */
+/* line 431, style.scss */
 .nav-link {
   padding: 8px 16px;
   font-size: 14px;
   line-height: 24px;
   color: #373f47; }
-  /* line 436, style.scss */
+  /* line 437, style.scss */
   .nav-link:hover, .nav-link:focus {
     color: #373f47;
     border: none; }
 
-/* line 443, style.scss */
+/* line 444, style.scss */
 .nav-tabs .nav-link {
   border: none; }
 
-/* line 446, style.scss */
+/* line 447, style.scss */
 .nav-tabs .nav-link:hover {
   border: none;
   color: #26a65b; }
 
-/* line 451, style.scss */
+/* line 452, style.scss */
 .nav-tabs .nav-link.active {
   border: none;
   border-bottom: 1px solid #26a65b;
   color: #26a65b; }
 
 /* === cards ===*/
-/* line 459, style.scss */
+/* line 460, style.scss */
 .card {
   border: none;
   -webkit-box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
           box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
   margin-bottom: 24px;
   border-radius: 8px; }
-  /* line 465, style.scss */
+  /* line 466, style.scss */
   .card-link, .card-link:hover {
     text-decoration: none; }
-  /* line 469, style.scss */
+  /* line 470, style.scss */
   .card-link:hover {
     outline: 1px solid #aaa7a2;
     border-radius: 8px; }
-  /* line 474, style.scss */
+  /* line 475, style.scss */
   .card-body {
     padding: 20px 24px; }
-  /* line 478, style.scss */
+  /* line 479, style.scss */
   .card-image {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -545,7 +546,7 @@ input:active,
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
-    /* line 485, style.scss */
+    /* line 486, style.scss */
     .card-image__wrap {
       height: 208px;
       overflow: hidden;
@@ -560,7 +561,7 @@ input:active,
           -ms-flex-align: center;
               align-items: center;
       text-align: center; }
-      /* line 494, style.scss */
+      /* line 495, style.scss */
       .card-image__wrap span {
         position: absolute;
         top: 85%;
@@ -583,19 +584,19 @@ input:active,
         color: #ffffff;
         padding: 0 24px;
         border-radius: 0px 4px 0px 0px; }
-  /* line 513, style.scss */
+  /* line 514, style.scss */
   .card-feedback p {
     font-size: 12px;
     line-height: 24px;
     color: #545d65; }
-  /* line 519, style.scss */
+  /* line 520, style.scss */
   .card-name {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     color: #373f47;
     margin-bottom: 48px; }
-  /* line 527, style.scss */
+  /* line 528, style.scss */
   .card__clock-price, .card-feedback {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -604,10 +605,10 @@ input:active,
         -ms-flex-pack: justify;
             justify-content: space-between;
     line-height: 24px; }
-  /* line 534, style.scss */
+  /* line 535, style.scss */
   .card__clock {
     font-size: 13px; }
-  /* line 538, style.scss */
+  /* line 539, style.scss */
   .card__price {
     font-size: 20px;
     line-height: 24px;
@@ -615,11 +616,11 @@ input:active,
     color: #fbb216; }
 
 /* == списки ==*/
-/* line 548, style.scss */
+/* line 549, style.scss */
 section.decription {
   margin-bottom: 84px; }
 
-/* line 552, style.scss */
+/* line 553, style.scss */
 .decription__ul-text,
 .decription__ol-text {
   font-size: 16px;
@@ -627,16 +628,16 @@ section.decription {
   color: #545d65;
   padding-left: 23px; }
 
-/* line 560, style.scss */
+/* line 561, style.scss */
 .decription__ul-text {
   list-style-type: disc;
   padding-bottom: 16px; }
 
 /* === dropdown === */
-/* line 567, style.scss */
+/* line 568, style.scss */
 .dropdown {
   padding: 0 16px 24px; }
-  /* line 570, style.scss */
+  /* line 571, style.scss */
   .dropdown-toggle {
     font-size: 14px;
     line-height: 24px;
@@ -652,45 +653,45 @@ section.decription {
             appearance: none;
     overflow: hidden;
     background: url("icons/dropdown.svg") no-repeat right; }
-    /* line 584, style.scss */
+    /* line 585, style.scss */
     .dropdown-toggle::after {
       border: none; }
 
-/* line 589, style.scss */
+/* line 590, style.scss */
 .btn.dropdown-toggle {
   color: #26a65b; }
-  /* line 592, style.scss */
+  /* line 593, style.scss */
   .btn.dropdown-toggle:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
-/* line 597, style.scss */
+/* line 598, style.scss */
 .dropdown-menu.show {
   display: block;
   border: 1px solid #26a65b;
   width: 100%; }
 
-/* line 603, style.scss */
+/* line 604, style.scss */
 .dropdown-item:focus,
 .dropdown-item:hover {
   color: #26a65b; }
 
-/* line 608, style.scss */
+/* line 609, style.scss */
 .dropdown-item {
   font-size: 14px;
   line-height: 24px; }
 
-/* line 613, style.scss */
+/* line 614, style.scss */
 .rating-list__item,
 .filter-content__checkbox ul li {
   list-style-type: none; }
 
 /* === Страны ===*/
-/* line 620, style.scss */
+/* line 621, style.scss */
 .container-country {
   margin-bottom: 48px; }
 
-/* line 623, style.scss */
+/* line 624, style.scss */
 .card-country {
   position: relative;
   display: -webkit-box;
@@ -705,14 +706,14 @@ section.decription {
   text-align: center;
   color: white; }
 
-/* line 632, style.scss */
+/* line 633, style.scss */
 .card-country__img {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px; }
 
-/* line 638, style.scss */
+/* line 639, style.scss */
 .card-img-overlay {
   position: absolute;
   top: 70%;
@@ -733,34 +734,34 @@ section.decription {
   text-align: left;
   border-radius: 0 0 8px 8px; }
 
-/* line 651, style.scss */
+/* line 652, style.scss */
 .card-title {
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 10px; }
 
-/* line 657, style.scss */
+/* line 658, style.scss */
 .card-excurs {
   font-size: 13px;
   line-height: 16px;
   color: #fbb216;
   margin-bottom: 10px; }
 
-/* line 664, style.scss */
+/* line 665, style.scss */
 .card-price {
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
   color: #ffffff; }
 
-/* line 671, style.scss */
+/* line 672, style.scss */
 section.decription-country {
   margin: 64px 0 84px; }
-  /* line 674, style.scss */
+  /* line 675, style.scss */
   section.decription-country h3 {
     padding: 16px 0 24px 0; }
-  /* line 678, style.scss */
+  /* line 679, style.scss */
   section.decription-country h4 {
     font-size: 24px;
     line-height: 32px;
@@ -768,7 +769,7 @@ section.decription-country {
     padding: 20px 0 8px 0; }
 
 /* === Город детально ===*/
-/* line 687, style.scss */
+/* line 688, style.scss */
 .banner__wrap {
   background: url("/img/banners/banner-budapeht.jpg") center no-repeat;
   background-size: cover;
@@ -776,11 +777,11 @@ section.decription-country {
   padding: 104px 224px 72px 224px;
   text-align: center;
   position: relative; }
-  /* line 696, style.scss */
+  /* line 697, style.scss */
   .banner__wrap-descript {
     position: relative;
     z-index: 3; }
-  /* line 701, style.scss */
+  /* line 702, style.scss */
   .banner__wrap:after {
     content: "";
     position: absolute;
@@ -791,14 +792,14 @@ section.decription-country {
     background: rgba(36, 42, 48, 0.6);
     z-index: 2;
     border-radius: 8px; }
-  /* line 713, style.scss */
+  /* line 714, style.scss */
   .banner__wrap-rewiews {
     font-size: 0.75rem; }
-    /* line 716, style.scss */
+    /* line 717, style.scss */
     .banner__wrap-rewiews_number {
       font-size: 12px;
       line-height: 24px; }
-  /* line 722, style.scss */
+  /* line 723, style.scss */
   .banner__wrap-title {
     font-weight: 600;
     font-size: 36px;
@@ -806,23 +807,23 @@ section.decription-country {
     text-align: center;
     color: #ffffff;
     padding-bottom: 48px; }
-  /* line 731, style.scss */
+  /* line 732, style.scss */
   .banner__wrap-stars {
     margin-bottom: 8px; }
 
-/* line 736, style.scss */
+/* line 737, style.scss */
 .promo-section {
   position: relative;
   display: block;
   margin-top: -50px;
   min-height: 104px; }
-  /* line 742, style.scss */
+  /* line 743, style.scss */
   .promo-section__container {
     -webkit-box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
             box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
     padding: 24px; }
 
-/* line 748, style.scss */
+/* line 749, style.scss */
 .promo-wrap {
   position: absolute;
   left: 0;
@@ -834,7 +835,7 @@ section.decription-country {
   max-width: 68.5rem;
   margin: 0 auto; }
 
-/* line 760, style.scss */
+/* line 761, style.scss */
 .promo-section__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,34 +843,34 @@ section.decription-country {
   float: left;
   height: 100%;
   text-align: center; }
-  /* line 766, style.scss */
+  /* line 767, style.scss */
   .promo-section__content p, .promo-section__content img {
     margin: auto; }
-  /* line 771, style.scss */
+  /* line 772, style.scss */
   .promo-section__content p {
     font-size: 0.875rem;
     font-weight: 700;
     text-align: left;
     padding-left: 18px; }
-    /* line 777, style.scss */
+    /* line 778, style.scss */
     .promo-section__content p span {
       font-weight: 400; }
-  /* line 782, style.scss */
+  /* line 783, style.scss */
   .promo-section__content img {
     max-width: 52px;
     max-height: 52px; }
 
-/* line 788, style.scss */
+/* line 789, style.scss */
 .decription-city {
   margin-top: 64px; }
 
-/* line 791, style.scss */
+/* line 792, style.scss */
 .attraction-item {
   overflow: hidden;
   margin: 0;
   width: 100%; }
 
-/* line 796, style.scss */
+/* line 797, style.scss */
 .attraction-item figure {
   position: relative;
   z-index: 1;
@@ -880,25 +881,25 @@ section.decription-country {
   height: 400px;
   border-radius: 8px; }
 
-/* line 806, style.scss */
+/* line 807, style.scss */
 .attraction-item figure img {
   position: relative;
   display: block;
   min-height: 100%; }
 
-/* line 811, style.scss */
+/* line 812, style.scss */
 .attraction-item figure figcaption {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(55, 63, 71, 0.6)), color-stop(96%, rgba(55, 63, 71, 0.6)));
   background-image: linear-gradient(to bottom, rgba(55, 63, 71, 0.6) 10%, rgba(55, 63, 71, 0.6) 96%); }
 
-/* line 816, style.scss */
+/* line 817, style.scss */
 .attraction-item figure figcaption::before,
 .attraction-item figure figcaption::after {
   pointer-events: none; }
 
-/* line 820, style.scss */
+/* line 821, style.scss */
 .attraction-item figure figcaption {
   position: absolute;
   top: 0;
@@ -906,12 +907,12 @@ section.decription-country {
   width: 100%;
   height: 100%; }
 
-/* line 828, style.scss */
+/* line 829, style.scss */
 .attraction-item figure h4,
 .attraction-item figure p {
   margin: 0; }
 
-/* line 833, style.scss */
+/* line 834, style.scss */
 .attraction-item__label {
   background: #fbb216;
   border-radius: 0px 8px 8px 0px;
@@ -925,7 +926,7 @@ section.decription-country {
   display: flex;
   z-index: 5; }
 
-/* line 847, style.scss */
+/* line 848, style.scss */
 .attraction-item__label img {
   width: 100%;
   position: relative;
@@ -935,7 +936,7 @@ section.decription-country {
   max-width: 32px;
   margin-right: 8px; }
 
-/* line 857, style.scss */
+/* line 858, style.scss */
 .attraction-item__label span {
   font-weight: 500;
   font-size: 13px;
@@ -943,18 +944,18 @@ section.decription-country {
   color: #ffffff;
   vertical-align: middle; }
 
-/* line 865, style.scss */
+/* line 866, style.scss */
 .link_add-see {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
   color: #fbb216; }
-  /* line 871, style.scss */
+  /* line 872, style.scss */
   .link_add-see:hover {
     text-decoration: underline;
     color: #fbb216; }
 
-/* line 877, style.scss */
+/* line 878, style.scss */
 .link_btn,
 .link_btn-green {
   font-weight: 600;
@@ -966,24 +967,24 @@ section.decription-country {
   padding: 13px 24px;
   border-radius: 4px; }
 
-/* line 888, style.scss */
+/* line 889, style.scss */
 .link_btn {
   color: #aaa7a1;
   padding: 13px 24px;
   border: 1px solid #aaa7a2;
   float: right; }
-  /* line 895, style.scss */
+  /* line 896, style.scss */
   .link_btn:hover {
     text-decoration: none;
     color: #fbb216;
     border: 1px solid #fbb216; }
-  /* line 901, style.scss */
+  /* line 902, style.scss */
   .link_btn:active, .link_btn:focus {
     background: #fbb216;
     color: #fff;
     border: 1px solid #fbb216; }
 
-/* line 909, style.scss */
+/* line 910, style.scss */
 .link_btn-green {
   color: #fff;
   background: #26a65b;
@@ -993,24 +994,24 @@ section.decription-country {
   width: 100%;
   text-align: center;
   display: block; }
-  /* line 919, style.scss */
+  /* line 920, style.scss */
   .link_btn-green:hover {
     text-decoration: none;
     background: #fff;
     color: #26a65b;
     border: 1px solid #26a65b; }
-  /* line 926, style.scss */
+  /* line 927, style.scss */
   .link_btn-green:active, .link_btn-green:focus {
     background: #26a65b;
     color: #fff;
     border: 1px solid #26a65b; }
 
 /* Эффект при наведении */
-/* line 935, style.scss */
+/* line 936, style.scss */
 figure.attraction-item__decript img {
   width: 100%; }
 
-/* line 938, style.scss */
+/* line 939, style.scss */
 figure.attraction-item__decript figcaption {
   top: auto;
   bottom: 0;
@@ -1018,7 +1019,7 @@ figure.attraction-item__decript figcaption {
   text-align: left;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(55, 63, 71, 0.6)), color-stop(96%, rgba(55, 63, 71, 0.6)));
   background-image: linear-gradient(to bottom, rgba(55, 63, 71, 0.6) 10%, rgba(55, 63, 71, 0.6) 96%); }
-  /* line 945, style.scss */
+  /* line 946, style.scss */
   figure.attraction-item__decript figcaption h4 {
     font-weight: 600;
     font-size: 16px;
@@ -1028,7 +1029,7 @@ figure.attraction-item__decript figcaption {
     transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     transition: transform 0.35s, -webkit-transform 0.35s; }
-  /* line 954, style.scss */
+  /* line 955, style.scss */
   figure.attraction-item__decript figcaption p {
     font-weight: 500;
     font-size: 14px;
@@ -1039,61 +1040,61 @@ figure.attraction-item__decript figcaption {
     transition: opacity 0.2s, transform 0.35s;
     transition: opacity 0.2s, transform 0.35s, -webkit-transform 0.35s;
     padding: 0 24px 20px 24px; }
-  /* line 964, style.scss */
+  /* line 965, style.scss */
   figure.attraction-item__decript figcaption h4, figure.attraction-item__decript figcaption p {
     color: #ffffff;
     -webkit-transform: translate3d(0, 0px, 0);
     transform: translate3d(0, 0px, 0); }
 
-/* line 972, style.scss */
+/* line 973, style.scss */
 figure.attraction-item__decript img:hover figure.attraction-item__decript figcaption {
   height: 160px; }
 
-/* line 976, style.scss */
+/* line 977, style.scss */
 figure.attraction-item__decript:hover img,
 figure.attraction-item__decript:hover p {
   opacity: 1; }
 
-/* line 981, style.scss */
+/* line 982, style.scss */
 figure.attraction-item__decript:hover h4,
 figure.attraction-item__decript:hover p {
   -webkit-transform: translate(0px, 0px);
   transform: translate(0px, 0px); }
 
-/* line 987, style.scss */
+/* line 988, style.scss */
 figure.attraction-item__decript:hover figcaption {
   height: 160px; }
 
-/* line 991, style.scss */
+/* line 992, style.scss */
 figure.attraction-item__decript:hover p {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
   -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s; }
 
-/* line 998, style.scss */
+/* line 999, style.scss */
 .attraction-item figure img:hover figure.attraction-item__decript figcaption {
   height: 160px; }
 
-/* line 1001, style.scss */
+/* line 1002, style.scss */
 .decription-city__list {
   margin-bottom: 86px; }
 
-/* line 1004, style.scss */
+/* line 1005, style.scss */
 .list-included {
   float: left;
   margin-right: 24px; }
 
-/* line 1008, style.scss */
+/* line 1009, style.scss */
 .list-not-included {
   float: right; }
 
-/* line 1011, style.scss */
+/* line 1012, style.scss */
 .list-included,
 .list-not-included {
   list-style-position: inside; }
 
-/* line 1015, style.scss */
+/* line 1016, style.scss */
 .list-included li,
 .list-not-included li {
   font-size: 16px;
@@ -1102,19 +1103,19 @@ figure.attraction-item__decript:hover p {
   padding-left: 36px;
   margin-bottom: 20px; }
 
-/* line 1024, style.scss */
+/* line 1025, style.scss */
 .list-included li {
   background: url(/icons/tick-circle.svg) no-repeat left center; }
 
-/* line 1027, style.scss */
+/* line 1028, style.scss */
 .list-not-included li {
   background: url(/icons/close-circle.svg) no-repeat left center; }
 
 /* === gallery=== */
-/* line 1033, style.scss */
+/* line 1034, style.scss */
 .gallery-item {
   padding: 0; }
-  /* line 1036, style.scss */
+  /* line 1037, style.scss */
   .gallery-item a img {
     padding: 0;
     background: none;
@@ -1122,12 +1123,12 @@ figure.attraction-item__decript:hover p {
     border-radius: 0;
     max-height: 288px;
     width: 100%; }
-  /* line 1045, style.scss */
+  /* line 1046, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 15px; }
 
 /* === аккардион ===*/
-/* line 1052, style.scss */
+/* line 1053, style.scss */
 .faq-item {
   display: block;
   padding: 20px 24px;
@@ -1144,13 +1145,13 @@ figure.attraction-item__decript:hover p {
   color: #373f47; }
 
 /* скрываем чекбоксы и блоки с содержанием */
-/* line 1067, style.scss */
+/* line 1068, style.scss */
 .hide,
 .hide + label ~ div {
   display: none; }
 
 /* вид текста label */
-/* line 1072, style.scss */
+/* line 1073, style.scss */
 .hide + label {
   margin: 0;
   padding: 0;
@@ -1158,12 +1159,12 @@ figure.attraction-item__decript:hover p {
   display: inline-block; }
 
 /* вид текста label при активном переключателе */
-/* line 1079, style.scss */
+/* line 1080, style.scss */
 .hide:checked + label {
   border-bottom: 0; }
 
 /* когда чекбокс активен показываем блоки с содержанием  */
-/* line 1083, style.scss */
+/* line 1084, style.scss */
 .hide:checked + label + div {
   display: block;
   font-weight: 500;
@@ -1185,7 +1186,7 @@ figure.attraction-item__decript:hover p {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 1119, style.scss */
+/* line 1120, style.scss */
 .hide + label:before {
   content: url("/icons/add.svg");
   display: block;
@@ -1198,17 +1199,17 @@ figure.attraction-item__decript:hover p {
   position: absolute;
   right: 40px; }
 
-/* line 1133, style.scss */
+/* line 1134, style.scss */
 .hide:checked + label:before {
   content: url("/icons/minus.svg"); }
 
 /* === отзывы ===*/
-/* line 1139, style.scss */
+/* line 1140, style.scss */
 .reviews-item {
   margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #f1f1f1; }
-  /* line 1143, style.scss */
+  /* line 1144, style.scss */
   .reviews-item__photo {
     width: 48px;
     height: 48px;
@@ -1217,7 +1218,7 @@ figure.attraction-item__decript:hover p {
     position: relative;
     float: left;
     margin-right: 16px; }
-    /* line 1152, style.scss */
+    /* line 1153, style.scss */
     .reviews-item__photo img {
       position: absolute;
       -o-object-fit: cover;
@@ -1226,49 +1227,49 @@ figure.attraction-item__decript:hover p {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-  /* line 1160, style.scss */
+  /* line 1161, style.scss */
   .reviews-item__name {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #373f47; }
-    /* line 1165, style.scss */
+    /* line 1166, style.scss */
     .reviews-item__name p {
       margin-bottom: 8px;
       line-height: 20px; }
-  /* line 1171, style.scss */
+  /* line 1172, style.scss */
   .reviews-item__text {
     font-size: 14px;
     line-height: 24px;
     color: #545d65;
     margin-top: 16px; }
 
-/* line 1179, style.scss */
+/* line 1180, style.scss */
 .filter-zakaz_title {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   color: #373f47; }
 
-/* line 1186, style.scss */
+/* line 1187, style.scss */
 section.decription-city section {
   margin-bottom: 88px; }
 
-/* line 1190, style.scss */
+/* line 1191, style.scss */
 .col-p-0 {
   padding: 0; }
 
-/* line 1194, style.scss */
+/* line 1195, style.scss */
 textarea[name="place"] {
   resize: none; }
 
-/* line 1198, style.scss */
+/* line 1199, style.scss */
 .form-reviews {
   width: 100%;
   max-width: 500px;
   background-color: #f9f9f9;
   padding: 16px; }
-  /* line 1204, style.scss */
+  /* line 1205, style.scss */
   .form-reviews input[type="text"],
   .form-reviews input[type="email"],
   .form-reviews textarea {
@@ -1279,37 +1280,89 @@ textarea[name="place"] {
     font-size: 11px;
     color: #928a97;
     border: none; }
-  /* line 1216, style.scss */
+  /* line 1217, style.scss */
   .form-reviews input[type="text"] {
     width: 45%;
     float: left; }
-  /* line 1220, style.scss */
+  /* line 1221, style.scss */
   .form-reviews input[type="email"] {
     width: 45%;
     float: right; }
-  /* line 1224, style.scss */
+  /* line 1225, style.scss */
   .form-reviews textarea {
     width: 100%; }
 
+/* line 1230, style.scss */
+.filter-content__count-block {
+  display: inline-block;
+  position: relative;
+  width: 100%; }
+
+/* line 1236, style.scss */
+.filter-content__count-block input[type="number"] {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield; }
+
+/* line 1249, style.scss */
+.filter-content__count-block input[type="number"]::-webkit-outer-spin-button,
+.filter-content__count-block input[type="number"]::-webkit-inner-spin-button {
+  display: none; }
+
+/* line 1253, style.scss */
+.count-minus {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  outline: none; }
+
+/* line 1265, style.scss */
+.count-plus {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  outline: none; }
+
 /* A media query */
 @media (max-width: 1440px) {
-  /* line 1231, style.scss */
+  /* line 1280, style.scss */
   .md-p-12 {
     padding: 0 12px; } }
 @media (min-width: 1200px) {
-  /* line 1237, style.scss */
+  /* line 1286, style.scss */
   .container {
     max-width: 1320px; } }
 @media (min-width: 1024px) {
-  /* line 1243, style.scss */
+  /* line 1292, style.scss */
   .card-body {
     padding: 10px 12px; }
 
-  /* line 1247, style.scss */
+  /* line 1296, style.scss */
   .md-p-33 {
     padding: 0 33px 0 15px; } }
 @media (min-width: 768px) {
-  /* line 1253, style.scss */
+  /* line 1302, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;
@@ -1317,159 +1370,159 @@ textarea[name="place"] {
     padding-left: 24px;
     padding-right: 24px; } }
 @media (max-width: 1024px) {
-  /* line 1263, style.scss */
+  /* line 1312, style.scss */
   .md-p-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1268, style.scss */
+  /* line 1317, style.scss */
   .md-m-0 {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1273, style.scss */
+  /* line 1322, style.scss */
   .md-p-8 {
     padding: 0 8px; }
 
-  /* line 1277, style.scss */
+  /* line 1326, style.scss */
   .filter-content__rating-list {
     margin-bottom: 0; }
 
-  /* line 1281, style.scss */
+  /* line 1330, style.scss */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 1285, style.scss */
+  /* line 1334, style.scss */
   .filter-content__buttons .buttons {
     padding: 10px 12px; }
 
-  /* line 1289, style.scss */
+  /* line 1338, style.scss */
   .promo-section__container {
     padding: 12px; }
 
-  /* line 1292, style.scss */
+  /* line 1341, style.scss */
   .attraction-item figure {
     height: 300px; }
 
-  /* line 1295, style.scss */
+  /* line 1344, style.scss */
   .col-md-12-1024 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%; }
 
-  /* line 1299, style.scss */
+  /* line 1348, style.scss */
   .gallery-item a img {
     max-height: 230px; } }
 @media (max-width: 768px) {
-  /* line 1304, style.scss */
+  /* line 1353, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 43px; }
 
-  /* line 1308, style.scss */
+  /* line 1357, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: left;
     padding-right: 24px; }
 
-  /* line 1313, style.scss */
+  /* line 1362, style.scss */
   .filter-content {
     margin-bottom: 36px; }
 
-  /* line 1316, style.scss */
+  /* line 1365, style.scss */
   .type-excursions {
     padding: 0 0 32px 0px; }
 
-  /* line 1320, style.scss */
+  /* line 1369, style.scss */
   h3 {
     padding: 0 0 32px 0;
     margin: 0; }
 
-  /* line 1324, style.scss */
+  /* line 1373, style.scss */
   .breadcrumb {
     margin-bottom: 24px; }
 
-  /* line 1327, style.scss */
+  /* line 1376, style.scss */
   .p-768-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1332, style.scss */
+  /* line 1381, style.scss */
   .page-titile {
     padding: 0; }
 
-  /* line 1335, style.scss */
+  /* line 1384, style.scss */
   h1.banner__wrap-title {
     font-size: 28px;
     line-height: 40px; }
 
-  /* line 1339, style.scss */
+  /* line 1388, style.scss */
   .banner__wrap {
     padding: 104px 24px 72px 24px; }
 
-  /* line 1342, style.scss */
+  /* line 1391, style.scss */
   .promo-wrap {
     max-width: 672px; }
 
-  /* line 1345, style.scss */
+  /* line 1394, style.scss */
   .promo-section__content {
     padding: 16px 38px; }
 
-  /* line 1348, style.scss */
+  /* line 1397, style.scss */
   .decription-city {
     margin-top: 192px; }
 
-  /* line 1351, style.scss */
+  /* line 1400, style.scss */
   .container-banner {
     padding: 0; }
 
-  /* line 1354, style.scss */
+  /* line 1403, style.scss */
   .decription-city h2 {
     font-size: 24px;
     line-height: 32px; }
 
-  /* line 1358, style.scss */
+  /* line 1407, style.scss */
   h3 {
     font-size: 20px;
     line-height: 32px; }
 
-  /* line 1362, style.scss */
+  /* line 1411, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 0; }
 
-  /* line 1365, style.scss */
+  /* line 1414, style.scss */
   section.decription-city .container {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     max-width: 768px; }
 
-  /* line 1372, style.scss */
+  /* line 1421, style.scss */
   .filter-zakaz {
     margin-bottom: 56px; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  /* line 1378, style.scss */
+  /* line 1427, style.scss */
   .radio-label {
     font-size: 13px; }
 
-  /* line 1382, style.scss */
+  /* line 1431, style.scss */
   .input[type="date"] {
     font-size: 12px; }
 
-  /* line 1385, style.scss */
+  /* line 1434, style.scss */
   .card-title {
     font-size: 20px; } }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   /* стили */ }
 @media only screen and (max-width: 576px) {
-  /* line 1395, style.scss */
+  /* line 1444, style.scss */
   .nav-tabs {
     display: none; }
 
-  /* line 1398, style.scss */
+  /* line 1447, style.scss */
   .filter-content {
     margin-bottom: 24px; }
 
-  /* line 1402, style.scss */
+  /* line 1451, style.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -1477,28 +1530,28 @@ textarea[name="place"] {
     margin-bottom: 0;
     text-align: left; }
 
-  /* line 1409, style.scss */
+  /* line 1458, style.scss */
   h3 {
     padding: 0 0 24px 0; }
 
-  /* line 1413, style.scss */
+  /* line 1462, style.scss */
   .filter-content__filter {
     padding-bottom: 0; }
 
-  /* line 1417, style.scss */
+  /* line 1466, style.scss */
   .breadcrumb {
     padding: 0; }
 
-  /* line 1421, style.scss */
+  /* line 1470, style.scss */
   .filter-content__head .filter-content__title {
     padding-top: 0;
     padding-bottom: 8px; }
 
-  /* line 1426, style.scss */
+  /* line 1475, style.scss */
   .dropdown-menu.show {
     width: 90%; }
 
-  /* line 1430, style.scss */
+  /* line 1479, style.scss */
   .type-excursions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1511,11 +1564,11 @@ textarea[name="place"] {
     scrollbar-width: none;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
-    /* line 1438, style.scss */
+    /* line 1487, style.scss */
     .type-excursions::-webkit-scrollbar {
       width: 0;
       height: 0; }
-    /* line 1442, style.scss */
+    /* line 1491, style.scss */
     .type-excursions__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1531,105 +1584,105 @@ textarea[name="place"] {
               flex: 0 0 auto;
       font-size: 14px; }
 
-  /* line 1450, style.scss */
+  /* line 1499, style.scss */
   .md-p-0,
   .page-titile {
     padding-left: 16px;
     padding-right: 16px; }
 
-  /* line 1455, style.scss */
+  /* line 1504, style.scss */
   .md-p-8 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1459, style.scss */
+  /* line 1508, style.scss */
   .gallery-item a img {
     max-height: none; }
 
-  /* line 1462, style.scss */
+  /* line 1511, style.scss */
   .container-banner {
     padding-right: 15px;
     padding-left: 15px; } }
 @media (min-width: 576px) {
-  /* line 1469, style.scss */
+  /* line 1518, style.scss */
   .mobile-tabs {
     display: none; } }
 @media (max-width: 425px) {
-  /* line 1475, style.scss */
+  /* line 1524, style.scss */
   .md-p-12 {
     padding: 0 16px; }
 
-  /* line 1478, style.scss */
+  /* line 1527, style.scss */
   .card-country {
     margin-bottom: 16px; }
 
-  /* line 1481, style.scss */
+  /* line 1530, style.scss */
   .breadcrumb {
     margin-bottom: 16px; }
 
-  /* line 1484, style.scss */
+  /* line 1533, style.scss */
   h1.banner__wrap-title {
     font-size: 20px;
     line-height: 24px; }
 
-  /* line 1488, style.scss */
+  /* line 1537, style.scss */
   .banner__wrap {
     padding: 88px 24px 88px 24px; }
 
-  /* line 1492, style.scss */
+  /* line 1541, style.scss */
   .promo-section__content {
     padding: 16px; }
 
-  /* line 1496, style.scss */
+  /* line 1545, style.scss */
   .promo-section__container {
     padding: 0; }
 
-  /* line 1500, style.scss */
+  /* line 1549, style.scss */
   .promo-wrap {
     max-width: 90%; }
 
-  /* line 1503, style.scss */
+  /* line 1552, style.scss */
   .decription-city {
     margin-top: 344px; }
 
-  /* line 1506, style.scss */
+  /* line 1555, style.scss */
   .decription-city h2 {
     margin-bottom: 16px; }
 
-  /* line 1510, style.scss */
+  /* line 1559, style.scss */
   p {
     font-size: 14px;
     line-height: 24px; }
 
-  /* line 1514, style.scss */
+  /* line 1563, style.scss */
   section.decription-city section {
     margin-bottom: 48px;
     margin-top: 24px; }
 
-  /* line 1518, style.scss */
+  /* line 1567, style.scss */
   .attraction-item figure {
     height: 400px; }
 
-  /* line 1521, style.scss */
+  /* line 1570, style.scss */
   .list-included {
     margin-bottom: 4px; }
 
-  /* line 1525, style.scss */
+  /* line 1574, style.scss */
   .list-not-included li {
     background: url(/icons/close-circle.svg) no-repeat left top; }
 
-  /* line 1529, style.scss */
+  /* line 1578, style.scss */
   .hide:checked + label + div {
     font-size: 14px;
     line-height: 20px; }
 
-  /* line 1534, style.scss */
+  /* line 1583, style.scss */
   .reviews-item__name p {
     margin-bottom: 0;
     line-height: 24px;
     font-size: 16px; }
 
-  /* line 1540, style.scss */
+  /* line 1589, style.scss */
   .link_btn {
     float: none;
     width: 100%;
@@ -1637,38 +1690,39 @@ textarea[name="place"] {
     margin-top: 24px;
     text-align: center; }
 
-  /* line 1548, style.scss */
+  /* line 1597, style.scss */
   .filter-zakaz {
     margin-bottom: 48px; } }
 @media (max-width: 320px) {
-  /* line 1554, style.scss */
+  /* line 1603, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 24px; }
 
-  /* line 1558, style.scss */
+  /* line 1607, style.scss */
   .filter-content__rating-list,
   .filter-content__buttons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
-  /* line 1562, style.scss */
+  /* line 1611, style.scss */
   .rating-list__item:first-child {
     padding-right: 45px; }
 
-  /* line 1566, style.scss */
+  /* line 1615, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: none; }
 
-  /* line 1570, style.scss */
+  /* line 1619, style.scss */
   input[type="date"] {
     width: 100%; }
 
-  /* line 1574, style.scss */
+  /* line 1623, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 1577, style.scss */
+  /* line 1626, style.scss */
   .mobile-none {
     display: none; } }
+
 /*# sourceMappingURL=style.css.map */

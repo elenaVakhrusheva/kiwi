@@ -344,6 +344,7 @@ textarea[name="place"]::placeholder {
   text-align: right;
   padding: 16px 0;
   border: none;
+  width: 100%;
   &::placeholder {
     color: #fbb216;
   }
@@ -1224,6 +1225,54 @@ textarea[name="place"] {
   textarea {
     width: 100%;
   }
+}
+
+.filter-content__count-block {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.filter-content__count-block input[type="number"] {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+.filter-content__count-block input[type="number"]::-webkit-outer-spin-button,
+.filter-content__count-block input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+.count-minus {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.count-plus {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  outline: none;
 }
 /* A media query */
 
