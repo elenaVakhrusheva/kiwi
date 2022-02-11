@@ -301,7 +301,7 @@ input[type="date"] {
           flex-flow: row-reverse;
   padding: 0;
   height: auto;
-  background: #fff url(/icons/calendar.svg) 0 50% no-repeat; }
+  background: #fff url(/icons/calendar.png) 0 50% no-repeat; }
   /* line 268, style.scss */
   input[type="date"]:active, input[type="date"]:focus {
     border: 0; }
@@ -338,7 +338,7 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: #fff url(/icons/arrow-down.svg) 100% 50% no-repeat;
+  background: #fff url(/icons/arrow-down.png) 100% 50% no-repeat;
   width: 100%;
   border: none; }
 
@@ -478,11 +478,11 @@ input:active,
 
 /* line 416, style.scss */
 .count-minus {
-  background: url(/icons/minus.svg) 50% 50% no-repeat; }
+  background: url(/icons/minus.png) 50% 50% no-repeat; }
 
 /* line 419, style.scss */
 .count-plus {
-  background: url(/icons/add.svg) 50% 50% no-repeat; }
+  background: url(/icons/add.png) 50% 50% no-repeat; }
 
 /* == Сортировка == */
 /* line 424, style.scss */
@@ -652,7 +652,7 @@ section.decription {
        -moz-appearance: none;
             appearance: none;
     overflow: hidden;
-    background: url("icons/dropdown.svg") no-repeat right; }
+    background: url("icons/arrow-down.png") no-repeat right; }
     /* line 585, style.scss */
     .dropdown-toggle::after {
       border: none; }
@@ -1105,11 +1105,11 @@ figure.attraction-item__decript:hover p {
 
 /* line 1025, style.scss */
 .list-included li {
-  background: url(/icons/tick-circle.svg) no-repeat left center; }
+  background: url(/icons/tick-circle.png) no-repeat left center; }
 
 /* line 1028, style.scss */
 .list-not-included li {
-  background: url(/icons/close-circle.svg) no-repeat left center; }
+  background: url(/icons/close-circle.png) no-repeat left center; }
 
 /* === gallery=== */
 /* line 1034, style.scss */
@@ -1188,7 +1188,7 @@ figure.attraction-item__decript:hover p {
     opacity: 1; } }
 /* line 1120, style.scss */
 .hide + label:before {
-  content: url("/icons/add.svg");
+  content: url("/icons/add.png");
   display: block;
   float: right;
   height: 16px;
@@ -1201,7 +1201,7 @@ figure.attraction-item__decript:hover p {
 
 /* line 1134, style.scss */
 .hide:checked + label:before {
-  content: url("/icons/minus.svg"); }
+  content: url("/icons/minus.png"); }
 
 /* === отзывы ===*/
 /* line 1140, style.scss */
@@ -1669,7 +1669,7 @@ textarea[name="place"] {
 
   /* line 1574, style.scss */
   .list-not-included li {
-    background: url(/icons/close-circle.svg) no-repeat left top; }
+    background: url(/icons/close-circle.png) no-repeat left top; }
 
   /* line 1578, style.scss */
   .hide:checked + label + div {

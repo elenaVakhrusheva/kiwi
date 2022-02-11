@@ -263,7 +263,7 @@ input[type="date"] {
   flex-flow: row-reverse;
   padding: 0;
   height: auto;
-  background: #fff url(/icons/calendar.svg) 0 50% no-repeat;
+  background: #fff url(/icons/calendar.png) 0 50% no-repeat;
 
   &:active,
   &:focus {
@@ -298,7 +298,7 @@ select {
   line-height: 24px;
   color: #545d65;
   appearance: none;
-  background: #fff url(/icons/arrow-down.svg) 100% 50% no-repeat;
+  background: #fff url(/icons/arrow-down.png) 100% 50% no-repeat;
   width: 100%;
   border: none;
 }
@@ -414,10 +414,10 @@ input:active,
   border: none;
 }
 .count-minus {
-  background: url(/icons/minus.svg) 50% 50% no-repeat;
+  background: url(/icons/minus.png) 50% 50% no-repeat;
 }
 .count-plus {
-  background: url(/icons/add.svg) 50% 50% no-repeat;
+  background: url(/icons/add.png) 50% 50% no-repeat;
 }
 /* == Сортировка == */
 
@@ -580,7 +580,7 @@ section.decription {
     width: 100%;
     appearance: none;
     overflow: hidden;
-    background: url("icons/dropdown.svg") no-repeat right;
+    background: url("icons/arrow-down.png") no-repeat right;
 
     &::after {
       border: none;
@@ -1023,10 +1023,10 @@ figure.attraction-item__decript:hover p {
 }
 
 .list-included li {
-  background: url(/icons/tick-circle.svg) no-repeat left center;
+  background: url(/icons/tick-circle.png) no-repeat left center;
 }
 .list-not-included li {
-  background: url(/icons/close-circle.svg) no-repeat left center;
+  background: url(/icons/close-circle.png) no-repeat left center;
 }
 
 /* === gallery=== */
@@ -1118,7 +1118,7 @@ figure.attraction-item__decript:hover p {
   }
 }
 .hide + label:before {
-  content: url("/icons/add.svg");
+  content: url("/icons/add.png");
   display: block;
   float: right;
   height: 16px;
@@ -1132,7 +1132,7 @@ figure.attraction-item__decript:hover p {
   right: 40px;
 }
 .hide:checked + label:before {
-  content: url("/icons/minus.svg");
+  content: url("/icons/minus.png");
 }
 
 /* === отзывы ===*/
@@ -1572,7 +1572,7 @@ textarea[name="place"] {
   }
 
   .list-not-included li {
-    background: url(/icons/close-circle.svg) no-repeat left top;
+    background: url(/icons/close-circle.png) no-repeat left top;
   }
 
   .hide:checked + label + div {
