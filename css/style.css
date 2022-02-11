@@ -940,7 +940,7 @@ section.decription-country {
 .attraction-item__label span {
   font-weight: 500;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 32px;
   color: #ffffff;
   vertical-align: middle; }
 
@@ -1101,21 +1101,22 @@ figure.attraction-item__decript:hover p {
   line-height: 28px;
   color: #545d65;
   padding-left: 36px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  list-style-type: none; }
 
-/* line 1025, style.scss */
+/* line 1026, style.scss */
 .list-included li {
   background: url(../icons/tick-circle.svg) no-repeat left center; }
 
-/* line 1028, style.scss */
+/* line 1029, style.scss */
 .list-not-included li {
   background: url(../icons/close-circle.svg) no-repeat left center; }
 
 /* === gallery=== */
-/* line 1034, style.scss */
+/* line 1035, style.scss */
 .gallery-item {
   padding: 0; }
-  /* line 1037, style.scss */
+  /* line 1038, style.scss */
   .gallery-item a img {
     padding: 0;
     background: none;
@@ -1123,12 +1124,12 @@ figure.attraction-item__decript:hover p {
     border-radius: 0;
     max-height: 288px;
     width: 100%; }
-  /* line 1046, style.scss */
+  /* line 1047, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 15px; }
 
 /* === аккардион ===*/
-/* line 1053, style.scss */
+/* line 1054, style.scss */
 .faq-item {
   display: block;
   padding: 20px 24px;
@@ -1145,13 +1146,13 @@ figure.attraction-item__decript:hover p {
   color: #373f47; }
 
 /* скрываем чекбоксы и блоки с содержанием */
-/* line 1068, style.scss */
+/* line 1069, style.scss */
 .hide,
 .hide + label ~ div {
   display: none; }
 
 /* вид текста label */
-/* line 1073, style.scss */
+/* line 1074, style.scss */
 .hide + label {
   margin: 0;
   padding: 0;
@@ -1159,12 +1160,12 @@ figure.attraction-item__decript:hover p {
   display: inline-block; }
 
 /* вид текста label при активном переключателе */
-/* line 1080, style.scss */
+/* line 1081, style.scss */
 .hide:checked + label {
   border-bottom: 0; }
 
 /* когда чекбокс активен показываем блоки с содержанием  */
-/* line 1084, style.scss */
+/* line 1085, style.scss */
 .hide:checked + label + div {
   display: block;
   font-weight: 500;
@@ -1186,7 +1187,7 @@ figure.attraction-item__decript:hover p {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 1120, style.scss */
+/* line 1121, style.scss */
 .hide + label:before {
   content: url(../icons/add.svg);
   display: block;
@@ -1199,17 +1200,17 @@ figure.attraction-item__decript:hover p {
   position: absolute;
   right: 40px; }
 
-/* line 1134, style.scss */
+/* line 1135, style.scss */
 .hide:checked + label:before {
   content: url(../icons/minus.svg); }
 
 /* === отзывы ===*/
-/* line 1140, style.scss */
+/* line 1141, style.scss */
 .reviews-item {
   margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #f1f1f1; }
-  /* line 1144, style.scss */
+  /* line 1145, style.scss */
   .reviews-item__photo {
     width: 48px;
     height: 48px;
@@ -1218,7 +1219,7 @@ figure.attraction-item__decript:hover p {
     position: relative;
     float: left;
     margin-right: 16px; }
-    /* line 1153, style.scss */
+    /* line 1154, style.scss */
     .reviews-item__photo img {
       position: absolute;
       -o-object-fit: cover;
@@ -1227,49 +1228,49 @@ figure.attraction-item__decript:hover p {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-  /* line 1161, style.scss */
+  /* line 1162, style.scss */
   .reviews-item__name {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #373f47; }
-    /* line 1166, style.scss */
+    /* line 1167, style.scss */
     .reviews-item__name p {
       margin-bottom: 8px;
       line-height: 20px; }
-  /* line 1172, style.scss */
+  /* line 1173, style.scss */
   .reviews-item__text {
     font-size: 14px;
     line-height: 24px;
     color: #545d65;
     margin-top: 16px; }
 
-/* line 1180, style.scss */
+/* line 1181, style.scss */
 .filter-zakaz_title {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   color: #373f47; }
 
-/* line 1187, style.scss */
+/* line 1188, style.scss */
 section.decription-city section {
   margin-bottom: 88px; }
 
-/* line 1191, style.scss */
+/* line 1192, style.scss */
 .col-p-0 {
   padding: 0; }
 
-/* line 1195, style.scss */
+/* line 1196, style.scss */
 textarea[name="place"] {
   resize: none; }
 
-/* line 1199, style.scss */
+/* line 1200, style.scss */
 .form-reviews {
   width: 100%;
   max-width: 500px;
   background-color: #f9f9f9;
   padding: 16px; }
-  /* line 1205, style.scss */
+  /* line 1206, style.scss */
   .form-reviews input[type="text"],
   .form-reviews input[type="email"],
   .form-reviews textarea {
@@ -1280,25 +1281,25 @@ textarea[name="place"] {
     font-size: 11px;
     color: #928a97;
     border: none; }
-  /* line 1217, style.scss */
+  /* line 1218, style.scss */
   .form-reviews input[type="text"] {
     width: 45%;
     float: left; }
-  /* line 1221, style.scss */
+  /* line 1222, style.scss */
   .form-reviews input[type="email"] {
     width: 45%;
     float: right; }
-  /* line 1225, style.scss */
+  /* line 1226, style.scss */
   .form-reviews textarea {
     width: 100%; }
 
-/* line 1230, style.scss */
+/* line 1231, style.scss */
 .filter-content__count-block {
   display: inline-block;
   position: relative;
   width: 100%; }
 
-/* line 1236, style.scss */
+/* line 1237, style.scss */
 .filter-content__count-block input[type="number"] {
   display: block;
   height: 32px;
@@ -1313,12 +1314,12 @@ textarea[name="place"] {
   -webkit-appearance: textfield;
   appearance: textfield; }
 
-/* line 1249, style.scss */
+/* line 1250, style.scss */
 .filter-content__count-block input[type="number"]::-webkit-outer-spin-button,
 .filter-content__count-block input[type="number"]::-webkit-inner-spin-button {
   display: none; }
 
-/* line 1253, style.scss */
+/* line 1254, style.scss */
 .count-minus {
   position: absolute;
   top: 1px;
@@ -1331,7 +1332,7 @@ textarea[name="place"] {
   border: none;
   outline: none; }
 
-/* line 1265, style.scss */
+/* line 1266, style.scss */
 .count-plus {
   position: absolute;
   top: 1px;
@@ -1346,23 +1347,23 @@ textarea[name="place"] {
 
 /* A media query */
 @media (max-width: 1440px) {
-  /* line 1280, style.scss */
+  /* line 1281, style.scss */
   .md-p-12 {
     padding: 0 12px; } }
 @media (min-width: 1200px) {
-  /* line 1286, style.scss */
+  /* line 1287, style.scss */
   .container {
     max-width: 1320px; } }
 @media (min-width: 1024px) {
-  /* line 1292, style.scss */
+  /* line 1293, style.scss */
   .card-body {
     padding: 10px 12px; }
 
-  /* line 1296, style.scss */
+  /* line 1297, style.scss */
   .md-p-33 {
     padding: 0 33px 0 15px; } }
 @media (min-width: 768px) {
-  /* line 1302, style.scss */
+  /* line 1303, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;
@@ -1370,159 +1371,159 @@ textarea[name="place"] {
     padding-left: 24px;
     padding-right: 24px; } }
 @media (max-width: 1024px) {
-  /* line 1312, style.scss */
+  /* line 1313, style.scss */
   .md-p-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1317, style.scss */
+  /* line 1318, style.scss */
   .md-m-0 {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1322, style.scss */
+  /* line 1323, style.scss */
   .md-p-8 {
     padding: 0 8px; }
 
-  /* line 1326, style.scss */
+  /* line 1327, style.scss */
   .filter-content__rating-list {
     margin-bottom: 0; }
 
-  /* line 1330, style.scss */
+  /* line 1331, style.scss */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 1334, style.scss */
+  /* line 1335, style.scss */
   .filter-content__buttons .buttons {
     padding: 10px 12px; }
 
-  /* line 1338, style.scss */
+  /* line 1339, style.scss */
   .promo-section__container {
     padding: 12px; }
 
-  /* line 1341, style.scss */
+  /* line 1342, style.scss */
   .attraction-item figure {
     height: 300px; }
 
-  /* line 1344, style.scss */
+  /* line 1345, style.scss */
   .col-md-12-1024 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%; }
 
-  /* line 1348, style.scss */
+  /* line 1349, style.scss */
   .gallery-item a img {
     max-height: 230px; } }
 @media (max-width: 768px) {
-  /* line 1353, style.scss */
+  /* line 1354, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 43px; }
 
-  /* line 1357, style.scss */
+  /* line 1358, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: left;
     padding-right: 24px; }
 
-  /* line 1362, style.scss */
+  /* line 1363, style.scss */
   .filter-content {
     margin-bottom: 36px; }
 
-  /* line 1365, style.scss */
+  /* line 1366, style.scss */
   .type-excursions {
     padding: 0 0 32px 0px; }
 
-  /* line 1369, style.scss */
+  /* line 1370, style.scss */
   h3 {
     padding: 0 0 32px 0;
     margin: 0; }
 
-  /* line 1373, style.scss */
+  /* line 1374, style.scss */
   .breadcrumb {
     margin-bottom: 24px; }
 
-  /* line 1376, style.scss */
+  /* line 1377, style.scss */
   .p-768-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1381, style.scss */
+  /* line 1382, style.scss */
   .page-titile {
     padding: 0; }
 
-  /* line 1384, style.scss */
+  /* line 1385, style.scss */
   h1.banner__wrap-title {
     font-size: 28px;
     line-height: 40px; }
 
-  /* line 1388, style.scss */
+  /* line 1389, style.scss */
   .banner__wrap {
     padding: 104px 24px 72px 24px; }
 
-  /* line 1391, style.scss */
+  /* line 1392, style.scss */
   .promo-wrap {
     max-width: 672px; }
 
-  /* line 1394, style.scss */
+  /* line 1395, style.scss */
   .promo-section__content {
     padding: 16px 38px; }
 
-  /* line 1397, style.scss */
+  /* line 1398, style.scss */
   .decription-city {
     margin-top: 192px; }
 
-  /* line 1400, style.scss */
+  /* line 1401, style.scss */
   .container-banner {
     padding: 0; }
 
-  /* line 1403, style.scss */
+  /* line 1404, style.scss */
   .decription-city h2 {
     font-size: 24px;
     line-height: 32px; }
 
-  /* line 1407, style.scss */
+  /* line 1408, style.scss */
   h3 {
     font-size: 20px;
     line-height: 32px; }
 
-  /* line 1411, style.scss */
+  /* line 1412, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 0; }
 
-  /* line 1414, style.scss */
+  /* line 1415, style.scss */
   section.decription-city .container {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     max-width: 768px; }
 
-  /* line 1421, style.scss */
+  /* line 1422, style.scss */
   .filter-zakaz {
     margin-bottom: 56px; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  /* line 1427, style.scss */
+  /* line 1428, style.scss */
   .radio-label {
     font-size: 13px; }
 
-  /* line 1431, style.scss */
+  /* line 1432, style.scss */
   .input[type="date"] {
     font-size: 12px; }
 
-  /* line 1434, style.scss */
+  /* line 1435, style.scss */
   .card-title {
     font-size: 20px; } }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   /* стили */ }
 @media only screen and (max-width: 576px) {
-  /* line 1444, style.scss */
+  /* line 1445, style.scss */
   .nav-tabs {
     display: none; }
 
-  /* line 1447, style.scss */
+  /* line 1448, style.scss */
   .filter-content {
     margin-bottom: 24px; }
 
-  /* line 1451, style.scss */
+  /* line 1452, style.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -1530,28 +1531,28 @@ textarea[name="place"] {
     margin-bottom: 0;
     text-align: left; }
 
-  /* line 1458, style.scss */
+  /* line 1459, style.scss */
   h3 {
     padding: 0 0 24px 0; }
 
-  /* line 1462, style.scss */
+  /* line 1463, style.scss */
   .filter-content__filter {
     padding-bottom: 0; }
 
-  /* line 1466, style.scss */
+  /* line 1467, style.scss */
   .breadcrumb {
     padding: 0; }
 
-  /* line 1470, style.scss */
+  /* line 1471, style.scss */
   .filter-content__head .filter-content__title {
     padding-top: 0;
     padding-bottom: 8px; }
 
-  /* line 1475, style.scss */
+  /* line 1476, style.scss */
   .dropdown-menu.show {
     width: 90%; }
 
-  /* line 1479, style.scss */
+  /* line 1480, style.scss */
   .type-excursions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1564,11 +1565,11 @@ textarea[name="place"] {
     scrollbar-width: none;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
-    /* line 1487, style.scss */
+    /* line 1488, style.scss */
     .type-excursions::-webkit-scrollbar {
       width: 0;
       height: 0; }
-    /* line 1491, style.scss */
+    /* line 1492, style.scss */
     .type-excursions__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1584,105 +1585,105 @@ textarea[name="place"] {
               flex: 0 0 auto;
       font-size: 14px; }
 
-  /* line 1499, style.scss */
+  /* line 1500, style.scss */
   .md-p-0,
   .page-titile {
     padding-left: 16px;
     padding-right: 16px; }
 
-  /* line 1504, style.scss */
+  /* line 1505, style.scss */
   .md-p-8 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1508, style.scss */
+  /* line 1509, style.scss */
   .gallery-item a img {
     max-height: none; }
 
-  /* line 1511, style.scss */
+  /* line 1512, style.scss */
   .container-banner {
     padding-right: 15px;
     padding-left: 15px; } }
 @media (min-width: 576px) {
-  /* line 1518, style.scss */
+  /* line 1519, style.scss */
   .mobile-tabs {
     display: none; } }
 @media (max-width: 425px) {
-  /* line 1524, style.scss */
+  /* line 1525, style.scss */
   .md-p-12 {
     padding: 0 16px; }
 
-  /* line 1527, style.scss */
+  /* line 1528, style.scss */
   .card-country {
     margin-bottom: 16px; }
 
-  /* line 1530, style.scss */
+  /* line 1531, style.scss */
   .breadcrumb {
     margin-bottom: 16px; }
 
-  /* line 1533, style.scss */
+  /* line 1534, style.scss */
   h1.banner__wrap-title {
     font-size: 20px;
     line-height: 24px; }
 
-  /* line 1537, style.scss */
+  /* line 1538, style.scss */
   .banner__wrap {
     padding: 88px 24px 88px 24px; }
 
-  /* line 1541, style.scss */
+  /* line 1542, style.scss */
   .promo-section__content {
     padding: 16px; }
 
-  /* line 1545, style.scss */
+  /* line 1546, style.scss */
   .promo-section__container {
     padding: 0; }
 
-  /* line 1549, style.scss */
+  /* line 1550, style.scss */
   .promo-wrap {
     max-width: 90%; }
 
-  /* line 1552, style.scss */
+  /* line 1553, style.scss */
   .decription-city {
     margin-top: 344px; }
 
-  /* line 1555, style.scss */
+  /* line 1556, style.scss */
   .decription-city h2 {
     margin-bottom: 16px; }
 
-  /* line 1559, style.scss */
+  /* line 1560, style.scss */
   p {
     font-size: 14px;
     line-height: 24px; }
 
-  /* line 1563, style.scss */
+  /* line 1564, style.scss */
   section.decription-city section {
     margin-bottom: 48px;
     margin-top: 24px; }
 
-  /* line 1567, style.scss */
+  /* line 1568, style.scss */
   .attraction-item figure {
     height: 400px; }
 
-  /* line 1570, style.scss */
+  /* line 1571, style.scss */
   .list-included {
     margin-bottom: 4px; }
 
-  /* line 1574, style.scss */
+  /* line 1575, style.scss */
   .list-not-included li {
     background: url(../icons/close-circle.svg) no-repeat left top; }
 
-  /* line 1578, style.scss */
+  /* line 1579, style.scss */
   .hide:checked + label + div {
     font-size: 14px;
     line-height: 20px; }
 
-  /* line 1583, style.scss */
+  /* line 1584, style.scss */
   .reviews-item__name p {
     margin-bottom: 0;
     line-height: 24px;
     font-size: 16px; }
 
-  /* line 1589, style.scss */
+  /* line 1590, style.scss */
   .link_btn {
     float: none;
     width: 100%;
@@ -1690,38 +1691,38 @@ textarea[name="place"] {
     margin-top: 24px;
     text-align: center; }
 
-  /* line 1597, style.scss */
+  /* line 1598, style.scss */
   .filter-zakaz {
     margin-bottom: 48px; } }
 @media (max-width: 320px) {
-  /* line 1603, style.scss */
+  /* line 1604, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 24px; }
 
-  /* line 1607, style.scss */
+  /* line 1608, style.scss */
   .filter-content__rating-list,
   .filter-content__buttons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
-  /* line 1611, style.scss */
+  /* line 1612, style.scss */
   .rating-list__item:first-child {
     padding-right: 45px; }
 
-  /* line 1615, style.scss */
+  /* line 1616, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: none; }
 
-  /* line 1619, style.scss */
+  /* line 1620, style.scss */
   input[type="date"] {
     width: 100%; }
 
-  /* line 1623, style.scss */
+  /* line 1624, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 1626, style.scss */
+  /* line 1627, style.scss */
   .mobile-none {
     display: none; } }
 

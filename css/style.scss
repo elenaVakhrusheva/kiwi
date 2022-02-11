@@ -858,7 +858,7 @@ section.decription-country {
 .attraction-item__label span {
   font-weight: 500;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 32px;
   color: #ffffff;
   vertical-align: middle;
 }
@@ -1020,6 +1020,7 @@ figure.attraction-item__decript:hover p {
   color: #545d65;
   padding-left: 36px;
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 .list-included li {
