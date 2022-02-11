@@ -33,9 +33,6 @@
         </ol>
       </nav>
     </div>
-  </div>
-  <div class="container md-p-0">
-    <h1>Экскурсии по России</h1>          
   </div>	 
   <!-- /nav-breadcrumb -->
 
@@ -190,17 +187,17 @@
 
 					<section class="decription-city__gallery">
 						<div class="row">							
-								<div class="col-lg-6 col-md-6 col-sm-12 gallery-item ">
-									  <a class="thumbnail" href="img/attractions/Budapest/gallery-1.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0"  src="img/attractions/Budapest/gallery-1.webp"  /></a>
-								</div> <!-- / 1фото-->
-								<div class="col-lg-6 col-md-6 col-sm-12 gallery-item">
-									<a class="thumbnail" href="img/attractions/Budapest/gallery-2.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0" src="img/attractions/Budapest/gallery-2.webp"  /></a>
-								</div> <!-- / 2фото-->
-								<div class="col-lg-6 col-md-6 col-sm-6 gallery-item">
-									<a class="thumbnail" href="img/attractions/Budapest/gallery-3.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0"  src="img/attractions/Budapest/gallery-3.webp"  /></a>
-								</div> <!-- / 3фото-->
-								<div class="col-lg-6 col-md-6 col-sm-6 gallery-item">
-								<a class="thumbnail" href="img/attractions/Budapest/gallery-4.webp" data-lightbox="imgGLR" ><img class="img-responsive" border="0" src="img/attractions/Budapest/gallery-4.webp"  /></a>
+							<div class="col-lg-6 col-md-6 col-sm-12 gallery-item ">
+								<a class="thumbnail" href="img/attractions/Budapest/gallery-1.webp" data-lightbox="imgGLR" ><img class="img-responsive"  src="img/attractions/Budapest/gallery-1.webp"  /></a>
+							</div> <!-- / 1фото-->
+							<div class="col-lg-6 col-md-6 col-sm-12 gallery-item">
+								<a class="thumbnail" href="img/attractions/Budapest/gallery-2.webp" data-lightbox="imgGLR" ><img class="img-responsive" src="img/attractions/Budapest/gallery-2.webp"  /></a>
+							</div> <!-- / 2фото-->
+							<div class="col-lg-6 col-md-6 col-sm-12 gallery-item">
+									<a class="thumbnail" href="img/attractions/Budapest/gallery-3.webp" data-lightbox="imgGLR" ><img class="img-responsive" src="img/attractions/Budapest/gallery-3.webp"  /></a>
+							</div> <!-- / 3фото-->
+							<div class="col-lg-6 col-md-6 col-sm-12 gallery-item">
+								<a class="thumbnail" href="img/attractions/Budapest/gallery-4.webp" data-lightbox="imgGLR" ><img class="img-responsive"  src="img/attractions/Budapest/gallery-4.webp"  /></a>
 								</div> <!-- / 4фото-->
 							
 
@@ -311,18 +308,66 @@
 							<a href="#" class="link_add-see">Показать еще</a>
 							<a href="#" class="link_btn">Написать отзыв</a>
 						</div>						
+
+
+
+						
 					</section><!-- /.decription-city__reviews-->
-
-				
-
-
+					
 				</div><!-- /.col-md-9-->
        
 
 
-        <div class="col-md-3"> <!-- блок фильтр -->
+        <div class="col-lg-3 col-md-12 filter-zakaz"> <!-- блок фильтр -->
           <h4 class="filter-zakaz_title">Оформление заказа</h4>
           <div class="form-group"> 
+						<div class="filter-content__item">
+							<label for="data" class="filter-content__title">Дата</label>
+							<!--img src="icons/calendar.svg" alt="" class="data-icon"-->
+							<input type="date" id="start" name="start"
+											value="15.02.2021"
+											min="15-01-2021" max="01-01-2022">							
+						</div>
+						<div class="filter-content__item">
+							<label for="hour" class="filter-content__title">Количество часов</label>
+							<div class="filter-content__count-block">
+                <button class="count-minus"></button>
+								<input name="hour" type="number" placeholder="2" step="1" min="1" max="24"/>
+								<button class="count-plus"> </button>
+              </div>
+						</div>
+						<div class="filter-content__item">
+							<label for="human" class="filter-content__title">Количество человек</label>
+							<div class="filter-content__count-block">
+                <button class="count-minus"></button>
+								<input name="human" type="number" placeholder="2" step="1" min="1" max="10" />
+								<button class="count-plus"> </button>
+              </div>
+						</div>
+						<div class="filter-content__item">
+							<label for="car" class="filter-content__title">Тип автомобиля</label>
+							<select name="auto" class="filter-content__select">
+								<option value="econom">Эконом (3 чел)</option>
+								<option value="comfort">Комфорт (3 чел)</option>
+								<option value="business">Бизнес (2 чел)</option>
+							</select>
+						</div>
+						<div class="filter-content__item">
+							<label for="car" class="filter-content__title">Язык</label>
+							<select name="lang"  class="filter-content__select">
+								<option value="ru">Русский</option>
+								<option value="en">Английский</option>
+								<option value="fz">Французский</option>
+							</select>
+						</div>
+						<div class="filter-content__item">
+							<label for="car" class="filter-content__title">Где забрать</label>
+							<textarea name="place" cols="30" rows="1" placeholder="Аэропорт, гостиница, адрес"></textarea>
+						</div>
+						
+						
+						<input name="summ" type="text" placeholder="От €333,00"  class="filter-content__summ"/>
+						
 
 						<a href="#" class="link_btn-green">Оформить</a>
 					</div>
@@ -331,160 +376,169 @@
 			
 			
 			<div class="row"> <!-- блок доп.предложений -->
-					<div class="col-md-12">
-							<section>
-					<div class="container  md-p-0">
-						<div class="row">
-							<div class="col-md-12 ">
-								<h3>Вам также может понравиться</h3>
+				<div class="col-md-12">
+					<section class="additional-offers">
+						<div class="container  md-p-0">
+							<div class="row">
+								<div class="col-md-12 ">
+									<h3>Вам также может понравиться</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+									<div class="card">
+										<a href="#"  class="card-link">
+										<div class="card-image__wrap">
+											<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+												<span>Сочи</span>
+										</div>
+											
+											<div class="card-body">
+												<div class="card-feedback">
+													<p class="card-feedback__stars">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+													</p>
+													<p>802 отзыва</p>
+												</div>
+
+												<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+												<div class="card__clock-price">
+													<p class="card__clock">
+														<span><img src="icons/clock.svg" alt="время"></span>
+														5 часов
+													</p>
+													<p class="card__price">от €333,00</p>
+												</div>
+
+											</div>
+											</a>
+										</div>
+								</div> <!-- / конец 1 карочки-->
+								<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+									<div class="card">
+										<a href="#"  class="card-link">
+											<div class="card-image__wrap">
+												<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+												<span>Сочи</span>
+											</div>
+											
+											<div class="card-body">
+												<div class="card-feedback">
+													<p class="card-feedback__stars">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+													</p>
+													<p>802 отзыва</p>
+												</div>
+
+												<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+												<div class="card__clock-price">
+													<p class="card__clock">
+														<span><img src="icons/clock.svg" alt="время"></span>
+														5 часов
+													</p>
+													<p class="card__price">от €333,00</p>
+												</div>
+
+											</div>
+											</a>
+										</div>
+								</div> <!-- / конец 2 карочки-->
+								<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+									<div class="card">
+										<a href="#"  class="card-link">
+											<div class="card-image__wrap">
+												<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+												<span>Сочи</span>
+											</div>
+											
+											<div class="card-body">
+												<div class="card-feedback">
+													<p class="card-feedback__stars">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+													</p>
+													<p>802 отзыва</p>
+												</div>
+
+												<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+												<div class="card__clock-price">
+													<p class="card__clock">
+														<span><img src="icons/clock.svg" alt="время"></span>
+														5 часов
+													</p>
+													<p class="card__price">от €333,00</p>
+												</div>
+
+											</div>
+											</a>
+										</div>
+								</div> <!-- / конец 3 карочки-->
+								<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+									<div class="card">
+										<a href="#" class="card-link">
+											<div class="card-image__wrap">
+												<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+												<span>Сочи</span>
+											</div>
+											
+											<div class="card-body">
+												<div class="card-feedback">
+													<p class="card-feedback__stars">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+														<img src="icons/star-full.svg" alt="звезда">
+													</p>
+													<p>802 отзыва</p>
+												</div>
+
+												<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+												<div class="card__clock-price">
+													<p class="card__clock">
+														<span><img src="icons/clock.svg" alt="время"></span>
+														5 часов
+													</p>
+													<p class="card__price">от €333,00</p>
+												</div>
+
+											</div>
+											</a>
+										</div>
+								</div> <!-- / конец 4 карочки-->
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
-								<div class="card">
-									<a href="#"  class="card-link">
-									<div class="card-image__wrap">
-										<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
-											<span>Сочи</span>
-									</div>
-										
-										<div class="card-body">
-											<div class="card-feedback">
-												<p class="card-feedback__stars">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-												</p>
-												<p>802 отзыва</p>
-											</div>
-
-											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
-
-											<div class="card__clock-price">
-												<p class="card__clock">
-													<span><img src="icons/clock.svg" alt="время"></span>
-													5 часов
-												</p>
-												<p class="card__price">от €333,00</p>
-											</div>
-
-										</div>
-										</a>
-									</div>
-							</div>
-							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
-								<div class="card">
-									<a href="#"  class="card-link">
-										<div class="card-image__wrap">
-											<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
-											<span>Сочи</span>
-										</div>
-										
-										<div class="card-body">
-											<div class="card-feedback">
-												<p class="card-feedback__stars">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-												</p>
-												<p>802 отзыва</p>
-											</div>
-
-											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
-
-											<div class="card__clock-price">
-												<p class="card__clock">
-													<span><img src="icons/clock.svg" alt="время"></span>
-													5 часов
-												</p>
-												<p class="card__price">от €333,00</p>
-											</div>
-
-										</div>
-										</a>
-									</div>
-							</div>
-							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
-								<div class="card">
-									<a href="#"  class="card-link">
-										<div class="card-image__wrap">
-											<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
-											<span>Сочи</span>
-										</div>
-										
-										<div class="card-body">
-											<div class="card-feedback">
-												<p class="card-feedback__stars">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-												</p>
-												<p>802 отзыва</p>
-											</div>
-
-											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
-
-											<div class="card__clock-price">
-												<p class="card__clock">
-													<span><img src="icons/clock.svg" alt="время"></span>
-													5 часов
-												</p>
-												<p class="card__price">от €333,00</p>
-											</div>
-
-										</div>
-										</a>
-									</div>
-							</div>
-							<div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
-								<div class="card">
-									<a href="#" class="card-link">
-										<div class="card-image__wrap">
-											<img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
-											<span>Сочи</span>
-										</div>
-										
-										<div class="card-body">
-											<div class="card-feedback">
-												<p class="card-feedback__stars">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-													<img src="icons/star-full.svg" alt="звезда">
-												</p>
-												<p>802 отзыва</p>
-											</div>
-
-											<p class="card-name">Автомобильная экскурсия по Стамбулу</p>
-
-											<div class="card__clock-price">
-												<p class="card__clock">
-													<span><img src="icons/clock.svg" alt="время"></span>
-													5 часов
-												</p>
-												<p class="card__price">от €333,00</p>
-											</div>
-
-										</div>
-										</a>
-									</div>
-							</div>
-						</div>
-					</div>
 					</section>
-					</div>
+				</div>
 			</div> <!-- / блок доп.предложений -->
     </div>
-	</div>
-  </section>
-
+	</section> <!-- /.decription-city -->
+						<div class="form-group form-reviews"> 
+							<p class="form_title">Добавить отзыв</p>
+							<span>Ваш e-mail не будет опубликован. Обязательные поля отмечены *</span>
+								<div>
+									<input type="text" class="form-reviews__input" placeholder="Имя *" required>
+									<input type="email" class="form-reviews__input" placeholder="E-mail">
+									<textarea name="reviews-text" cols="30" rows="4" placeholder="Ваш отзыв *" required></textarea>
+							<p>Оценка</p>
+							</div>
+							<a href="#" class="link_btn-green">Отправить отзыв</a>
+							</div>
 <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
