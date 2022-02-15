@@ -1,17 +1,21 @@
- $( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  } );
+const tabControls = document.querySelectorAll('.js-tab-control');
+const tabContents = document.querySelectorAll('.js-tab-content');
 
-
+// если хочешь именно ссылками и чтобы контент располагался в любом порядке
+tabControls.forEach((elem, index) => {
+  elem.addEventListener('click', (e) => tabClickHandler(e, elem));
+});
+function tabClickHandler(event, elem) {
+  const { hash } = event.srcElement;
+  const targetId = hash.replace('#', '');
+  const content = document.getElementById(targetId);
 
   
+ if (content.classList.contains('show')) return;
+  
+  tabControls.forEach(el => el.classList.remove('active'));
+  tabContents.forEach(el => el.classList.remove('show'));
+  
+  elem.classList.add('active');
+  content.classList.add('show');
+}

@@ -7,10 +7,10 @@
   <title>Город</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!--link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"-->
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->
+  
+
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,94 +34,32 @@
             </nav>
         </div>
       </div>
-      <div class="container page-titile">
-        <h1>Экскурсии по России</h1>          
+
+      <div class="container  md-p-0">
+        <h1>Экскурсии в Сочи</h1>          
       </div>	 
-      <!-- /nav-breadcrumb -->
-
-      <style>
-
-
-
-.type-excursions li {
-  display: inline-block; 
-}
-.type-excursions li a { 
-  text-decoration: none;
-  display: inline-block;
-  padding: 0 10px;
-  height: 30px;
-  line-height: 30px;
-}
-.type-excursions__content {
-  width:100%;
-  height:100px;
-  overflow:hidden;
-}
-.type-excursions__content ul {
-  list-style: none;
-  height: 120px;
- /* overflow: scroll;
-  overflow-y: hidden;*/
-}
-.type-excursions__content ul li {
-  width:100%;
-  height:98px; 
-}
-
-
-@media only screen and (max-width: 576px){
-  .type-excursions {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    overflow-x: auto;
-    width: 100%;
-    scrollbar-width: none;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-}
-        </style>
-
-  <div class="container">
+      <div class="container page">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 md-p-0" >        
         <ul class="type-excursions">
-          <li class="type-excursions__item"><a href="#type-all" class="nav-link">Все</a></li>
-          <li class="type-excursions__item"><a href="#type-auto" class="nav-link">Автомобильные</a></li>
-          <li class="type-excursions__item"><a href="#type-walk"  class="nav-link">Пешие</a></li>
-          <li class="type-excursions__item"><a href="#type-auto-rent" class="nav-link">Авто в аренду</a></li>
+          <li class="type-excursions__item"><a href="#type-all" class="nav-link js-tab-control">Все</a></li>
+          <li class="type-excursions__item"><a href="#type-auto" class="nav-link js-tab-control">Автомобильные</a></li>
+          <li class="type-excursions__item"><a href="#type-walk"  class="nav-link js-tab-control">Пешие</a></li>
+          <li class="type-excursions__item"><a href="#type-auto-rent" class="nav-link js-tab-control">Авто в аренду</a></li>
         </ul>
         <div class="type-excursions__content">
         <ul>
-          <li id="type-all">
-            
-          </li>
-          <!-- Все экскурсии-->
-          <li id="type-auto">
-            <div>Содержимое 2-й вкладки</div>
-          </li>
-          <!-- Автомобильные экскурсии-->
-
-          <li id="type-walk">
-            <div>Содержимое 3-й вкладки</div>
-          </li>
-          <!-- Пешие экскурсии-->
-          <li id="type-auto-rent">
-            <div>
-              
-              <div class="row">
+          <li id="type-all" class="js-tab-content show">
+             <div class="row">
               <div class="col-lg-3 col-md-12 md-p-33">
                 <div class="form-group filter-content ">         
-                    <div class="filter-content__filter filter-content__item">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-xs-12 filter-content__filter">
                       <div class="filter-content__title">Фильтры <span>(3)</span> </div>
                       <div class="filter-content__filter-title__icon-minus">
                         <img src="icons/minus.svg" alt="свернуть">
                       </div>
+                    </div>
                     </div>
 
                     <div class="row">
@@ -135,7 +73,7 @@
                                 <label class="radio-label" for="radio1">Любой</label>
                               </li>
 
-                              <li>
+                              <li class="rating-list__item">
                                 <input class="rating-list__item-input" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
                                 <label class="radio-label" for="radio2">От 
                                   <span class="rating-list__item-star">
@@ -199,42 +137,25 @@
               </div> <!-- конец фильтра-->
 
               <div class="col-lg-9 col-md-12 " >
-              <ul class="nav nav-tabs" id="myTab" role="tablist"> <!-- табы -->
-                <li class="nav-item">
-                  <a class="nav-link  nav-sort active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Популярные</a>
-                </li>
+              <!-- табы -->
+              <div class="type-excursions__sort">
+                <input type="radio" name="odin" checked="checked" id="top"/>
+                <label for="top">Популярные</label>
+                
+                <input type="radio" name="odin" id="low"/>
+                <label for="low">Сначала дешевле</label>
+                
+                <input type="radio" name="odin" id="expens"/>
+                <label for="expens">Сначала дороже</label>
 
-                <li class="nav-item">
-                  <a class="nav-link nav-sort" id="low-price-tab" data-toggle="tab" href="#low-price" role="tab" aria-controls="low-price" aria-selected="false">Сначала дешевле</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-sort" id="expens-pice-tab" data-toggle="tab" href="#expens-pice" role="tab" aria-controls="expens-pice" aria-selected="false">Сначала дороже</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-sort" id="high-rating-tab" data-toggle="tab" href="#high-rating" role="tab" aria-controls="high-rating" aria-selected="false">С высоким рейтингом</a>
-                </li>
-              </ul> <!-- /табы -->
-
-
-              <!-- Мобильные табы --> 
-              <div class="dropdown mobile-tabs">
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Популярные
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#low-price">Сначала дешевле</a>
-                  <a class="dropdown-item" href="#expens-pice">Сначала дороже</a>
-                  <a class="dropdown-item" href="#high-rating">С высоким рейтингом</a>
-                </div>
-              </div>
-              <!-- / Мобильные табы -->
-
-              <div class="tab-content col-md-12">
-                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="row">
+                <input type="radio" name="odin" id="high"/>
+                <label for="high">С высоким рейтингом</label>
+                
+                <div class="type-excursions__sort-content">
+                   <div class="row">
                     <div class="col-lg-4 col-md-6 col-xs-12 md-p-8">
-                      <div class="card">
+                      <a href="#">
+                        <div class="card">
                         <span class="card-image__wrap">
                           <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
                         </span>
@@ -263,10 +184,13 @@
 
                         </div>
                       </div>
+                    </a>
+                      
                     </div>
                     <!-- 1 вкладка 1 карточка-->
                     <div class="col-lg-4 col-md-6 col-xs-12 md-p-8">
-                      <div class="card">
+                      <a href="#">
+                        <div class="card">
                         <span class="card-image__wrap">
                           <img src="img/attractions/Istanbul-3.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
                         </span>
@@ -293,11 +217,14 @@
                           </div>
 
                         </div>
-                      </div>
+                      </div> 
+                      </a>
+
                     </div>
                     <!-- 1 вкладка 2 карточка-->
                     <div class="col-lg-4 col-md-6 col-xs-12 md-p-8">
-                      <div class="card">
+                      <a href="#">
+                        <div class="card">
                         <span class="card-image__wrap"> 
                           <img src="img/attractions/Istanbul-4.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
                         </span>
@@ -326,10 +253,13 @@
 
                         </div>
                       </div>
+                      </a>
+
                     </div>
                     <!-- 1 вкладка 3 карточка-->
                     <div class="col-lg-4 col-md-6 col-xs-12 md-p-8">
-                      <div class="card">
+                      <a href="#">
+                        <div class="card">
                         <span class="card-image__wrap">
                           <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
                         </span>
@@ -358,10 +288,13 @@
 
                         </div>
                       </div>
+                      </a>
+
                     </div>
                     <!-- 1 вкладка 4 карточка-->
                     <div class="col-lg-4 col-md-6 col-xs-12 md-p-8">
-                      <div class="card">
+                      <a href="#">
+                        <div class="card">
                         <span class="card-image__wrap">
                           <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
                         </span>
@@ -390,10 +323,13 @@
 
                         </div>
                       </div>
+                      </a>
+
                     </div>
                     <!-- 1 вкладка 5 карточка-->
                     <div class="col-lg-4 col-md-6 col-xs-12 md-p-8">
-                      <div class="card">
+                      <a href="#">
+                        <div class="card">
                         <span class="card-image__wrap">
                           <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
                         </span>
@@ -422,88 +358,37 @@
 
                         </div>
                       </div>
+                      </a>
+
                     </div>
                     <!-- 1 вкладка 6 карточка-->
                   </div>
-                </div> <!-- 1 вкладка: Популярные-->
+                </div><!-- 1 вкладка: Популярные-->
+
+
+                <div class="type-excursions__sort-content">вторая вкладка</div><!-- 2 вкладка: Сначала дешевле -->
                 
-                <div class="tab-pane" id="low-price" role="tabpanel" aria-labelledby="low-price-tab">
-                  <div class="row">
-                    <div class="col-3">col-3</div>
-                    <div class="col-3">col-3</div>
-                    <div class="col-3">col-3</div>
-                  </div>
-                </div>
-                <!-- 2 вкладка: Сначала дешевле-->
-                
-                <div class="tab-pane" id="expens-pice" role="tabpanel" aria-labelledby="expens-pice-tab">
-                  <div class="row">
-                    <div class="col-3">col-3</div>
-                    <div class="col-3">col-3</div>
-                    <div class="col-3">col-3</div>
-                  </div>
-                </div>
-                <!-- 3 вкладка: Сначала дороже-->
-                
-                <div class="tab-pane" id="high-rating" role="tabpanel" aria-labelledby="high-rating-tab">
-                  <div class="card-group">
-                    <div class="card">
-                        <img src="img/attractions/Istanbul-2.jpg" class="card-image" alt="Автомобильная экскурсия по Стамбулу">
-                        <div class="card-body">
-                          <div class="card-feedback">
-                            <p class="card-feedback__stars">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                            </p>
-                            <p>802 отзыва</p>
-                          </div>
-
-                          <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
-
-                          <div class="card__clock-price">
-                            <p class="card__clock">
-                              <span><img src="icons/clock.svg" alt="время"></span>
-                              5 часов
-                            </p>
-                            <p class="card__price">от €333,00</p>
-                          </div>
-
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img src="img/attractions/Istanbul-2.jpg" class="card-image" alt="Автомобильная экскурсия по Стамбулу">
-                        <div class="card-body">
-                          <div class="card-feedback">
-                            <p class="card-feedback__stars">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                              <img src="icons/star-full.svg" alt="звезда">
-                            </p>
-                            <p>802 отзыва</p>
-                          </div>
-
-                          <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
-
-                          <div class="card__clock-price">
-                            <p class="card__clock">
-                              <span><img src="icons/clock.svg" alt="время"></span>
-                              5 часов
-                            </p>
-                            <p class="card__price">от €333,00</p>
-                          </div>
-
-                        </div>
-                      </div>
-                      
-                  </div>
-                </div>
-                <!-- 3 вкладка: С высоким рейтингом-->
+                <div class="type-excursions__sort-content">третья вкладка</div> <!-- 3 вкладка: Популярные-->
               </div>
+              <!-- /табы -->
+
+
+              <!-- Мобильные табы --> 
+              <div class="dropdown mobile-tabs">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Популярные
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#low-price">Сначала дешевле</a>
+                  <a class="dropdown-item" href="#expens-pice">Сначала дороже</a>
+                  <a class="dropdown-item" href="#high-rating">С высоким рейтингом</a>
+                </div>
+              </div>
+              <!-- / Мобильные табы -->
+
+              
+              
               
               
               
@@ -511,7 +396,20 @@
               
               </div>
             </div>
-            </div>
+           
+          </li>
+          <!-- Все экскурсии-->
+          <li id="type-auto" class="js-tab-content ">
+            <div>Содержимое 2-й вкладки</div>
+          </li>
+          <!-- Автомобильные экскурсии-->
+
+          <li id="type-walk" class="js-tab-content ">
+            <div>Содержимое 3-й вкладки</div>
+          </li>
+          <!-- Пешие экскурсии-->
+          <li id="type-auto-rent" class="js-tab-content ">
+            <div>Содержимое 4-й вкладки</div>
           </li>
           <!-- Авто в аренду экскурсии-->
         </ul>
@@ -524,7 +422,8 @@
        </div>
       </div>
      </div>  
-
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
         
