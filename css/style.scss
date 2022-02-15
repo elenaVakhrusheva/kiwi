@@ -1,4 +1,8 @@
 /* === base style ===*/
+
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
@@ -1178,6 +1182,8 @@ figure.attraction-item__decript:hover p {
 .list-included {
   float: left;
   margin-right: 24px;
+  list-style: none;
+  padding-left: 0;
 }
 .list-not-included {
   float: right;
