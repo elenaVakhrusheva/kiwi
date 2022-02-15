@@ -1,7 +1,7 @@
 const tabControls = document.querySelectorAll('.js-tab-control');
 const tabContents = document.querySelectorAll('.js-tab-content');
 
-// если хочешь именно ссылками и чтобы контент располагался в любом порядке
+
 tabControls.forEach((elem, index) => {
   elem.addEventListener('click', (e) => tabClickHandler(e, elem));
 });

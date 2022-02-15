@@ -597,7 +597,7 @@ section.decription {
 /*nav ex*/
 .type-excursions {
   padding: 0 0 40px 0px;
-  margin: 0 15px 40px 15px;
+  /*margin: 0 15px 40px 15px;*/
 
   &__item {
     /* background: #ffffff;
@@ -677,7 +677,9 @@ section.decription {
       & li {
         width: 100%;
         display: none;
-        padding: 0 15px;
+        /*padding: 0 15px;*/
+        padding: 0;
+        margin: 0;
       }
       & li.show {
         display: block;
