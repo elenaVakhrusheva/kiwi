@@ -98,7 +98,6 @@ h3 {
     &-last {
       border-bottom: none;
       margin-bottom: 16px;
-      padding: 0;
     }
   }
 }
@@ -598,16 +597,9 @@ section.decription {
 
 /*nav ex*/
 .type-excursions {
-  padding: 0 0 40px 0px;
-  /*margin: 0 15px 40px 15px;*/
+  padding: 0;
 
   &__item {
-    /* background: #ffffff;
-    box-sizing: border-box;
-    border-radius: 32px;
-    display: flex;
-    float: left;*/
-
     &:nth-last-child(n + 2) {
       margin-right: 16px;
     }
@@ -671,6 +663,7 @@ section.decription {
 
   &__content {
     width: 100%;
+    padding-top: 36px;
     clear: both;
 
     & ul {
@@ -1643,7 +1636,7 @@ textarea[name="place"] {
 }
 
 @media only screen and (max-width: 576px) {
-  .nav-tabs {
+  .type-excursions__sort {
     display: none;
   }
   .filter-content {
