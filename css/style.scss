@@ -1182,8 +1182,6 @@ figure.attraction-item__decript:hover p {
 .list-included {
   float: left;
   margin-right: 24px;
-  list-style: none;
-  padding-left: 0;
 }
 .list-not-included {
   float: right;
@@ -1191,6 +1189,8 @@ figure.attraction-item__decript:hover p {
 .list-included,
 .list-not-included {
   list-style-position: inside;
+  list-style: none;
+  padding-left: 0;
 }
 .list-included li,
 .list-not-included li {
