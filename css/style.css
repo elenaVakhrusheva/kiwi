@@ -518,7 +518,7 @@ input[type="checkbox"]:disabled + label::before {
   background-color: #fff;
   background-clip: border-box;
   max-width: 288px;
-  margin: 0 auto; }
+  margin: 0 auto 24px; }
   /* line 457, style.scss */
   .card-link {
     width: 100%; }
@@ -871,16 +871,17 @@ section.decription {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: white; }
+  color: white;
+  margin: 0 auto 24px; }
 
-/* line 816, style.scss */
+/* line 817, style.scss */
 .card-country__img {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px; }
 
-/* line 822, style.scss */
+/* line 823, style.scss */
 .card-img-overlay {
   position: absolute;
   top: 70%;
@@ -901,34 +902,34 @@ section.decription {
   text-align: left;
   border-radius: 0 0 8px 8px; }
 
-/* line 835, style.scss */
+/* line 836, style.scss */
 .card-title {
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 10px; }
 
-/* line 841, style.scss */
+/* line 842, style.scss */
 .card-excurs {
   font-size: 13px;
   line-height: 16px;
   color: #fbb216;
   margin-bottom: 10px; }
 
-/* line 848, style.scss */
+/* line 849, style.scss */
 .card-price {
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
   color: #ffffff; }
 
-/* line 855, style.scss */
+/* line 856, style.scss */
 section.decription-country {
   margin: 64px 0 84px; }
-  /* line 858, style.scss */
+  /* line 859, style.scss */
   section.decription-country h3 {
     padding: 16px 0 24px 0; }
-  /* line 862, style.scss */
+  /* line 863, style.scss */
   section.decription-country h4 {
     font-size: 24px;
     line-height: 32px;
@@ -936,7 +937,7 @@ section.decription-country {
     padding: 20px 0 8px 0; }
 
 /* === Город детально ===*/
-/* line 871, style.scss */
+/* line 872, style.scss */
 .banner__wrap {
   background: url(../img/banners/banner-budapeht.jpg) center no-repeat;
   background-size: cover;
@@ -944,11 +945,11 @@ section.decription-country {
   padding: 104px 224px 72px 224px;
   text-align: center;
   position: relative; }
-  /* line 880, style.scss */
+  /* line 881, style.scss */
   .banner__wrap-descript {
     position: relative;
     z-index: 3; }
-  /* line 885, style.scss */
+  /* line 886, style.scss */
   .banner__wrap:after {
     content: "";
     position: absolute;
@@ -959,14 +960,14 @@ section.decription-country {
     background: rgba(36, 42, 48, 0.6);
     z-index: 2;
     border-radius: 8px; }
-  /* line 897, style.scss */
+  /* line 898, style.scss */
   .banner__wrap-rewiews {
     font-size: 0.75rem; }
-    /* line 900, style.scss */
+    /* line 901, style.scss */
     .banner__wrap-rewiews_number {
       font-size: 12px;
       line-height: 24px; }
-  /* line 906, style.scss */
+  /* line 907, style.scss */
   .banner__wrap-title {
     font-weight: 600;
     font-size: 36px;
@@ -974,23 +975,23 @@ section.decription-country {
     text-align: center;
     color: #ffffff;
     padding-bottom: 48px; }
-  /* line 915, style.scss */
+  /* line 916, style.scss */
   .banner__wrap-stars {
     margin-bottom: 8px; }
 
-/* line 920, style.scss */
+/* line 921, style.scss */
 .promo-section {
   position: relative;
   display: block;
   margin-top: -50px;
   min-height: 104px; }
-  /* line 926, style.scss */
+  /* line 927, style.scss */
   .promo-section__container {
     -webkit-box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
             box-shadow: 0px 4px 8px rgba(126, 122, 106, 0.05);
     padding: 24px; }
 
-/* line 932, style.scss */
+/* line 933, style.scss */
 .promo-wrap {
   position: absolute;
   left: 0;
@@ -1001,7 +1002,7 @@ section.decription-country {
   border-radius: 8px;
   max-width: 68.5rem;
   margin: 0 auto; }
-  /* line 943, style.scss */
+  /* line 944, style.scss */
   .promo-wrap::after {
     content: "";
     position: absolute;
@@ -1009,7 +1010,7 @@ section.decription-country {
     height: 1px;
     width: 1px; }
 
-/* line 951, style.scss */
+/* line 952, style.scss */
 .promo-section__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1017,34 +1018,34 @@ section.decription-country {
   float: left;
   height: 100%;
   text-align: center; }
-  /* line 957, style.scss */
+  /* line 958, style.scss */
   .promo-section__content p, .promo-section__content img {
     margin: auto; }
-  /* line 962, style.scss */
+  /* line 963, style.scss */
   .promo-section__content p {
     font-size: 0.875rem;
     font-weight: 700;
     text-align: left;
     padding-left: 18px; }
-    /* line 968, style.scss */
+    /* line 969, style.scss */
     .promo-section__content p span {
       font-weight: 400; }
-  /* line 973, style.scss */
+  /* line 974, style.scss */
   .promo-section__content img {
     max-width: 52px;
     max-height: 52px; }
 
-/* line 979, style.scss */
+/* line 980, style.scss */
 .decription-city {
   margin-top: 64px; }
 
-/* line 982, style.scss */
+/* line 983, style.scss */
 .attraction-item {
   overflow: hidden;
   margin: 0;
   width: 100%; }
 
-/* line 987, style.scss */
+/* line 988, style.scss */
 .attraction-item figure {
   position: relative;
   z-index: 1;
@@ -1055,33 +1056,33 @@ section.decription-country {
   height: 400px;
   border-radius: 8px; }
 
-/* line 997, style.scss */
+/* line 998, style.scss */
 .attraction-item figure img {
   position: relative;
   display: block;
   min-height: 100%; }
 
-/* line 1002, style.scss */
+/* line 1003, style.scss */
 .attraction-item figure figcaption {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(55, 63, 71, 0.6)), color-stop(96%, rgba(55, 63, 71, 0.6)));
   background-image: linear-gradient(to bottom, rgba(55, 63, 71, 0.6) 10%, rgba(55, 63, 71, 0.6) 96%); }
 
-/* line 1008, style.scss */
+/* line 1009, style.scss */
 .card-img-overlay .btn-transparent {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden; }
 
-/* line 1013, style.scss */
+/* line 1014, style.scss */
 .attraction-item figure figcaption::before,
 .attraction-item figure figcaption::after,
 .card-img-overlay .btn-transparent::before,
 .card-img-overlay .btn-transparent::after {
   pointer-events: none; }
 
-/* line 1019, style.scss */
+/* line 1020, style.scss */
 .attraction-item figure figcaption {
   position: absolute;
   top: 0;
@@ -1089,12 +1090,12 @@ section.decription-country {
   width: 100%;
   height: 100%; }
 
-/* line 1027, style.scss */
+/* line 1028, style.scss */
 .attraction-item figure h4,
 .attraction-item figure p {
   margin: 0; }
 
-/* line 1032, style.scss */
+/* line 1033, style.scss */
 .attraction-item__label {
   background: #fbb216;
   border-radius: 0px 8px 8px 0px;
@@ -1108,7 +1109,7 @@ section.decription-country {
   display: flex;
   z-index: 5; }
 
-/* line 1046, style.scss */
+/* line 1047, style.scss */
 .attraction-item__label img {
   width: 100%;
   position: relative;
@@ -1118,7 +1119,7 @@ section.decription-country {
   max-width: 32px;
   margin-right: 8px; }
 
-/* line 1056, style.scss */
+/* line 1057, style.scss */
 .attraction-item__label span {
   font-weight: 500;
   font-size: 13px;
@@ -1126,18 +1127,18 @@ section.decription-country {
   color: #ffffff;
   vertical-align: middle; }
 
-/* line 1064, style.scss */
+/* line 1065, style.scss */
 .link_add-see {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
   color: #fbb216; }
-  /* line 1070, style.scss */
+  /* line 1071, style.scss */
   .link_add-see:hover {
     text-decoration: underline;
     color: #fbb216; }
 
-/* line 1076, style.scss */
+/* line 1077, style.scss */
 .link_btn,
 .link_btn-green {
   font-weight: 600;
@@ -1149,24 +1150,24 @@ section.decription-country {
   padding: 13px 24px;
   border-radius: 4px; }
 
-/* line 1087, style.scss */
+/* line 1088, style.scss */
 .link_btn {
   color: #aaa7a1;
   padding: 13px 24px;
   border: 1px solid #aaa7a2;
   float: right; }
-  /* line 1094, style.scss */
+  /* line 1095, style.scss */
   .link_btn:hover {
     text-decoration: none;
     color: #fbb216;
     border: 1px solid #fbb216; }
-  /* line 1100, style.scss */
+  /* line 1101, style.scss */
   .link_btn:active, .link_btn:focus {
     background: #fbb216;
     color: #fff;
     border: 1px solid #fbb216; }
 
-/* line 1108, style.scss */
+/* line 1109, style.scss */
 .link_btn-green {
   color: #fff;
   background: #26a65b;
@@ -1176,24 +1177,24 @@ section.decription-country {
   width: 100%;
   text-align: center;
   display: block; }
-  /* line 1118, style.scss */
+  /* line 1119, style.scss */
   .link_btn-green:hover {
     text-decoration: none;
     background: #fff;
     color: #26a65b;
     border: 1px solid #26a65b; }
-  /* line 1125, style.scss */
+  /* line 1126, style.scss */
   .link_btn-green:active, .link_btn-green:focus {
     background: #26a65b;
     color: #fff;
     border: 1px solid #26a65b; }
 
 /* Эффект при наведении */
-/* line 1134, style.scss */
+/* line 1135, style.scss */
 figure.attraction-item__decript img {
   width: 100%; }
 
-/* line 1137, style.scss */
+/* line 1138, style.scss */
 figure.attraction-item__decript figcaption {
   top: auto;
   bottom: 0;
@@ -1201,7 +1202,7 @@ figure.attraction-item__decript figcaption {
   text-align: left;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(55, 63, 71, 0.6)), color-stop(96%, rgba(55, 63, 71, 0.6)));
   background-image: linear-gradient(to bottom, rgba(55, 63, 71, 0.6) 10%, rgba(55, 63, 71, 0.6) 96%); }
-  /* line 1144, style.scss */
+  /* line 1145, style.scss */
   figure.attraction-item__decript figcaption h4 {
     font-weight: 600;
     font-size: 16px;
@@ -1211,7 +1212,7 @@ figure.attraction-item__decript figcaption {
     transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     transition: transform 0.35s, -webkit-transform 0.35s; }
-  /* line 1153, style.scss */
+  /* line 1154, style.scss */
   figure.attraction-item__decript figcaption p {
     font-weight: 500;
     font-size: 14px;
@@ -1222,21 +1223,21 @@ figure.attraction-item__decript figcaption {
     transition: opacity 0.2s, transform 0.35s;
     transition: opacity 0.2s, transform 0.35s, -webkit-transform 0.35s;
     padding: 0 24px 20px 24px; }
-  /* line 1163, style.scss */
+  /* line 1164, style.scss */
   figure.attraction-item__decript figcaption h4, figure.attraction-item__decript figcaption p {
     color: #ffffff;
     -webkit-transform: translate3d(0, 0px, 0);
     transform: translate3d(0, 0px, 0); }
 
-/* line 1171, style.scss */
+/* line 1172, style.scss */
 figure.attraction-item__decript img:hover figure.attraction-item__decript figcaption {
   height: 160px; }
 
-/* line 1175, style.scss */
+/* line 1176, style.scss */
 .card.card-country:hover ~ .card-country .card-img-overlay {
   height: 190px; }
 
-/* line 1179, style.scss */
+/* line 1180, style.scss */
 .card-img-overlay .btn-transparent:hover .card-country a img {
   opacity: 1;
   -webkit-transform: translate(0px, 0px);
@@ -1246,39 +1247,39 @@ figure.attraction-item__decript img:hover figure.attraction-item__decript figcap
   -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s; }
 
-/* line 1189, style.scss */
+/* line 1190, style.scss */
 figure.attraction-item__decript:hover img,
 figure.attraction-item__decript:hover p {
   opacity: 1; }
 
-/* line 1194, style.scss */
+/* line 1195, style.scss */
 figure.attraction-item__decript:hover h4,
 figure.attraction-item__decript:hover p {
   -webkit-transform: translate(0px, 0px);
   transform: translate(0px, 0px); }
 
-/* line 1200, style.scss */
+/* line 1201, style.scss */
 figure.attraction-item__decript:hover figcaption {
   height: 160px; }
 
-/* line 1204, style.scss */
+/* line 1205, style.scss */
 figure.attraction-item__decript:hover p {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
   -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s; }
 
-/* line 1211, style.scss */
+/* line 1212, style.scss */
 .attraction-item figure img:hover figure.attraction-item__decript figcaption {
   height: 160px; }
 
-/* line 1215, style.scss */
+/* line 1216, style.scss */
 .card-country__img {
   width: 100%;
   display: block;
   position: relative; }
 
-/* line 1221, style.scss */
+/* line 1222, style.scss */
 .card-img-overlay .btn-transparent {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
@@ -1287,7 +1288,7 @@ figure.attraction-item__decript:hover p {
   overflow: hidden;
   opacity: 0; }
 
-/* line 1228, style.scss */
+/* line 1229, style.scss */
 .card-country:hover .card-img-overlay {
   opacity: 1;
   -webkit-transform: translate(0%, -19%);
@@ -1295,35 +1296,35 @@ figure.attraction-item__decript:hover p {
   height: 190px;
   outline: none !important; }
 
-/* line 1235, style.scss */
+/* line 1236, style.scss */
 .card-img-overlay a:hover {
   outline: none; }
 
-/* line 1239, style.scss */
+/* line 1240, style.scss */
 .card-country:hover .card-img-overlay .btn-transparent {
   opacity: 1; }
 
-/* line 1243, style.scss */
+/* line 1244, style.scss */
 .decription-city__list {
   margin-bottom: 86px; }
 
-/* line 1246, style.scss */
+/* line 1247, style.scss */
 .list-included {
   float: left;
   margin-right: 24px; }
 
-/* line 1250, style.scss */
+/* line 1251, style.scss */
 .list-not-included {
   float: right; }
 
-/* line 1253, style.scss */
+/* line 1254, style.scss */
 .list-included,
 .list-not-included {
   list-style-position: inside;
   list-style: none;
   padding-left: 0; }
 
-/* line 1259, style.scss */
+/* line 1260, style.scss */
 .list-included li,
 .list-not-included li {
   font-size: 16px;
@@ -1333,19 +1334,19 @@ figure.attraction-item__decript:hover p {
   margin-bottom: 20px;
   list-style-type: none; }
 
-/* line 1269, style.scss */
+/* line 1270, style.scss */
 .list-included li {
   background: url(../icons/tick-circle.svg) no-repeat left center; }
 
-/* line 1272, style.scss */
+/* line 1273, style.scss */
 .list-not-included li {
   background: url(../icons/close-circle.svg) no-repeat left center; }
 
 /* === gallery=== */
-/* line 1278, style.scss */
+/* line 1279, style.scss */
 .gallery-item {
   padding: 0; }
-  /* line 1281, style.scss */
+  /* line 1282, style.scss */
   .gallery-item a img {
     padding: 0;
     background: none;
@@ -1353,12 +1354,12 @@ figure.attraction-item__decript:hover p {
     border-radius: 0;
     max-height: 288px;
     width: 100%; }
-  /* line 1290, style.scss */
+  /* line 1291, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 15px; }
 
 /* === аккардион ===*/
-/* line 1297, style.scss */
+/* line 1298, style.scss */
 .faq-item {
   display: block;
   padding: 20px 24px;
@@ -1375,13 +1376,13 @@ figure.attraction-item__decript:hover p {
   color: #373f47; }
 
 /* скрываем чекбоксы и блоки с содержанием */
-/* line 1312, style.scss */
+/* line 1313, style.scss */
 .hide,
 .hide + label ~ div {
   display: none; }
 
 /* вид текста label */
-/* line 1317, style.scss */
+/* line 1318, style.scss */
 .hide + label {
   margin: 0;
   padding: 0;
@@ -1389,12 +1390,12 @@ figure.attraction-item__decript:hover p {
   display: inline-block; }
 
 /* вид текста label при активном переключателе */
-/* line 1324, style.scss */
+/* line 1325, style.scss */
 .hide:checked + label {
   border-bottom: 0; }
 
 /* когда чекбокс активен показываем блоки с содержанием  */
-/* line 1328, style.scss */
+/* line 1329, style.scss */
 .hide:checked + label + div {
   display: block;
   font-weight: 500;
@@ -1416,7 +1417,7 @@ figure.attraction-item__decript:hover p {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 1364, style.scss */
+/* line 1365, style.scss */
 .hide + label:before {
   content: url(../icons/add.svg);
   display: block;
@@ -1429,17 +1430,17 @@ figure.attraction-item__decript:hover p {
   position: absolute;
   right: 40px; }
 
-/* line 1378, style.scss */
+/* line 1379, style.scss */
 .hide:checked + label:before {
   content: url(../icons/minus.svg); }
 
 /* === отзывы ===*/
-/* line 1384, style.scss */
+/* line 1385, style.scss */
 .reviews-item {
   margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #f1f1f1; }
-  /* line 1388, style.scss */
+  /* line 1389, style.scss */
   .reviews-item__photo {
     width: 48px;
     height: 48px;
@@ -1448,7 +1449,7 @@ figure.attraction-item__decript:hover p {
     position: relative;
     float: left;
     margin-right: 16px; }
-    /* line 1397, style.scss */
+    /* line 1398, style.scss */
     .reviews-item__photo img {
       position: absolute;
       -o-object-fit: cover;
@@ -1457,49 +1458,49 @@ figure.attraction-item__decript:hover p {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-  /* line 1405, style.scss */
+  /* line 1406, style.scss */
   .reviews-item__name {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #373f47; }
-    /* line 1410, style.scss */
+    /* line 1411, style.scss */
     .reviews-item__name p {
       margin-bottom: 8px;
       line-height: 20px; }
-  /* line 1416, style.scss */
+  /* line 1417, style.scss */
   .reviews-item__text {
     font-size: 14px;
     line-height: 24px;
     color: #545d65;
     margin-top: 16px; }
 
-/* line 1424, style.scss */
+/* line 1425, style.scss */
 .filter-zakaz_title {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   color: #373f47; }
 
-/* line 1431, style.scss */
+/* line 1432, style.scss */
 section.decription-city section {
   margin-bottom: 88px; }
 
-/* line 1435, style.scss */
+/* line 1436, style.scss */
 .col-p-0 {
   padding: 0; }
 
-/* line 1439, style.scss */
+/* line 1440, style.scss */
 textarea[name="place"] {
   resize: none; }
 
-/* line 1443, style.scss */
+/* line 1444, style.scss */
 .form-reviews {
   width: 100%;
   max-width: 500px;
   background-color: #f9f9f9;
   padding: 16px; }
-  /* line 1449, style.scss */
+  /* line 1450, style.scss */
   .form-reviews input[type="text"],
   .form-reviews input[type="email"],
   .form-reviews textarea {
@@ -1510,24 +1511,24 @@ textarea[name="place"] {
     font-size: 11px;
     color: #928a97;
     border: none; }
-  /* line 1461, style.scss */
+  /* line 1462, style.scss */
   .form-reviews input[type="text"] {
     width: 45%;
     float: left; }
-  /* line 1465, style.scss */
+  /* line 1466, style.scss */
   .form-reviews input[type="email"] {
     width: 45%;
     float: right; }
-  /* line 1469, style.scss */
+  /* line 1470, style.scss */
   .form-reviews textarea {
     width: 100%; }
 
-/* line 1474, style.scss */
+/* line 1475, style.scss */
 .filter-content__count-block {
   display: inline-block;
   position: relative;
   width: 100%; }
-  /* line 1479, style.scss */
+  /* line 1480, style.scss */
   .filter-content__count-block input[type="number"] {
     display: block;
     height: 32px;
@@ -1542,12 +1543,12 @@ textarea[name="place"] {
     -webkit-appearance: textfield;
     appearance: textfield; }
 
-/* line 1494, style.scss */
+/* line 1495, style.scss */
 .filter-content__count-block input[type="number"]::-webkit-outer-spin-button,
 .filter-content__count-block input[type="number"]::-webkit-inner-spin-button {
   display: none; }
 
-/* line 1498, style.scss */
+/* line 1499, style.scss */
 .count-minus {
   position: absolute;
   top: 1px;
@@ -1560,7 +1561,7 @@ textarea[name="place"] {
   border: none;
   outline: none; }
 
-/* line 1510, style.scss */
+/* line 1511, style.scss */
 .count-plus {
   position: absolute;
   top: 1px;
@@ -1573,17 +1574,17 @@ textarea[name="place"] {
   border: none;
   outline: none; }
 
-/* line 1523, style.scss */
+/* line 1524, style.scss */
 .page-titile,
 .page {
   padding: 0; }
 
-/* line 1528, style.scss */
+/* line 1529, style.scss */
 .item-center {
   width: 100%;
   text-align: center; }
 
-/* line 1533, style.scss */
+/* line 1534, style.scss */
 .btn-green {
   font-weight: 600;
   font-size: 14px;
@@ -1598,13 +1599,13 @@ textarea[name="place"] {
   border-radius: 4px;
   text-decoration: none;
   margin-top: 24px; }
-  /* line 1546, style.scss */
+  /* line 1547, style.scss */
   .btn-green:hover, .btn-green:focus {
     background: #26a65b;
     color: #fff;
     text-decoration: none; }
 
-/* line 1554, style.scss */
+/* line 1555, style.scss */
 .btn-transparent {
   font-weight: 600;
   font-size: 14px;
@@ -1618,7 +1619,7 @@ textarea[name="place"] {
   text-decoration: none;
   width: 100%;
   text-align: center; }
-  /* line 1567, style.scss */
+  /* line 1568, style.scss */
   .btn-transparent:hover, .btn-transparent:focus {
     border: 1px solid #fbb216;
     color: #fbb216;
@@ -1626,23 +1627,23 @@ textarea[name="place"] {
 
 /*=== A media query ===*/
 @media (max-width: 1440px) {
-  /* line 1578, style.scss */
+  /* line 1579, style.scss */
   .md-p-12 {
     padding: 0 12px; } }
 @media (min-width: 1200px) {
-  /* line 1584, style.scss */
+  /* line 1585, style.scss */
   .container {
     max-width: 1320px; } }
 @media (min-width: 1024px) {
-  /* line 1590, style.scss */
+  /* line 1591, style.scss */
   .card-body {
     padding: 10px 12px; }
 
-  /* line 1594, style.scss */
+  /* line 1595, style.scss */
   .md-p-33 {
     padding: 0 33px 0 15px; } }
 @media (min-width: 768px) {
-  /* line 1600, style.scss */
+  /* line 1601, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;
@@ -1650,124 +1651,124 @@ textarea[name="place"] {
     padding-left: 24px;
     padding-right: 24px; }
 
-  /* line 1607, style.scss */
+  /* line 1608, style.scss */
   .mobile-tabs {
     display: none; } }
 @media (max-width: 1200px) {
-  /* line 1613, style.scss */
+  /* line 1614, style.scss */
   .md-p-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1617, style.scss */
+  /* line 1618, style.scss */
   input[type="date"] {
     background: #fff url(../icons/calendar.svg) 60% 50% no-repeat;
     padding-bottom: 6px; }
 
-  /* line 1621, style.scss */
+  /* line 1622, style.scss */
   .filter-content__rating-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
 @media (max-width: 1199px) {
-  /* line 1626, style.scss */
+  /* line 1627, style.scss */
   .gallery-item a img {
     max-height: 230px; } }
 @media (max-width: 1024px) {
-  /* line 1632, style.scss */
+  /* line 1633, style.scss */
   .md-m-0 {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1637, style.scss */
+  /* line 1638, style.scss */
   .md-p-8 {
     padding: 0 8px; }
 
-  /* line 1641, style.scss */
+  /* line 1642, style.scss */
   .filter-content__rating-list,
   .radio-labe {
     margin-bottom: 0; }
 
-  /* line 1646, style.scss */
+  /* line 1647, style.scss */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 1650, style.scss */
+  /* line 1651, style.scss */
   .filter-content__buttons .buttons {
     padding: 10px 12px; }
 
-  /* line 1654, style.scss */
+  /* line 1655, style.scss */
   .promo-section__container {
     padding: 12px; }
 
-  /* line 1657, style.scss */
+  /* line 1658, style.scss */
   .attraction-item figure {
     height: 300px; }
 
-  /* line 1660, style.scss */
+  /* line 1661, style.scss */
   .col-md-12-1024 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%; }
 
-  /* line 1665, style.scss */
+  /* line 1666, style.scss */
   h1.banner__wrap-title {
     font-size: 28px;
     line-height: 40px; }
 
-  /* line 1669, style.scss */
+  /* line 1670, style.scss */
   .banner__wrap {
     padding: 104px 24px 72px 24px; } }
 @media (max-width: 768px) {
-  /* line 1675, style.scss */
+  /* line 1676, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 43px; }
 
-  /* line 1679, style.scss */
+  /* line 1680, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: left;
     padding-right: 24px; }
 
-  /* line 1684, style.scss */
+  /* line 1685, style.scss */
   .filter-content {
     margin-bottom: 36px; }
 
-  /* line 1688, style.scss */
+  /* line 1689, style.scss */
   .filter-content__rating-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
 
-  /* line 1691, style.scss */
+  /* line 1692, style.scss */
   .type-excursions {
     padding: 0 0 32px 0px; }
 
-  /* line 1695, style.scss */
+  /* line 1696, style.scss */
   h3 {
     padding: 0 0 32px 0;
     margin: 0; }
 
-  /* line 1699, style.scss */
+  /* line 1700, style.scss */
   .breadcrumb {
     margin-bottom: 24px; }
 
-  /* line 1702, style.scss */
+  /* line 1703, style.scss */
   .p-768-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1707, style.scss */
+  /* line 1708, style.scss */
   h1.banner__wrap-title {
     font-size: 28px;
     line-height: 40px; }
 
-  /* line 1711, style.scss */
+  /* line 1712, style.scss */
   .banner__wrap {
     padding: 104px 24px 72px 24px; }
 
-  /* line 1714, style.scss */
+  /* line 1715, style.scss */
   .promo-wrap {
     max-width: 672px; }
-    /* line 1716, style.scss */
+    /* line 1717, style.scss */
     .promo-wrap::after {
       content: "";
       position: absolute;
@@ -1775,44 +1776,44 @@ textarea[name="place"] {
       height: 1px;
       width: 1px; }
 
-  /* line 1724, style.scss */
+  /* line 1725, style.scss */
   .promo-section__content {
     padding: 16px 38px; }
 
-  /* line 1727, style.scss */
+  /* line 1728, style.scss */
   .decription-city {
     margin-top: 192px; }
 
-  /* line 1730, style.scss */
+  /* line 1731, style.scss */
   .container-banner {
     padding: 0; }
 
-  /* line 1733, style.scss */
+  /* line 1734, style.scss */
   .decription-city h2 {
     font-size: 24px;
     line-height: 32px; }
 
-  /* line 1737, style.scss */
+  /* line 1738, style.scss */
   h3 {
     font-size: 20px;
     line-height: 32px; }
 
-  /* line 1741, style.scss */
+  /* line 1742, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 0; }
 
-  /* line 1744, style.scss */
+  /* line 1745, style.scss */
   section.decription-city .container {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     max-width: 768px; }
 
-  /* line 1751, style.scss */
+  /* line 1752, style.scss */
   .filter-zakaz {
     margin-bottom: 56px; }
 
-  /* line 1754, style.scss */
+  /* line 1755, style.scss */
   .filter-content__item-last {
     border-bottom: none;
     margin-bottom: 16px;
@@ -1826,54 +1827,59 @@ textarea[name="place"] {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
-  /* line 1762, style.scss */
+  /* line 1763, style.scss */
   .filter-content__checkbox {
     width: 100%; }
 
-  /* line 1765, style.scss */
+  /* line 1766, style.scss */
   .filter-content__checkbox:nth-last-child(n + 2) {
     margin-right: 16px; }
 
-  /* line 1768, style.scss */
+  /* line 1769, style.scss */
   .item-buttons {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
 
-  /* line 1771, style.scss */
+  /* line 1772, style.scss */
   .list-not-included {
     float: left; } }
 @media (max-width: 767px) {
-  /* line 1776, style.scss */
+  /* line 1777, style.scss */
   .type-excursions__sort {
     display: none; }
 
-  /* line 1779, style.scss */
+  /* line 1780, style.scss */
   .decription-city {
     margin-top: 328px; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  /* line 1784, style.scss */
+  /* line 1785, style.scss */
   .radio-label {
     font-size: 13px; }
 
-  /* line 1788, style.scss */
+  /* line 1789, style.scss */
   .input[type="date"] {
     font-size: 12px; }
 
-  /* line 1791, style.scss */
+  /* line 1792, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 1795, style.scss */
+  /* line 1796, style.scss */
   .filter-content__buttons .buttons {
     padding: 6px 12px; } }
+@media screen and (min-width: 480px) {
+  /* line 1801, style.scss */
+  .sticky-btn {
+    display: none;
+    opacity: 0; } }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   /* стили */ }
 @media only screen and (max-width: 576px) {
-  /* line 1805, style.scss */
+  /* line 1811, style.scss */
   .filter-content {
     margin-bottom: 24px; }
 
-  /* line 1809, style.scss */
+  /* line 1815, style.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -1881,139 +1887,147 @@ textarea[name="place"] {
     margin-bottom: 0;
     text-align: left; }
 
-  /* line 1816, style.scss */
+  /* line 1822, style.scss */
   h3 {
     padding: 0 0 24px 0; }
 
-  /* line 1820, style.scss */
+  /* line 1826, style.scss */
   .filter-content__filter {
     padding-bottom: 0; }
 
-  /* line 1824, style.scss */
+  /* line 1830, style.scss */
   .breadcrumb {
     padding: 0; }
 
-  /* line 1828, style.scss */
+  /* line 1834, style.scss */
   .filter-content__head .filter-content__title {
     padding-top: 0;
     padding-bottom: 8px; }
 
-  /* line 1833, style.scss */
+  /* line 1839, style.scss */
   .dropdown-menu.show {
     width: 90%; }
 
-  /* line 1838, style.scss */
+  /* line 1844, style.scss */
   .type-excursions::-webkit-scrollbar {
     width: 0;
     height: 0; }
 
-  /* line 1843, style.scss */
+  /* line 1849, style.scss */
   .md-p-0,
   .page-titile {
     padding-left: 16px;
     padding-right: 16px; }
 
-  /* line 1848, style.scss */
+  /* line 1854, style.scss */
   .md-p-8 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1852, style.scss */
+  /* line 1858, style.scss */
   .gallery-item a img {
     max-height: none; }
 
-  /* line 1855, style.scss */
+  /* line 1861, style.scss */
   .container-banner {
     padding-right: 15px;
     padding-left: 15px; } }
-@media (min-width: 480px) {
-  /* line 1862, style.scss */
-  .btn-sticky {
-    position: -webkit-sticky;
-    position: sticky;
+@media (max-width: 480px) {
+  /* line 1868, style.scss */
+  .sticky-btn {
+    position: fixed;
     bottom: 0;
     min-height: 2em;
-    width: 100%; } }
-@media screen and (max-width: 480px) {
-  /* line 1870, style.scss */
-  .btn-stiky {
-    display: none; } }
+    width: 100%;
+    border: none;
+    background: none;
+    z-index: 356;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 0px; } }
 @media (max-width: 425px) {
-  /* line 1875, style.scss */
+  /* line 1883, style.scss */
   .md-p-12 {
     padding: 0 16px; }
 
-  /* line 1878, style.scss */
+  /* line 1886, style.scss */
   .card-country {
     margin-bottom: 16px; }
 
-  /* line 1881, style.scss */
+  /* line 1889, style.scss */
   .breadcrumb {
     margin-bottom: 16px; }
 
-  /* line 1884, style.scss */
+  /* line 1892, style.scss */
   h1.banner__wrap-title {
     font-size: 20px;
     line-height: 24px; }
 
-  /* line 1888, style.scss */
+  /* line 1896, style.scss */
   .banner__wrap {
     padding: 88px 24px 88px 24px; }
 
-  /* line 1892, style.scss */
+  /* line 1900, style.scss */
   .promo-section__content {
     padding: 16px; }
 
-  /* line 1896, style.scss */
+  /* line 1904, style.scss */
   .promo-section__container {
     padding: 0; }
 
-  /* line 1900, style.scss */
+  /* line 1908, style.scss */
   .promo-wrap {
     max-width: 90%; }
 
-  /* line 1903, style.scss */
+  /* line 1911, style.scss */
   .decription-city {
     margin-top: 270px; }
 
-  /* line 1906, style.scss */
+  /* line 1914, style.scss */
   .decription-city h2 {
     margin-bottom: 16px; }
 
-  /* line 1910, style.scss */
+  /* line 1918, style.scss */
   p {
     font-size: 14px;
     line-height: 24px; }
 
-  /* line 1914, style.scss */
+  /* line 1922, style.scss */
   section.decription-city section {
     margin-bottom: 48px;
     margin-top: 24px; }
 
-  /* line 1918, style.scss */
+  /* line 1926, style.scss */
   .attraction-item figure {
     height: 400px; }
 
-  /* line 1921, style.scss */
+  /* line 1929, style.scss */
   .list-included {
     margin-bottom: 4px; }
 
-  /* line 1925, style.scss */
+  /* line 1933, style.scss */
   .list-not-included li {
     background: url(../icons/close-circle.svg) no-repeat left top; }
 
-  /* line 1929, style.scss */
+  /* line 1937, style.scss */
   .hide:checked + label + div {
     font-size: 14px;
     line-height: 20px; }
 
-  /* line 1934, style.scss */
+  /* line 1942, style.scss */
   .reviews-item__name p {
     margin-bottom: 0;
     line-height: 24px;
     font-size: 16px; }
 
-  /* line 1940, style.scss */
+  /* line 1948, style.scss */
   .link_btn {
     float: none;
     width: 100%;
@@ -2021,42 +2035,42 @@ textarea[name="place"] {
     margin-top: 24px;
     text-align: center; }
 
-  /* line 1948, style.scss */
+  /* line 1956, style.scss */
   .filter-zakaz {
     margin-bottom: 48px; }
 
-  /* line 1951, style.scss */
+  /* line 1959, style.scss */
   input[type="date"] {
     background: #fff url(../icons/calendar.svg) 100% 50% no-repeat; } }
 @media (max-width: 320px) {
-  /* line 1957, style.scss */
+  /* line 1965, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 24px; }
 
-  /* line 1961, style.scss */
+  /* line 1969, style.scss */
   .filter-content__rating-list,
   .filter-content__buttons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
-  /* line 1965, style.scss */
+  /* line 1973, style.scss */
   .rating-list__item:first-child {
     padding-right: 45px; }
 
-  /* line 1969, style.scss */
+  /* line 1977, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: none; }
 
-  /* line 1973, style.scss */
+  /* line 1981, style.scss */
   input[type="date"] {
     width: 100%; }
 
-  /* line 1977, style.scss */
+  /* line 1985, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 1980, style.scss */
+  /* line 1988, style.scss */
   .mobile-none {
     display: none; } }
 
