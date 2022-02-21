@@ -372,8 +372,8 @@ input[type="checkbox"]:not(:disabled):not(:checked) + label:hover::before {
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
 input[type="checkbox"]:not(:disabled):active + label::before {
-  background-color: #26a65b;
-  border-color: #26a65b;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
@@ -412,6 +412,13 @@ input[type="checkbox"]:disabled + label::before {
     color: #26a65b;
   }
 }
+
+/* стили для активного состояния чекбокса (при нажатии на него) 
+input[type="checkbox"] ~ .hide:active + label::before {
+  background-color: transparent;
+  border-color: transparent;
+}
+*/
 .filter-content__count-block {
   display: flex;
   flex-wrap: nowrap;
@@ -465,7 +472,11 @@ input[type="checkbox"]:disabled + label::before {
 
   &-link:hover,
   &-link .card:hover {
-    outline: 1px solid #aaa7a2;
+    /* outline: 1px solid #aaa7a2;
+    -moz-outline-radius: 8px;*/
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);
+    box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);
     border-radius: 8px;
   }
 
@@ -520,6 +531,7 @@ input[type="checkbox"]:disabled + label::before {
     line-height: 22px;
     color: #373f47;
     margin-bottom: 48px;
+    min-height: 66px;
   }
 
   &__clock-price,
@@ -1231,6 +1243,7 @@ figure.attraction-item__decript:hover p {
   transform: translate(0%, -19%);
   height: 190px;
   outline: none !important;
+  transition: 1s;
 }
 
 .card-img-overlay a:hover {
@@ -1378,6 +1391,10 @@ figure.attraction-item__decript:hover p {
 }
 .hide:checked + label:before {
   content: url(../icons/minus.svg);
+}
+.hide:active + label:before,
+.hide[type="checkbox"]:active {
+  background: transparent;
 }
 
 /* === отзывы ===*/
