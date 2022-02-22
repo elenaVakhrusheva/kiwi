@@ -1305,38 +1305,40 @@ figure.attraction-item__decript:hover p {
           transform: translate(0%, -19%);
   height: 190px;
   outline: none !important;
-  -webkit-transition: 1s;
-  transition: 1s; }
+  -webkit-transition: 2s;
+  transition: 2s; }
 
 /* line 1249, style.scss */
 .card-img-overlay a:hover {
-  outline: none; }
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
-/* line 1253, style.scss */
+/* line 1254, style.scss */
 .card-country:hover .card-img-overlay .btn-transparent {
   opacity: 1; }
 
-/* line 1257, style.scss */
+/* line 1258, style.scss */
 .decription-city__list {
   margin-bottom: 86px; }
 
-/* line 1260, style.scss */
+/* line 1261, style.scss */
 .list-included {
   float: left;
   margin-right: 24px; }
 
-/* line 1264, style.scss */
+/* line 1265, style.scss */
 .list-not-included {
   float: right; }
 
-/* line 1267, style.scss */
+/* line 1268, style.scss */
 .list-included,
 .list-not-included {
   list-style-position: inside;
   list-style: none;
   padding-left: 0; }
 
-/* line 1273, style.scss */
+/* line 1274, style.scss */
 .list-included li,
 .list-not-included li {
   font-size: 16px;
@@ -1346,19 +1348,19 @@ figure.attraction-item__decript:hover p {
   margin-bottom: 20px;
   list-style-type: none; }
 
-/* line 1283, style.scss */
+/* line 1284, style.scss */
 .list-included li {
   background: url(../icons/tick-circle.svg) no-repeat left center; }
 
-/* line 1286, style.scss */
+/* line 1287, style.scss */
 .list-not-included li {
   background: url(../icons/close-circle.svg) no-repeat left center; }
 
 /* === gallery=== */
-/* line 1292, style.scss */
+/* line 1293, style.scss */
 .gallery-item {
   padding: 0; }
-  /* line 1295, style.scss */
+  /* line 1296, style.scss */
   .gallery-item a img {
     padding: 0;
     background: none;
@@ -1366,12 +1368,12 @@ figure.attraction-item__decript:hover p {
     border-radius: 0;
     max-height: 288px;
     width: 100%; }
-  /* line 1304, style.scss */
+  /* line 1305, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 15px; }
 
 /* === аккардион ===*/
-/* line 1311, style.scss */
+/* line 1312, style.scss */
 .faq-item {
   display: block;
   padding: 20px 24px;
@@ -1388,13 +1390,13 @@ figure.attraction-item__decript:hover p {
   color: #373f47; }
 
 /* скрываем чекбоксы и блоки с содержанием */
-/* line 1326, style.scss */
+/* line 1327, style.scss */
 .hide,
 .hide + label ~ div {
   display: none; }
 
 /* вид текста label */
-/* line 1331, style.scss */
+/* line 1332, style.scss */
 .hide + label {
   margin: 0;
   padding: 0;
@@ -1402,12 +1404,12 @@ figure.attraction-item__decript:hover p {
   display: inline-block; }
 
 /* вид текста label при активном переключателе */
-/* line 1338, style.scss */
+/* line 1339, style.scss */
 .hide:checked + label {
   border-bottom: 0; }
 
 /* когда чекбокс активен показываем блоки с содержанием  */
-/* line 1342, style.scss */
+/* line 1343, style.scss */
 .hide:checked + label + div {
   display: block;
   font-weight: 500;
@@ -1429,7 +1431,7 @@ figure.attraction-item__decript:hover p {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 1378, style.scss */
+/* line 1379, style.scss */
 .hide + label:before {
   content: url(../icons/add.svg);
   display: block;
@@ -1442,22 +1444,22 @@ figure.attraction-item__decript:hover p {
   position: absolute;
   right: 40px; }
 
-/* line 1392, style.scss */
+/* line 1393, style.scss */
 .hide:checked + label:before {
   content: url(../icons/minus.svg); }
 
-/* line 1395, style.scss */
+/* line 1396, style.scss */
 .hide:active + label:before,
 .hide[type="checkbox"]:active {
   background: transparent; }
 
 /* === отзывы ===*/
-/* line 1402, style.scss */
+/* line 1403, style.scss */
 .reviews-item {
   margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #f1f1f1; }
-  /* line 1406, style.scss */
+  /* line 1407, style.scss */
   .reviews-item__photo {
     width: 48px;
     height: 48px;
@@ -1466,7 +1468,7 @@ figure.attraction-item__decript:hover p {
     position: relative;
     float: left;
     margin-right: 16px; }
-    /* line 1415, style.scss */
+    /* line 1416, style.scss */
     .reviews-item__photo img {
       position: absolute;
       -o-object-fit: cover;
@@ -1475,49 +1477,49 @@ figure.attraction-item__decript:hover p {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-  /* line 1423, style.scss */
+  /* line 1424, style.scss */
   .reviews-item__name {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #373f47; }
-    /* line 1428, style.scss */
+    /* line 1429, style.scss */
     .reviews-item__name p {
       margin-bottom: 8px;
       line-height: 20px; }
-  /* line 1434, style.scss */
+  /* line 1435, style.scss */
   .reviews-item__text {
     font-size: 14px;
     line-height: 24px;
     color: #545d65;
     margin-top: 16px; }
 
-/* line 1442, style.scss */
+/* line 1443, style.scss */
 .filter-zakaz_title {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   color: #373f47; }
 
-/* line 1449, style.scss */
+/* line 1450, style.scss */
 section.decription-city section {
   margin-bottom: 88px; }
 
-/* line 1453, style.scss */
+/* line 1454, style.scss */
 .col-p-0 {
   padding: 0; }
 
-/* line 1457, style.scss */
+/* line 1458, style.scss */
 textarea[name="place"] {
   resize: none; }
 
-/* line 1461, style.scss */
+/* line 1462, style.scss */
 .form-reviews {
   width: 100%;
   max-width: 500px;
   background-color: #f9f9f9;
   padding: 16px; }
-  /* line 1467, style.scss */
+  /* line 1468, style.scss */
   .form-reviews input[type="text"],
   .form-reviews input[type="email"],
   .form-reviews textarea {
@@ -1528,24 +1530,24 @@ textarea[name="place"] {
     font-size: 11px;
     color: #928a97;
     border: none; }
-  /* line 1479, style.scss */
+  /* line 1480, style.scss */
   .form-reviews input[type="text"] {
     width: 45%;
     float: left; }
-  /* line 1483, style.scss */
+  /* line 1484, style.scss */
   .form-reviews input[type="email"] {
     width: 45%;
     float: right; }
-  /* line 1487, style.scss */
+  /* line 1488, style.scss */
   .form-reviews textarea {
     width: 100%; }
 
-/* line 1492, style.scss */
+/* line 1493, style.scss */
 .filter-content__count-block {
   display: inline-block;
   position: relative;
   width: 100%; }
-  /* line 1497, style.scss */
+  /* line 1498, style.scss */
   .filter-content__count-block input[type="number"] {
     display: block;
     height: 32px;
@@ -1560,12 +1562,12 @@ textarea[name="place"] {
     -webkit-appearance: textfield;
     appearance: textfield; }
 
-/* line 1512, style.scss */
+/* line 1513, style.scss */
 .filter-content__count-block input[type="number"]::-webkit-outer-spin-button,
 .filter-content__count-block input[type="number"]::-webkit-inner-spin-button {
   display: none; }
 
-/* line 1516, style.scss */
+/* line 1517, style.scss */
 .count-minus {
   position: absolute;
   top: 1px;
@@ -1578,7 +1580,7 @@ textarea[name="place"] {
   border: none;
   outline: none; }
 
-/* line 1528, style.scss */
+/* line 1529, style.scss */
 .count-plus {
   position: absolute;
   top: 1px;
@@ -1591,17 +1593,17 @@ textarea[name="place"] {
   border: none;
   outline: none; }
 
-/* line 1541, style.scss */
+/* line 1542, style.scss */
 .page-titile,
 .page {
   padding: 0; }
 
-/* line 1546, style.scss */
+/* line 1547, style.scss */
 .item-center {
   width: 100%;
   text-align: center; }
 
-/* line 1551, style.scss */
+/* line 1552, style.scss */
 .btn-green {
   font-weight: 600;
   font-size: 14px;
@@ -1616,13 +1618,13 @@ textarea[name="place"] {
   border-radius: 4px;
   text-decoration: none;
   margin-top: 24px; }
-  /* line 1564, style.scss */
+  /* line 1565, style.scss */
   .btn-green:hover, .btn-green:focus {
     background: #26a65b;
     color: #fff;
     text-decoration: none; }
 
-/* line 1572, style.scss */
+/* line 1573, style.scss */
 .btn-transparent {
   font-weight: 600;
   font-size: 14px;
@@ -1636,7 +1638,7 @@ textarea[name="place"] {
   text-decoration: none;
   width: 100%;
   text-align: center; }
-  /* line 1585, style.scss */
+  /* line 1586, style.scss */
   .btn-transparent:hover, .btn-transparent:focus {
     border: 1px solid #fbb216;
     color: #fbb216;
@@ -1644,23 +1646,23 @@ textarea[name="place"] {
 
 /*=== A media query ===*/
 @media (max-width: 1440px) {
-  /* line 1596, style.scss */
+  /* line 1597, style.scss */
   .md-p-12 {
     padding: 0 12px; } }
 @media (min-width: 1200px) {
-  /* line 1602, style.scss */
+  /* line 1603, style.scss */
   .container {
     max-width: 1320px; } }
 @media (min-width: 1024px) {
-  /* line 1608, style.scss */
+  /* line 1609, style.scss */
   .card-body {
     padding: 10px 12px; }
 
-  /* line 1612, style.scss */
+  /* line 1613, style.scss */
   .md-p-33 {
     padding: 0 33px 0 15px; } }
 @media (min-width: 768px) {
-  /* line 1618, style.scss */
+  /* line 1619, style.scss */
   .wrapper {
     max-width: 720px;
     margin-left: auto;
@@ -1668,124 +1670,124 @@ textarea[name="place"] {
     padding-left: 24px;
     padding-right: 24px; }
 
-  /* line 1625, style.scss */
+  /* line 1626, style.scss */
   .mobile-tabs {
     display: none; } }
 @media (max-width: 1200px) {
-  /* line 1631, style.scss */
+  /* line 1632, style.scss */
   .md-p-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1635, style.scss */
+  /* line 1636, style.scss */
   input[type="date"] {
     background: #fff url(../icons/calendar.svg) 60% 50% no-repeat;
     padding-bottom: 6px; }
 
-  /* line 1639, style.scss */
+  /* line 1640, style.scss */
   .filter-content__rating-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
 @media (max-width: 1199px) {
-  /* line 1644, style.scss */
+  /* line 1645, style.scss */
   .gallery-item a img {
     max-height: 230px; } }
 @media (max-width: 1024px) {
-  /* line 1650, style.scss */
+  /* line 1651, style.scss */
   .md-m-0 {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1655, style.scss */
+  /* line 1656, style.scss */
   .md-p-8 {
     padding: 0 8px; }
 
-  /* line 1659, style.scss */
+  /* line 1660, style.scss */
   .filter-content__rating-list,
   .radio-labe {
     margin-bottom: 0; }
 
-  /* line 1664, style.scss */
+  /* line 1665, style.scss */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 1668, style.scss */
+  /* line 1669, style.scss */
   .filter-content__buttons .buttons {
     padding: 10px 12px; }
 
-  /* line 1672, style.scss */
+  /* line 1673, style.scss */
   .promo-section__container {
     padding: 12px; }
 
-  /* line 1675, style.scss */
+  /* line 1676, style.scss */
   .attraction-item figure {
     height: 300px; }
 
-  /* line 1678, style.scss */
+  /* line 1679, style.scss */
   .col-md-12-1024 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%; }
 
-  /* line 1683, style.scss */
+  /* line 1684, style.scss */
   h1.banner__wrap-title {
     font-size: 28px;
     line-height: 40px; }
 
-  /* line 1687, style.scss */
+  /* line 1688, style.scss */
   .banner__wrap {
     padding: 104px 24px 72px 24px; } }
 @media (max-width: 768px) {
-  /* line 1693, style.scss */
+  /* line 1694, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 43px; }
 
-  /* line 1697, style.scss */
+  /* line 1698, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: left;
     padding-right: 24px; }
 
-  /* line 1702, style.scss */
+  /* line 1703, style.scss */
   .filter-content {
     margin-bottom: 36px; }
 
-  /* line 1706, style.scss */
+  /* line 1707, style.scss */
   .filter-content__rating-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
 
-  /* line 1709, style.scss */
+  /* line 1710, style.scss */
   .type-excursions {
     padding: 0 0 32px 0px; }
 
-  /* line 1713, style.scss */
+  /* line 1714, style.scss */
   h3 {
     padding: 0 0 32px 0;
     margin: 0; }
 
-  /* line 1717, style.scss */
+  /* line 1718, style.scss */
   .breadcrumb {
     margin-bottom: 24px; }
 
-  /* line 1720, style.scss */
+  /* line 1721, style.scss */
   .p-768-0 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1725, style.scss */
+  /* line 1726, style.scss */
   h1.banner__wrap-title {
     font-size: 28px;
     line-height: 40px; }
 
-  /* line 1729, style.scss */
+  /* line 1730, style.scss */
   .banner__wrap {
     padding: 104px 24px 72px 24px; }
 
-  /* line 1732, style.scss */
+  /* line 1733, style.scss */
   .promo-wrap {
     max-width: 672px; }
-    /* line 1734, style.scss */
+    /* line 1735, style.scss */
     .promo-wrap::after {
       content: "";
       position: absolute;
@@ -1793,44 +1795,44 @@ textarea[name="place"] {
       height: 1px;
       width: 1px; }
 
-  /* line 1742, style.scss */
+  /* line 1743, style.scss */
   .promo-section__content {
     padding: 16px 38px; }
 
-  /* line 1745, style.scss */
+  /* line 1746, style.scss */
   .decription-city {
     margin-top: 192px; }
 
-  /* line 1748, style.scss */
+  /* line 1749, style.scss */
   .container-banner {
     padding: 0; }
 
-  /* line 1751, style.scss */
+  /* line 1752, style.scss */
   .decription-city h2 {
     font-size: 24px;
     line-height: 32px; }
 
-  /* line 1755, style.scss */
+  /* line 1756, style.scss */
   h3 {
     font-size: 20px;
     line-height: 32px; }
 
-  /* line 1759, style.scss */
+  /* line 1760, style.scss */
   .gallery-item:nth-child(odd) {
     padding-left: 0; }
 
-  /* line 1762, style.scss */
+  /* line 1763, style.scss */
   section.decription-city .container {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     max-width: 768px; }
 
-  /* line 1769, style.scss */
+  /* line 1770, style.scss */
   .filter-zakaz {
     margin-bottom: 56px; }
 
-  /* line 1772, style.scss */
+  /* line 1773, style.scss */
   .filter-content__item-last {
     border-bottom: none;
     margin-bottom: 16px;
@@ -1844,59 +1846,59 @@ textarea[name="place"] {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
-  /* line 1780, style.scss */
+  /* line 1781, style.scss */
   .filter-content__checkbox {
     width: 100%; }
 
-  /* line 1783, style.scss */
+  /* line 1784, style.scss */
   .filter-content__checkbox:nth-last-child(n + 2) {
     margin-right: 16px; }
 
-  /* line 1786, style.scss */
+  /* line 1787, style.scss */
   .item-buttons {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
 
-  /* line 1789, style.scss */
+  /* line 1790, style.scss */
   .list-not-included {
     float: left; } }
 @media (max-width: 767px) {
-  /* line 1794, style.scss */
+  /* line 1795, style.scss */
   .type-excursions__sort {
     display: none; }
 
-  /* line 1797, style.scss */
+  /* line 1798, style.scss */
   .decription-city {
     margin-top: 328px; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  /* line 1802, style.scss */
+  /* line 1803, style.scss */
   .radio-label {
     font-size: 13px; }
 
-  /* line 1806, style.scss */
+  /* line 1807, style.scss */
   .input[type="date"] {
     font-size: 12px; }
 
-  /* line 1809, style.scss */
+  /* line 1810, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 1813, style.scss */
+  /* line 1814, style.scss */
   .filter-content__buttons .buttons {
     padding: 6px 12px; } }
 @media screen and (min-width: 480px) {
-  /* line 1818, style.scss */
+  /* line 1819, style.scss */
   .sticky-btn {
     display: none;
     opacity: 0; } }
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   /* стили */ }
 @media only screen and (max-width: 576px) {
-  /* line 1828, style.scss */
+  /* line 1829, style.scss */
   .filter-content {
     margin-bottom: 24px; }
 
-  /* line 1832, style.scss */
+  /* line 1833, style.scss */
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -1904,53 +1906,53 @@ textarea[name="place"] {
     margin-bottom: 0;
     text-align: left; }
 
-  /* line 1839, style.scss */
+  /* line 1840, style.scss */
   h3 {
     padding: 0 0 24px 0; }
 
-  /* line 1843, style.scss */
+  /* line 1844, style.scss */
   .filter-content__filter {
     padding-bottom: 0; }
 
-  /* line 1847, style.scss */
+  /* line 1848, style.scss */
   .breadcrumb {
     padding: 0; }
 
-  /* line 1851, style.scss */
+  /* line 1852, style.scss */
   .filter-content__head .filter-content__title {
     padding-top: 0;
     padding-bottom: 8px; }
 
-  /* line 1856, style.scss */
+  /* line 1857, style.scss */
   .dropdown-menu.show {
     width: 90%; }
 
-  /* line 1861, style.scss */
+  /* line 1862, style.scss */
   .type-excursions::-webkit-scrollbar {
     width: 0;
     height: 0; }
 
-  /* line 1866, style.scss */
+  /* line 1867, style.scss */
   .md-p-0,
   .page-titile {
     padding-left: 16px;
     padding-right: 16px; }
 
-  /* line 1871, style.scss */
+  /* line 1872, style.scss */
   .md-p-8 {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 1875, style.scss */
+  /* line 1876, style.scss */
   .gallery-item a img {
     max-height: none; }
 
-  /* line 1878, style.scss */
+  /* line 1879, style.scss */
   .container-banner {
     padding-right: 15px;
     padding-left: 15px; } }
 @media (max-width: 480px) {
-  /* line 1885, style.scss */
+  /* line 1886, style.scss */
   .sticky-btn {
     position: fixed;
     bottom: 0;
@@ -1970,81 +1972,81 @@ textarea[name="place"] {
             justify-content: center;
     left: 0px; } }
 @media (max-width: 425px) {
-  /* line 1900, style.scss */
+  /* line 1901, style.scss */
   .md-p-12 {
     padding: 0 16px; }
 
-  /* line 1903, style.scss */
+  /* line 1904, style.scss */
   .card-country {
     margin-bottom: 16px; }
 
-  /* line 1906, style.scss */
+  /* line 1907, style.scss */
   .breadcrumb {
     margin-bottom: 16px; }
 
-  /* line 1909, style.scss */
+  /* line 1910, style.scss */
   h1.banner__wrap-title {
     font-size: 20px;
     line-height: 24px; }
 
-  /* line 1913, style.scss */
+  /* line 1914, style.scss */
   .banner__wrap {
     padding: 88px 24px 88px 24px; }
 
-  /* line 1917, style.scss */
+  /* line 1918, style.scss */
   .promo-section__content {
     padding: 16px; }
 
-  /* line 1921, style.scss */
+  /* line 1922, style.scss */
   .promo-section__container {
     padding: 0; }
 
-  /* line 1925, style.scss */
+  /* line 1926, style.scss */
   .promo-wrap {
     max-width: 90%; }
 
-  /* line 1928, style.scss */
+  /* line 1929, style.scss */
   .decription-city {
     margin-top: 270px; }
 
-  /* line 1931, style.scss */
+  /* line 1932, style.scss */
   .decription-city h2 {
     margin-bottom: 16px; }
 
-  /* line 1935, style.scss */
+  /* line 1936, style.scss */
   p {
     font-size: 14px;
     line-height: 24px; }
 
-  /* line 1939, style.scss */
+  /* line 1940, style.scss */
   section.decription-city section {
     margin-bottom: 48px;
     margin-top: 24px; }
 
-  /* line 1943, style.scss */
+  /* line 1944, style.scss */
   .attraction-item figure {
     height: 400px; }
 
-  /* line 1946, style.scss */
+  /* line 1947, style.scss */
   .list-included {
     margin-bottom: 4px; }
 
-  /* line 1950, style.scss */
+  /* line 1951, style.scss */
   .list-not-included li {
     background: url(../icons/close-circle.svg) no-repeat left top; }
 
-  /* line 1954, style.scss */
+  /* line 1955, style.scss */
   .hide:checked + label + div {
     font-size: 14px;
     line-height: 20px; }
 
-  /* line 1959, style.scss */
+  /* line 1960, style.scss */
   .reviews-item__name p {
     margin-bottom: 0;
     line-height: 24px;
     font-size: 16px; }
 
-  /* line 1965, style.scss */
+  /* line 1966, style.scss */
   .link_btn {
     float: none;
     width: 100%;
@@ -2052,42 +2054,42 @@ textarea[name="place"] {
     margin-top: 24px;
     text-align: center; }
 
-  /* line 1973, style.scss */
+  /* line 1974, style.scss */
   .filter-zakaz {
     margin-bottom: 48px; }
 
-  /* line 1976, style.scss */
+  /* line 1977, style.scss */
   input[type="date"] {
     background: #fff url(../icons/calendar.svg) 100% 50% no-repeat; } }
 @media (max-width: 320px) {
-  /* line 1982, style.scss */
+  /* line 1983, style.scss */
   .filter-content__buttons .buttons {
     padding: 13px 24px; }
 
-  /* line 1986, style.scss */
+  /* line 1987, style.scss */
   .filter-content__rating-list,
   .filter-content__buttons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
-  /* line 1990, style.scss */
+  /* line 1991, style.scss */
   .rating-list__item:first-child {
     padding-right: 45px; }
 
-  /* line 1994, style.scss */
+  /* line 1995, style.scss */
   .filter-content__checkbox ul li:nth-last-child(n + 2) {
     float: none; }
 
-  /* line 1998, style.scss */
+  /* line 1999, style.scss */
   input[type="date"] {
     width: 100%; }
 
-  /* line 2002, style.scss */
+  /* line 2003, style.scss */
   .card-title {
     font-size: 20px; }
 
-  /* line 2005, style.scss */
+  /* line 2006, style.scss */
   .mobile-none {
     display: none; } }
 

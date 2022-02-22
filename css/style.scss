@@ -1243,11 +1243,12 @@ figure.attraction-item__decript:hover p {
   transform: translate(0%, -19%);
   height: 190px;
   outline: none !important;
-  transition: 1s;
+  transition: 2s;
 }
 
 .card-img-overlay a:hover {
   outline: none;
+  box-shadow:none;
 }
 
 .card-country:hover .card-img-overlay .btn-transparent {
