@@ -473,9 +473,9 @@ input[type="checkbox"] ~ .hide:active + label::before {
   &-link:hover {
     /* outline: 1px solid #aaa7a2;
     -moz-outline-radius: 8px;*/
-    -webkit-box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);
+    /*-webkit-box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);
     -moz-box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);
-    box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);
+    box-shadow: 0px 0px 1px 1px rgba(170, 167, 162, 0.5);*/
     border-radius: 8px;
   }
 
